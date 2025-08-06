@@ -1,3 +1,5 @@
+
+
 import requests
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
@@ -19,13 +21,10 @@ CITIES = {
     "Paris": {"lat": 48.8566, "lon": 2.3522}
 }
 
-# Target hours for forecast
-TARGET_HOURS = [9, 12, 15, 18, 21, 0]
-
 # --- FETCH FUNCTIONS ---
 
 def get_openweather_forecast(lat, lon):
-    """Fetch tomorrow's forecast (3-hour intervals) from OpenWeather"""
+    """Fetch tomorrow's forecast (3-hour intervals) from OpenWeather (free forecast API)"""
     url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=metric&appid={OPENWEATHER_API_KEY}"
     data = requests.get(url).json()
 
@@ -34,25 +33,21 @@ def get_openweather_forecast(lat, lon):
         return []
 
     tomorrow = (datetime.now() + timedelta(days=1)).date()
-    points = []
+    forecasts = []
 
-    # Extract 3-hourly forecast for tomorrow at target hours
     for item in data["list"]:
-        from pytz import timezone, utc
-paris_tz = timezone("Europe/Paris")
-
-dt_utc = datetime.utcfromtimestamp(item["dt"])   # OWM is UTC
-dt = utc.localize(dt_utc).astimezone(paris_tz)   # convert to Paris local
-        if dt.date() == tomorrow and (dt.hour in TARGET_HOURS):
+        dt = datetime.fromtimestamp(item["dt"])
+        # Only include 10:00 - 22:00
+        if dt.date() == tomorrow and 10 <= dt.hour <= 22:
             temp = item["main"]["temp"]
-            rain = item.get("pop", 0) * 100  # pop is 0–1 → convert to %
-            points.append((dt, temp, rain))
+            rain = item.get("pop", 0) * 100  # Probability of precipitation
+            forecasts.append((dt, temp, rain))
 
-    return points
+    return forecasts
 
 
 def get_weatherapi_forecast(city_name):
-    """Fetch tomorrow's forecast (hourly) from WeatherAPI for 09–00 target hours"""
+    """Fetch tomorrow's forecast (hourly) from WeatherAPI and sample every 3 hours to match OpenWeather"""
     url = f"http://api.weatherapi.com/v1/forecast.json?key={WEATHERAPI_API_KEY}&q={city_name}&days=2&aqi=no&alerts=no"
     data = requests.get(url).json()
 
@@ -61,93 +56,81 @@ def get_weatherapi_forecast(city_name):
         return []
 
     tomorrow = (datetime.now() + timedelta(days=1)).date()
-    points = []
+    forecasts = []
 
-    # Extract hourly forecast for tomorrow and filter target hours
-    for hour in data["forecast"]["forecastday"][1]["hour"]:
-        from pytz import timezone
-paris_tz = timezone("Europe/Paris")
-
-dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
-dt = paris_tz.localize(dt)  # explicitly mark as Paris local (avoid naive datetime)
-
-        if dt.date() == tomorrow and (dt.hour in TARGET_HOURS):
+    for i, hour in enumerate(data["forecast"]["forecastday"][1]["hour"]):
+        dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
+        # Only include 10:00 - 22:00 and every 3rd hour (align with OpenWeather)
+        if dt.date() == tomorrow and 10 <= dt.hour <= 22 and i % 3 == 0:
             temp = hour["temp_c"]
-            rain = float(hour["chance_of_rain"])  # already %
-            points.append((dt, temp, rain))
+            rain = hour["chance_of_rain"]
+            forecasts.append((dt, temp, rain))
 
-    return points
-
+    return forecasts
 
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """
-    Plot comparison graph with evenly spaced hours (09–00) and bold annotations at 15:00 and 21:00.
-    """
+    """Plot accurate comparison graph for temps and rain probabilities"""
+    import matplotlib.dates as mdates
 
-    # Fixed target labels
-    hours_labels = ["09", "12", "15", "18", "21", "00"]
+    # Combine and filter to 09:00–00:00
+    def filter_data(data):
+        return [(t[0], t[1], t[2]) for t in data if 9 <= t[0].hour or t[0].hour == 0]
 
-    # Sort and ensure data only contains target hours
-    owm_data = sorted([d for d in owm_data if d[0].hour in TARGET_HOURS], key=lambda x: x[0])
-    wa_data = sorted([d for d in wa_data if d[0].hour in TARGET_HOURS], key=lambda x: x[0])
+    owm_data = filter_data(owm_data)
+    wa_data = filter_data(wa_data)
 
-    # Extract temperatures and rain
+    # Separate fields
+    times = [t[0] for t in owm_data]  # use OWM times as base
     temps_owm = [t[1] for t in owm_data]
-    rains_owm = [t[2] for t in owm_data]
-
+    rains_owm = [max(0, t[2]) for t in owm_data]  # clamp to 0
     temps_wa = [t[1] for t in wa_data]
-    rains_wa = [t[2] for t in wa_data]
+    rains_wa = [max(0, t[2]) for t in wa_data]    # clamp to 0
 
-    # Average line
     avg_temp_line = [(a + b) / 2 for a, b in zip(temps_owm, temps_wa)]
 
-    # Use simple indices for equal spacing
-    x = range(len(hours_labels))  # 0 to 5
-
-    # --- Plot ---
+    # Plot
     fig, ax1 = plt.subplots(figsize=(8, 4))
 
     # Temperature lines
-    ax1.plot(x, temps_owm, label="Temp OWM", color="red", linestyle="-", marker="o")
-    ax1.plot(x, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--", marker="o")
-    ax1.plot(x, avg_temp_line, label="Avg Temp", color="black", linestyle=":", marker="o")
+    ax1.plot(times, temps_owm, label="Temp OWM", color="red")
+    ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
+    ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
 
     ax1.set_ylabel("Temperature (°C)", color="red")
     ax1.tick_params(axis="y", labelcolor="red")
 
     # Rain probability lines (secondary axis)
     ax2 = ax1.twinx()
-    ax2.plot(x, rains_owm, label="Rain% OWM", color="cyan", linestyle="-", marker="o")
-    ax2.plot(x, rains_wa, label="Rain% WeatherAPI", color="blue", linestyle="-.", marker="o")
+    ax2.plot(times, rains_owm, label="Rain% OWM", color="blue", linestyle="-.")
+    ax2.plot(times, rains_wa, label="Rain% WeatherAPI", color="cyan", linestyle=":")
     ax2.set_ylabel("Rain Probability (%)", color="blue")
     ax2.tick_params(axis="y", labelcolor="blue")
-    ax2.set_ylim(0, 100)
+    ax2.set_ylim(0, 100)  # force 0–100%
 
-    # X-axis: equal spacing with labels
-    ax1.set_xticks(x)
-    ax1.set_xticklabels(hours_labels)
+    # X-axis formatting
+    tick_hours = [9, 12, 15, 18, 21, 0]
+    tick_labels = ["9", "12", "15", "18", "21", "00"]
+    ax1.set_xticks([t for t in times if t.hour in tick_hours])
+    ax1.set_xticklabels([tick_labels[tick_hours.index(t.hour)] for t in times if t.hour in tick_hours])
 
-    # Combine legends
-    lines_1, labels_1 = ax1.get_legend_handles_labels()
-    lines_2, labels_2 = ax2.get_legend_handles_labels()
-    ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left")
+    # Bold annotations at 15 & 21
+    for target_hour in [15, 21]:
+        if any(t.hour == target_hour for t in times):
+            idx = next(i for i, t in enumerate(times) if t.hour == target_hour)
+            ax1.annotate(
+                f"{avg_temp_line[idx]:.1f}°C",
+                (times[idx], avg_temp_line[idx]),
+                textcoords="offset points",
+                xytext=(0, 10),
+                ha='center',
+                fontsize=12,
+                fontweight='bold',
+                color="black"
+            )
 
-    # Bold annotations at 15 (index 2) and 21 (index 4)
-    for idx in [2, 4]:
-        ax1.annotate(
-            f"{avg_temp_line[idx]:.1f}°C",
-            (x[idx], avg_temp_line[idx]),
-            textcoords="offset points",
-            xytext=(0, 12),
-            ha='center',
-            fontsize=11,
-            fontweight='bold',
-            color="black"
-        )
-
-    # Title and layout
+    # Title & layout
     fig.suptitle(f"{city} Tomorrow – Temp & Rain", fontsize=12)
     fig.tight_layout()
 
@@ -155,7 +138,6 @@ def plot_comparison(city, owm_data, wa_data):
     plt.savefig(filename)
     plt.close()
     return filename
-
 
 
 def weather_to_emoji(condition):
@@ -172,9 +154,9 @@ def weather_to_emoji(condition):
     else:
         return "🌤️"
 
-
 def create_summary(city_name, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range):
     """Format summary line with emoji, avg, range, high/low, uncertainty flag"""
+    # Determine emoji condition (simple logic based on rain)
     if avg_rain > 30:
         condition = "rain"
     elif avg_rain > 5:
@@ -197,7 +179,6 @@ def create_summary(city_name, avg_temp, avg_rain, high_temp, low_temp, temp_rang
 
     return summary
 
-
 def send_pushover(message, image_path=None):
     """Send Pushover notification with optional image"""
     files = {}
@@ -212,7 +193,6 @@ def send_pushover(message, image_path=None):
     }, files=files)
     return response.json()
 
-
 # --- MAIN SCRIPT ---
 
 def main():
@@ -220,16 +200,6 @@ def main():
         # Fetch data
         owm_data = get_openweather_forecast(CITIES[city]["lat"], CITIES[city]["lon"])
         wa_data = get_weatherapi_forecast(city)
-
-        # --- DEBUG: Print timestamps and values to check alignment ---
-        print(f"\n--- DEBUG: OpenWeather data for {city} ---")
-        for t in owm_data:
-            print(t[0], "Temp:", t[1], "Rain:", t[2])
-
-        print(f"\n--- DEBUG: WeatherAPI data for {city} ---")
-        for t in wa_data:
-            print(t[0], "Temp:", t[1], "Rain:", t[2])
-        # ------------------------------------------------------------
 
         if not owm_data or not wa_data:
             send_pushover(f"{city}: Weather data unavailable.")
@@ -259,7 +229,6 @@ def main():
         # Graph & push
         graph_file = plot_comparison(city, owm_data, wa_data)
         send_pushover(message, graph_file)
-
 
 if __name__ == "__main__":
     main()
