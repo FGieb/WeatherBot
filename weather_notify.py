@@ -107,9 +107,12 @@ def send_pushover(message, image_path=None):
     response = requests.post("https://api.pushover.net/1/messages.json", data={
         "token": PUSHOVER_API_TOKEN,
         "user": PUSHOVER_USER_KEY,
-        "message": message
+        "message": message,
+        "priority": 1,        # High priority (forces alert)
+        "sound": "pushover"   # Optional: choose alert sound
     }, files=files)
     return response.json()
+
 
 # --- MAIN SCRIPT ---
 
