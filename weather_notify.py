@@ -212,6 +212,16 @@ def main():
         owm_data = get_openweather_forecast(CITIES[city]["lat"], CITIES[city]["lon"])
         wa_data = get_weatherapi_forecast(city)
 
+        # --- DEBUG: Print timestamps and values to check alignment ---
+        print(f"\n--- DEBUG: OpenWeather data for {city} ---")
+        for t in owm_data:
+            print(t[0], "Temp:", t[1], "Rain:", t[2])
+
+        print(f"\n--- DEBUG: WeatherAPI data for {city} ---")
+        for t in wa_data:
+            print(t[0], "Temp:", t[1], "Rain:", t[2])
+        # ------------------------------------------------------------
+
         if not owm_data or not wa_data:
             send_pushover(f"{city}: Weather data unavailable.")
             continue
