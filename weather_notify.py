@@ -45,7 +45,7 @@ def get_openweather_forecast(lat, lon):
 
 
 def get_weatherapi_forecast(city_name):
-    """Fetch tomorrow's forecast (hourly) from WeatherAPI"""
+    """Fetch tomorrow's forecast (hourly) from WeatherAPI and sample every 3 hours to match OpenWeather"""
     url = f"http://api.weatherapi.com/v1/forecast.json?key={WEATHERAPI_API_KEY}&q={city_name}&days=2&aqi=no&alerts=no"
     data = requests.get(url).json()
 
@@ -56,13 +56,16 @@ def get_weatherapi_forecast(city_name):
     tomorrow = (datetime.now() + timedelta(days=1)).date()
     forecasts = []
 
-    for hour in data["forecast"]["forecastday"][1]["hour"]:
-        dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
-        temp = hour["temp_c"]
-        rain = hour["chance_of_rain"]
-        forecasts.append((dt, temp, rain))
+    # Take every 3rd hour to align with OpenWeather's 3-hour intervals
+    for i, hour in enumerate(data["forecast"]["forecastday"][1]["hour"]):
+        if i % 3 == 0:
+            dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
+            temp = hour["temp_c"]
+            rain = hour["chance_of_rain"]
+            forecasts.append((dt, temp, rain))
 
     return forecasts
+
 
 # --- GRAPHING & NOTIFICATIONS ---
 
