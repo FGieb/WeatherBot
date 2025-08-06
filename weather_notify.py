@@ -98,6 +98,25 @@ def plot_comparison(city, owm_data, wa_data):
     plt.close()
     return filename
 
+def weather_to_emoji(condition):
+    """Convert basic condition keywords to emoji"""
+    condition = condition.lower()
+    if "rain" in condition:
+        return "🌧️"
+    elif "snow" in condition:
+        return "❄️"
+    elif "cloud" in condition:
+        return "☁️"
+    elif "clear" in condition:
+        return "☀️"
+    else:
+        return "🌤️"
+
+def create_summary(city_name, avg_temp, avg_rain, condition):
+    """Format summary line with emoji and key metrics"""
+    emoji = weather_to_emoji(condition)
+    return f"{city_name}: {emoji} {avg_temp:.1f}°C, {avg_rain:.0f}% rain"
+
 
 def send_pushover(message, image_path=None):
     """Send Pushover notification with optional image"""
