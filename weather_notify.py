@@ -74,72 +74,69 @@ def get_weatherapi_forecast(city_name):
 
 def plot_comparison(city, owm_data, wa_data):
     """
-    Plot comparison graph:
-    - Red solid = OWM temp, Orange dashed = WeatherAPI temp, Black dotted = Average temp
-    - Cyan solid = OWM rain %, Blue dash-dot = WeatherAPI rain %
-    - Bold annotations at 15:00 and 21:00 (average temp)
+    Plot comparison graph with evenly spaced hours (09–00) and bold annotations at 15:00 and 21:00.
     """
 
-    # Ensure same order: 09 → 00
+    # Fixed target labels
+    hours_labels = ["09", "12", "15", "18", "21", "00"]
+
+    # Sort and ensure data only contains target hours
     owm_data = sorted([d for d in owm_data if d[0].hour in TARGET_HOURS], key=lambda x: x[0])
     wa_data = sorted([d for d in wa_data if d[0].hour in TARGET_HOURS], key=lambda x: x[0])
 
-    # Use OWM times as base (both APIs provide same fixed points)
-    times = [t[0] for t in owm_data]
-
-    # Extract values
+    # Extract temperatures and rain
     temps_owm = [t[1] for t in owm_data]
     rains_owm = [t[2] for t in owm_data]
 
     temps_wa = [t[1] for t in wa_data]
     rains_wa = [t[2] for t in wa_data]
 
-    # Average temps (for black dotted line)
+    # Average line
     avg_temp_line = [(a + b) / 2 for a, b in zip(temps_owm, temps_wa)]
 
-    # --- Plot setup ---
+    # Use simple indices for equal spacing
+    x = range(len(hours_labels))  # 0 to 5
+
+    # --- Plot ---
     fig, ax1 = plt.subplots(figsize=(8, 4))
 
-    # Temperature axis (left)
-    ax1.plot(times, temps_owm, label="Temp OWM", color="red", linestyle="-")
-    ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
-    ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
+    # Temperature lines
+    ax1.plot(x, temps_owm, label="Temp OWM", color="red", linestyle="-", marker="o")
+    ax1.plot(x, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--", marker="o")
+    ax1.plot(x, avg_temp_line, label="Avg Temp", color="black", linestyle=":", marker="o")
 
     ax1.set_ylabel("Temperature (°C)", color="red")
     ax1.tick_params(axis="y", labelcolor="red")
 
-    # Rain probability axis (right)
+    # Rain probability lines (secondary axis)
     ax2 = ax1.twinx()
-    ax2.plot(times, rains_owm, label="Rain% OWM", color="cyan", linestyle="-")
-    ax2.plot(times, rains_wa, label="Rain% WeatherAPI", color="blue", linestyle="-.")
+    ax2.plot(x, rains_owm, label="Rain% OWM", color="cyan", linestyle="-", marker="o")
+    ax2.plot(x, rains_wa, label="Rain% WeatherAPI", color="blue", linestyle="-.", marker="o")
     ax2.set_ylabel("Rain Probability (%)", color="blue")
     ax2.tick_params(axis="y", labelcolor="blue")
-    ax2.set_ylim(0, 100)  # Force 0–100%
+    ax2.set_ylim(0, 100)
+
+    # X-axis: equal spacing with labels
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(hours_labels)
 
     # Combine legends
     lines_1, labels_1 = ax1.get_legend_handles_labels()
     lines_2, labels_2 = ax2.get_legend_handles_labels()
     ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left")
 
-    # X-axis formatting
-    tick_labels = ["9", "12", "15", "18", "21", "00"]
-    ax1.set_xticks(times)
-    ax1.set_xticklabels(tick_labels)
-
-    # Bold annotations at 15:00 and 21:00
-    for target_hour in [15, 21]:
-        if any(t.hour == target_hour for t in times):
-            idx = next(i for i, t in enumerate(times) if t.hour == target_hour)
-            ax1.annotate(
-                f"{avg_temp_line[idx]:.1f}°C",
-                (times[idx], avg_temp_line[idx]),
-                textcoords="offset points",
-                xytext=(0, 12),
-                ha='center',
-                fontsize=11,
-                fontweight='bold',
-                color="black"
-            )
+    # Bold annotations at 15 (index 2) and 21 (index 4)
+    for idx in [2, 4]:
+        ax1.annotate(
+            f"{avg_temp_line[idx]:.1f}°C",
+            (x[idx], avg_temp_line[idx]),
+            textcoords="offset points",
+            xytext=(0, 12),
+            ha='center',
+            fontsize=11,
+            fontweight='bold',
+            color="black"
+        )
 
     # Title and layout
     fig.suptitle(f"{city} Tomorrow – Temp & Rain", fontsize=12)
@@ -149,6 +146,7 @@ def plot_comparison(city, owm_data, wa_data):
     plt.savefig(filename)
     plt.close()
     return filename
+
 
 
 def weather_to_emoji(condition):
