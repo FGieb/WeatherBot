@@ -67,36 +67,47 @@ def get_weatherapi_forecast(city_name):
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """Plot comparison graph for temps and rain probabilities"""
-    plt.figure(figsize=(8, 4))
-    plt.title(f"Weather Comparison - {city} (Tomorrow)")
+    """Improved graph: dual y-axes, simplified time labels, clearer colors"""
+    import matplotlib.dates as mdates
+    fig, ax1 = plt.subplots(figsize=(8, 4))
 
-    # OpenWeather
-    times_owm = [t[0] for t in owm_data]
+    # Prepare data (assuming both APIs return aligned times)
+    times = [t[0] for t in owm_data]
     temps_owm = [t[1] for t in owm_data]
-    rains_owm = [t[2] for t in owm_data]
-
-    # WeatherAPI
-    times_wa = [t[0] for t in wa_data]
     temps_wa = [t[1] for t in wa_data]
-    rains_wa = [t[2] for t in wa_data]
+    rain_owm = [t[2] for t in owm_data]
+    rain_wa = [t[2] for t in wa_data]
 
-    # Plot temperature
-    plt.plot(times_owm, temps_owm, label="Temp OWM", linestyle="-")
-    plt.plot(times_wa, temps_wa, label="Temp WeatherAPI", linestyle="--")
+    # Plot temperature on left axis (red tones)
+    ax1.set_title(f"{city} Tomorrow – Temp & Rain", fontsize=12, weight='bold')
+    ax1.plot(times, temps_owm, label="Temp OWM", color="red", linewidth=2)
+    ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--", linewidth=2)
+    ax1.set_ylabel("Temperature (°C)", color="red", fontsize=10)
+    ax1.tick_params(axis='y', labelcolor="red")
 
-    # Plot rain
-    plt.plot(times_owm, rains_owm, label="Rain% OWM", linestyle=":")
-    plt.plot(times_wa, rains_wa, label="Rain% WeatherAPI", linestyle="-.")
+    # Plot rain probability on right axis (blue tones)
+    ax2 = ax1.twinx()
+    ax2.plot(times, rain_owm, label="Rain OWM", color="blue", linestyle=":")
+    ax2.plot(times, rain_wa, label="Rain WeatherAPI", color="cyan", linestyle="-.")
+    ax2.set_ylabel("Rain Probability (%)", color="blue", fontsize=10)
+    ax2.tick_params(axis='y', labelcolor="blue")
 
-    plt.legend()
-    plt.xticks(rotation=45)
+    # Simplify x-axis to 3-hour intervals
+    ax1.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))
+    ax1.xaxis.set_major_locator(mdates.HourLocator(interval=3))
+    plt.xticks(rotation=0)
+
+    # Place legend neatly
+    fig.legend(loc="upper center", ncol=4, fontsize=8, bbox_to_anchor=(0.5, 1.05))
+
     plt.tight_layout()
 
+    # Save higher DPI for mobile clarity
     filename = f"{city.lower()}_comparison.png"
-    plt.savefig(filename)
+    plt.savefig(filename, dpi=150)
     plt.close()
     return filename
+
 
 def weather_to_emoji(condition):
     """Convert basic condition keywords to emoji"""
