@@ -98,73 +98,84 @@ def get_weatherapi_forecast(city_name):
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """Plot comparison graph for temps and rain probabilities (09:00 → 00:00)"""
+    """Plot comparison graph for temps and rain probabilities with proper alignment and annotations"""
 
     import numpy as np
     import matplotlib.pyplot as plt
 
-    # --- Extract data ---
-    times_owm = np.array([t[0] for t in owm_data])
-    temps_owm = np.array([t[1] for t in owm_data])
-    rains_owm = np.array([t[2] for t in owm_data])
+    # ---- Prepare data ----
+    times_owm = [t[0] for t in owm_data]
+    temps_owm = [t[1] for t in owm_data]
+    rains_owm = [t[2] for t in owm_data]
 
-    times_wa = np.array([t[0] for t in wa_data])
-    temps_wa = np.array([t[1] for t in wa_data])
-    rains_wa = np.array([t[2] for t in wa_data])
+    times_wa = [t[0] for t in wa_data]
+    temps_wa = [t[1] for t in wa_data]
+    rains_wa = [t[2] for t in wa_data]
 
-    # --- Target hourly times (09 → 00) ---
-    start_hour = 9
-    end_hour = 24
-    target_hours = np.arange(start_hour, end_hour + 1)  # 9,10,...,24
+    # Merge timestamps (unique + sorted)
+    all_times = sorted(set(times_owm + times_wa))
 
-    # Interpolate OpenWeather (3-hour) to hourly
-    interp_temps_owm = np.interp(target_hours, [t.hour for t in times_owm], temps_owm)
-    interp_rains_owm = np.interp(target_hours, [t.hour for t in times_owm], rains_owm)
+    # Helper: interpolate or fallback to NaN
+    def interpolate(times, values, target_times):
+        result = []
+        for target in target_times:
+            if target in times:
+                result.append(values[times.index(target)])
+            else:
+                # simple interpolation: take closest value
+                if len(times) > 0:
+                    closest_idx = min(range(len(times)), key=lambda i: abs((times[i] - target).total_seconds()))
+                    result.append(values[closest_idx])
+                else:
+                    result.append(np.nan)
+        return result
 
-    # WeatherAPI is already hourly; align to same target hours
-    wa_hourly = {t.hour: (temp, rain) for t, temp, rain in zip(times_wa, temps_wa, rains_wa)}
-    aligned_temps_wa = [wa_hourly.get(h, np.nan) for h in target_hours]
-    temps_wa_aligned = [v[0] if v else np.nan for v in aligned_temps_wa]
-    rains_wa_aligned = [v[1] if v else np.nan for v in aligned_temps_wa]
+    # Align data
+    temps_owm_aligned = interpolate(times_owm, temps_owm, all_times)
+    rains_owm_aligned = interpolate(times_owm, rains_owm, all_times)
+    temps_wa_aligned = interpolate(times_wa, temps_wa, all_times)
+    rains_wa_aligned = interpolate(times_wa, rains_wa, all_times)
 
-    # --- Compute average temp line ---
-    avg_temp_line = (interp_temps_owm + np.array(temps_wa_aligned)) / 2
+    # Average temp line (between APIs)
+    avg_temp_line = [(t1 + t2) / 2 for t1, t2 in zip(temps_owm_aligned, temps_wa_aligned)]
 
-    # --- Plot ---
+    # ---- Plot ----
     fig, ax1 = plt.subplots(figsize=(8, 4))
 
-    # Temperature (left axis)
-    ax1.plot(target_hours, interp_temps_owm, 'r-', label="Temp OWM")
-    ax1.plot(target_hours, temps_wa_aligned, 'orange', linestyle='--', label="Temp WeatherAPI")
-    ax1.plot(target_hours, avg_temp_line, 'k:', label="Avg Temp")
+    # Temp axis
+    ax1.set_xlabel("Time")
+    ax1.set_ylabel("Temperature (°C)", color="red")
 
-    ax1.set_ylabel("Temperature (°C)", color='red')
-    ax1.tick_params(axis='y', labelcolor='red')
-    ax1.set_ylim(min(min(interp_temps_owm), min(temps_wa_aligned)) - 2,
-                 max(max(interp_temps_owm), max(temps_wa_aligned)) + 2)
+    # Lines for temperature
+    ax1.plot(all_times, temps_owm_aligned, label="Temp OWM", color="red", linestyle="-")
+    ax1.plot(all_times, temps_wa_aligned, label="Temp WeatherAPI", color="orange", linestyle="--")
+    ax1.plot(all_times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
 
-    # Rain (right axis)
+    # Rain axis (right)
     ax2 = ax1.twinx()
-    ax2.plot(target_hours, interp_rains_owm, 'b-.', label="Rain% OWM")
-    ax2.plot(target_hours, rains_wa_aligned, 'cyan', linestyle=':', label="Rain% WeatherAPI")
-    ax2.set_ylabel("Rain Probability (%)", color='blue')
-    ax2.tick_params(axis='y', labelcolor='blue')
-    ax2.set_ylim(0, 100)
+    ax2.set_ylabel("Rain Probability (%)", color="blue")
 
-    # --- X-axis labels (fixed 6 labels: 9, 12, 15, 18, 21, 00) ---
-    tick_labels = ["9", "12", "15", "18", "21", "00"]
-    tick_positions = np.linspace(start_hour, end_hour, len(tick_labels))
-    ax1.set_xticks(tick_positions)
-    ax1.set_xticklabels(tick_labels)
+    # Lines for rain
+    ax2.plot(all_times, rains_owm_aligned, label="Rain% OWM", color="cyan", linestyle="-")
+    ax2.plot(all_times, rains_wa_aligned, label="Rain% WeatherAPI", color="blue", linestyle="-.")
 
-    # --- Bold annotations at 15:00 and 21:00 ---
-    for hour in [15, 21]:
-        idx = np.where(target_hours == hour)[0]
-        if idx.size > 0:
-            temp_value = avg_temp_line[idx[0]]
+    # Combine legends
+    lines_1, labels_1 = ax1.get_legend_handles_labels()
+    lines_2, labels_2 = ax2.get_legend_handles_labels()
+    ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left")
+
+    # Format x-axis (fixed 9 → 00 labels)
+    label_hours = ["9", "12", "15", "18", "21", "00"]
+    step = max(1, len(all_times) // len(label_hours))
+    ax1.set_xticks(all_times[::step])
+    ax1.set_xticklabels(label_hours)
+
+    # Bold annotations at 15 and 21
+    if len(avg_temp_line) >= 5:
+        for idx in [2, 4]:  # 15 and 21 index
             ax1.annotate(
-                f"{temp_value:.1f}°C",
-                (hour, temp_value),
+                f"{avg_temp_line[idx]:.1f}°C",
+                (all_times[idx], avg_temp_line[idx]),
                 textcoords="offset points",
                 xytext=(0, 12),
                 ha='center',
@@ -172,20 +183,15 @@ def plot_comparison(city, owm_data, wa_data):
                 fontweight='bold'
             )
 
-    # Title & legend
-    plt.title(f"{city} Tomorrow – Temp & Rain")
-    fig.tight_layout()
+    # Tight layout
+    plt.tight_layout()
 
-    # Merge legends
-    lines_1, labels_1 = ax1.get_legend_handles_labels()
-    lines_2, labels_2 = ax2.get_legend_handles_labels()
-    ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left")
-
-    # Save file
+    # Save figure
     filename = f"{city.lower()}_comparison.png"
     plt.savefig(filename)
     plt.close()
     return filename
+
 
 
 
