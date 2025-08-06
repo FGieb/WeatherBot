@@ -19,10 +19,13 @@ CITIES = {
     "Paris": {"lat": 48.8566, "lon": 2.3522}
 }
 
+# Target hours for forecast
+TARGET_HOURS = [9, 12, 15, 18, 21, 0]
+
 # --- FETCH FUNCTIONS ---
 
 def get_openweather_forecast(lat, lon):
-    """Fetch tomorrow's forecast (interpolated hourly for 09–00) from OpenWeather"""
+    """Fetch tomorrow's forecast (3-hour intervals) from OpenWeather"""
     url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=metric&appid={OPENWEATHER_API_KEY}"
     data = requests.get(url).json()
 
@@ -33,45 +36,19 @@ def get_openweather_forecast(lat, lon):
     tomorrow = (datetime.now() + timedelta(days=1)).date()
     points = []
 
-    # Extract 3-hourly forecast for tomorrow
+    # Extract 3-hourly forecast for tomorrow at target hours
     for item in data["list"]:
         dt = datetime.fromtimestamp(item["dt"])
-        if dt.date() == tomorrow:
+        if dt.date() == tomorrow and (dt.hour in TARGET_HOURS):
             temp = item["main"]["temp"]
-            rain = item.get("pop", 0) * 100
+            rain = item.get("pop", 0) * 100  # pop is 0–1 → convert to %
             points.append((dt, temp, rain))
 
-    if not points:
-        return []
-
-    # Interpolate to desired hours: 09, 12, 15, 18, 21, 00
-    target_hours = [9, 12, 15, 18, 21, 0]
-    interpolated = []
-    for h in target_hours:
-        target_time = datetime.combine(tomorrow, datetime.min.time()) + timedelta(hours=h)
-        # If direct match
-        for pt in points:
-            if pt[0].hour == h:
-                interpolated.append((target_time, pt[1], pt[2]))
-                break
-        else:
-            # Interpolate between closest 3-hour points
-            before = max((p for p in points if p[0] <= target_time), default=points[0])
-            after = min((p for p in points if p[0] >= target_time), default=points[-1])
-            if before == after:
-                temp = before[1]
-                rain = before[2]
-            else:
-                ratio = (target_time - before[0]).total_seconds() / (after[0] - before[0]).total_seconds()
-                temp = before[1] + (after[1] - before[1]) * ratio
-                rain = before[2] + (after[2] - before[2]) * ratio
-            interpolated.append((target_time, temp, rain))
-
-    return interpolated
+    return points
 
 
 def get_weatherapi_forecast(city_name):
-    """Fetch tomorrow's forecast (hourly) from WeatherAPI for 09–00"""
+    """Fetch tomorrow's forecast (hourly) from WeatherAPI for 09–00 target hours"""
     url = f"http://api.weatherapi.com/v1/forecast.json?key={WEATHERAPI_API_KEY}&q={city_name}&days=2&aqi=no&alerts=no"
     data = requests.get(url).json()
 
@@ -82,118 +59,96 @@ def get_weatherapi_forecast(city_name):
     tomorrow = (datetime.now() + timedelta(days=1)).date()
     points = []
 
-    # Extract hourly forecast for tomorrow
+    # Extract hourly forecast for tomorrow and filter target hours
     for hour in data["forecast"]["forecastday"][1]["hour"]:
         dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
-        if dt.date() == tomorrow and (dt.hour >= 9 or dt.hour == 0):
-            points.append((dt, hour["temp_c"], hour["chance_of_rain"]))
+        if dt.date() == tomorrow and (dt.hour in TARGET_HOURS):
+            temp = hour["temp_c"]
+            rain = float(hour["chance_of_rain"])  # already %
+            points.append((dt, temp, rain))
 
-    # Filter for target hours
-    target_hours = [9, 12, 15, 18, 21, 0]
-    filtered = [p for p in points if p[0].hour in target_hours]
-
-    return filtered
+    return points
 
 
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """Plot comparison graph for temps and rain probabilities with proper alignment and annotations"""
+    """
+    Plot comparison graph:
+    - Red solid = OWM temp, Orange dashed = WeatherAPI temp, Black dotted = Average temp
+    - Cyan solid = OWM rain %, Blue dash-dot = WeatherAPI rain %
+    - Bold annotations at 15:00 and 21:00 (average temp)
+    """
 
-    import numpy as np
-    import matplotlib.pyplot as plt
+    # Ensure same order: 09 → 00
+    owm_data = sorted([d for d in owm_data if d[0].hour in TARGET_HOURS], key=lambda x: x[0])
+    wa_data = sorted([d for d in wa_data if d[0].hour in TARGET_HOURS], key=lambda x: x[0])
 
-    # ---- Prepare data ----
-    times_owm = [t[0] for t in owm_data]
+    # Use OWM times as base (both APIs provide same fixed points)
+    times = [t[0] for t in owm_data]
+
+    # Extract values
     temps_owm = [t[1] for t in owm_data]
     rains_owm = [t[2] for t in owm_data]
 
-    times_wa = [t[0] for t in wa_data]
     temps_wa = [t[1] for t in wa_data]
     rains_wa = [t[2] for t in wa_data]
 
-    # Merge timestamps (unique + sorted)
-    all_times = sorted(set(times_owm + times_wa))
+    # Average temps (for black dotted line)
+    avg_temp_line = [(a + b) / 2 for a, b in zip(temps_owm, temps_wa)]
 
-    # Helper: interpolate or fallback to NaN
-    def interpolate(times, values, target_times):
-        result = []
-        for target in target_times:
-            if target in times:
-                result.append(values[times.index(target)])
-            else:
-                # simple interpolation: take closest value
-                if len(times) > 0:
-                    closest_idx = min(range(len(times)), key=lambda i: abs((times[i] - target).total_seconds()))
-                    result.append(values[closest_idx])
-                else:
-                    result.append(np.nan)
-        return result
-
-    # Align data
-    temps_owm_aligned = interpolate(times_owm, temps_owm, all_times)
-    rains_owm_aligned = interpolate(times_owm, rains_owm, all_times)
-    temps_wa_aligned = interpolate(times_wa, temps_wa, all_times)
-    rains_wa_aligned = interpolate(times_wa, rains_wa, all_times)
-
-    # Average temp line (between APIs)
-    avg_temp_line = [(t1 + t2) / 2 for t1, t2 in zip(temps_owm_aligned, temps_wa_aligned)]
-
-    # ---- Plot ----
+    # --- Plot setup ---
     fig, ax1 = plt.subplots(figsize=(8, 4))
 
-    # Temp axis
-    ax1.set_xlabel("Time")
+    # Temperature axis (left)
+    ax1.plot(times, temps_owm, label="Temp OWM", color="red", linestyle="-")
+    ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
+    ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
+
     ax1.set_ylabel("Temperature (°C)", color="red")
+    ax1.tick_params(axis="y", labelcolor="red")
 
-    # Lines for temperature
-    ax1.plot(all_times, temps_owm_aligned, label="Temp OWM", color="red", linestyle="-")
-    ax1.plot(all_times, temps_wa_aligned, label="Temp WeatherAPI", color="orange", linestyle="--")
-    ax1.plot(all_times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
-
-    # Rain axis (right)
+    # Rain probability axis (right)
     ax2 = ax1.twinx()
+    ax2.plot(times, rains_owm, label="Rain% OWM", color="cyan", linestyle="-")
+    ax2.plot(times, rains_wa, label="Rain% WeatherAPI", color="blue", linestyle="-.")
     ax2.set_ylabel("Rain Probability (%)", color="blue")
-
-    # Lines for rain
-    ax2.plot(all_times, rains_owm_aligned, label="Rain% OWM", color="cyan", linestyle="-")
-    ax2.plot(all_times, rains_wa_aligned, label="Rain% WeatherAPI", color="blue", linestyle="-.")
+    ax2.tick_params(axis="y", labelcolor="blue")
+    ax2.set_ylim(0, 100)  # Force 0–100%
 
     # Combine legends
     lines_1, labels_1 = ax1.get_legend_handles_labels()
     lines_2, labels_2 = ax2.get_legend_handles_labels()
     ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left")
 
-    # Format x-axis (fixed 9 → 00 labels)
-    label_hours = ["9", "12", "15", "18", "21", "00"]
-    step = max(1, len(all_times) // len(label_hours))
-    ax1.set_xticks(all_times[::step])
-    ax1.set_xticklabels(label_hours)
+    # X-axis formatting
+    tick_labels = ["9", "12", "15", "18", "21", "00"]
+    ax1.set_xticks(times)
+    ax1.set_xticklabels(tick_labels)
 
-    # Bold annotations at 15 and 21
-    if len(avg_temp_line) >= 5:
-        for idx in [2, 4]:  # 15 and 21 index
+    # Bold annotations at 15:00 and 21:00
+    for target_hour in [15, 21]:
+        if any(t.hour == target_hour for t in times):
+            idx = next(i for i, t in enumerate(times) if t.hour == target_hour)
             ax1.annotate(
                 f"{avg_temp_line[idx]:.1f}°C",
-                (all_times[idx], avg_temp_line[idx]),
+                (times[idx], avg_temp_line[idx]),
                 textcoords="offset points",
                 xytext=(0, 12),
                 ha='center',
                 fontsize=11,
-                fontweight='bold'
+                fontweight='bold',
+                color="black"
             )
 
-    # Tight layout
-    plt.tight_layout()
+    # Title and layout
+    fig.suptitle(f"{city} Tomorrow – Temp & Rain", fontsize=12)
+    fig.tight_layout()
 
-    # Save figure
     filename = f"{city.lower()}_comparison.png"
     plt.savefig(filename)
     plt.close()
     return filename
-
-
-
 
 
 def weather_to_emoji(condition):
@@ -210,9 +165,9 @@ def weather_to_emoji(condition):
     else:
         return "🌤️"
 
+
 def create_summary(city_name, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range):
     """Format summary line with emoji, avg, range, high/low, uncertainty flag"""
-    # Determine emoji condition (simple logic based on rain)
     if avg_rain > 30:
         condition = "rain"
     elif avg_rain > 5:
@@ -235,6 +190,7 @@ def create_summary(city_name, avg_temp, avg_rain, high_temp, low_temp, temp_rang
 
     return summary
 
+
 def send_pushover(message, image_path=None):
     """Send Pushover notification with optional image"""
     files = {}
@@ -248,6 +204,7 @@ def send_pushover(message, image_path=None):
         "sound": "pushover"
     }, files=files)
     return response.json()
+
 
 # --- MAIN SCRIPT ---
 
@@ -285,6 +242,7 @@ def main():
         # Graph & push
         graph_file = plot_comparison(city, owm_data, wa_data)
         send_pushover(message, graph_file)
+
 
 if __name__ == "__main__":
     main()
