@@ -69,56 +69,59 @@ def get_weatherapi_forecast(city_name):
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """Improved graph: clear times, rain baseline, average temp line, annotations."""
+    """Improved graph: fixed time ticks, clearer avg annotations, rain baseline."""
     import numpy as np
 
     # Extract data
-    times = [t[0] for t in owm_data]  # assuming both APIs return same time intervals
+    times = [t[0] for t in owm_data]  # assumes aligned intervals
     temps_owm = [t[1] for t in owm_data]
     rains_owm = [t[2] for t in owm_data]
     temps_wa = [t[1] for t in wa_data]
     rains_wa = [t[2] for t in wa_data]
 
-    # Average line for temperature
+    # Average temps per hour
     avg_temp_line = [(o + w) / 2 for o, w in zip(temps_owm, temps_wa)]
 
-    # Convert times to hour labels
-    hours = [t.strftime("%H:%M") for t in times]
-
-    plt.figure(figsize=(8, 4))
-    plt.title(f"{city} Tomorrow – Temp & Rain")
-
-    # Temperature axis
+    # Create figure
     fig, ax1 = plt.subplots(figsize=(8, 4))
+    fig.suptitle(f"{city} Tomorrow – Temp & Rain", fontsize=12)
+
+    # Plot temperatures
     ax1.set_xlabel("Time")
     ax1.set_ylabel("Temperature (°C)", color="red")
-    ax1.plot(hours, temps_owm, label="Temp OWM", color="red")
-    ax1.plot(hours, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
-    ax1.plot(hours, avg_temp_line, label=f"Avg Temp", color="black", linestyle=":")
+    ax1.plot(temps_owm, label="Temp OWM", color="red")
+    ax1.plot(temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
+    ax1.plot(avg_temp_line, label="Avg Temp", color="black", linestyle=":")
 
-    # Annotate two points (midday & evening)
-    mid_idx = len(avg_temp_line) // 3  # around 1/3 into day
-    eve_idx = (2 * len(avg_temp_line)) // 3  # around 2/3 into day
-    ax1.annotate(f"{avg_temp_line[mid_idx]:.1f}°C", (mid_idx, avg_temp_line[mid_idx]),
-                 textcoords="offset points", xytext=(0, 10), ha='center', fontsize=8)
-    ax1.annotate(f"{avg_temp_line[eve_idx]:.1f}°C", (eve_idx, avg_temp_line[eve_idx]),
-                 textcoords="offset points", xytext=(0, 10), ha='center', fontsize=8)
+    # Annotate at 15 and 21 (indices 2 and 4 if 6 total points from 9–00)
+    if len(avg_temp_line) >= 5:
+        for idx in [2, 4]:  # roughly 15:00 and 21:00
+            ax1.annotate(
+                f"{avg_temp_line[idx]:.1f}°C",
+                (idx, avg_temp_line[idx]),
+                textcoords="offset points",
+                xytext=(0, 12),
+                ha='center',
+                fontsize=11,
+                fontweight='bold'
+            )
 
     ax1.tick_params(axis="y", labelcolor="red")
 
-    # Rain probability axis
+    # Plot rain on secondary axis
     ax2 = ax1.twinx()
     ax2.set_ylabel("Rain Probability (%)", color="blue")
-    ax2.set_ylim(0, 100)  # Force 0–100 range
-    ax2.plot(hours, rains_owm, label="Rain% OWM", color="blue", linestyle=":")
-    ax2.plot(hours, rains_wa, label="Rain% WeatherAPI", color="cyan", linestyle="-.")
+    ax2.set_ylim(0, 100)
+    ax2.plot(rains_owm, label="Rain% OWM", color="blue", linestyle=":")
+    ax2.plot(rains_wa, label="Rain% WeatherAPI", color="cyan", linestyle="-.")
 
     ax2.tick_params(axis="y", labelcolor="blue")
 
-    # X-axis ticks: show only 12, 15, 18, 21, 00
-    tick_positions = [i for i, h in enumerate(hours) if h in ["12:00", "15:00", "18:00", "21:00", "00:00"]]
+    # Custom X-axis ticks (9, 12, 15, 18, 21, 00)
+    labels = ["9", "12", "15", "18", "21", "00"]
+    tick_positions = np.linspace(0, len(avg_temp_line) - 1, len(labels))
     ax1.set_xticks(tick_positions)
-    ax1.set_xticklabels([hours[i] for i in tick_positions])
+    ax1.set_xticklabels(labels)
 
     # Combine legends
     lines1, labels1 = ax1.get_legend_handles_labels()
@@ -126,14 +129,11 @@ def plot_comparison(city, owm_data, wa_data):
     ax1.legend(lines1 + lines2, labels1 + labels2, loc="upper left", fontsize=8)
 
     plt.tight_layout()
-
     filename = f"{city.lower()}_comparison.png"
     plt.savefig(filename, dpi=120)
     plt.close()
 
     return filename
-
-
 
 
 def weather_to_emoji(condition):
