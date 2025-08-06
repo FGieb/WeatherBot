@@ -97,7 +97,7 @@ def get_weatherapi_forecast(city_name):
 
 # --- GRAPHING & NOTIFICATIONS ---
 
-ddef plot_comparison(city, owm_data, wa_data):
+def plot_comparison(city, owm_data, wa_data):
     """Plot comparison graph with accurate times, 09–00, bold temps at 15 & 21"""
     import matplotlib.dates as mdates
 
