@@ -1,0 +1,31 @@
+name: Daily Weather Bot
+
+on:
+  schedule:
+    - cron: '0 20 * * *'   # 20:00 UTC = 21:00 CET daily
+  workflow_dispatch:        # Allow manual trigger from GitHub
+
+jobs:
+  weather:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests matplotlib python-dotenv
+
+      - name: Run Weather Bot
+        env:
+          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+          PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          WEATHERAPI_API_KEY: ${{ secrets.WEATHERAPI_API_KEY }}
+        run: python weather_notify.py
