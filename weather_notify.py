@@ -69,11 +69,10 @@ def get_weatherapi_forecast(city_name):
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """Improved graph: fixed time ticks, clearer avg annotations, rain baseline."""
+    """Final version: correct time ticks + bold temps at 15 & 21."""
     import numpy as np
 
     # Extract data
-    times = [t[0] for t in owm_data]  # assumes aligned intervals
     temps_owm = [t[1] for t in owm_data]
     rains_owm = [t[2] for t in owm_data]
     temps_wa = [t[1] for t in wa_data]
@@ -93,9 +92,9 @@ def plot_comparison(city, owm_data, wa_data):
     ax1.plot(temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
     ax1.plot(avg_temp_line, label="Avg Temp", color="black", linestyle=":")
 
-    # Annotate at 15 and 21 (indices 2 and 4 if 6 total points from 9–00)
+    # Bold annotations at 15 (index 2) and 21 (index 4)
     if len(avg_temp_line) >= 5:
-        for idx in [2, 4]:  # roughly 15:00 and 21:00
+        for idx in [2, 4]:
             ax1.annotate(
                 f"{avg_temp_line[idx]:.1f}°C",
                 (idx, avg_temp_line[idx]),
@@ -134,6 +133,7 @@ def plot_comparison(city, owm_data, wa_data):
     plt.close()
 
     return filename
+
 
 
 def weather_to_emoji(condition):
