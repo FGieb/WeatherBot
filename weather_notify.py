@@ -69,7 +69,7 @@ def get_weatherapi_forecast(city_name):
 # --- GRAPHING & NOTIFICATIONS ---
 
 def plot_comparison(city, owm_data, wa_data):
-    """Final version: correct time ticks + bold temps at 15 & 21."""
+    """Final with bold temp annotations at 15 & 21 and aligned axis."""
     import numpy as np
 
     # Extract data
@@ -92,17 +92,20 @@ def plot_comparison(city, owm_data, wa_data):
     ax1.plot(temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
     ax1.plot(avg_temp_line, label="Avg Temp", color="black", linestyle=":")
 
-    # Bold annotations at 15 (index 2) and 21 (index 4)
-    if len(avg_temp_line) >= 5:
-        for idx in [2, 4]:
+    # **Bold annotations at 15 (index 2) and 21 (index 4)**
+    annotation_indices = [2, 4]  # 15h and 21h
+    for idx in annotation_indices:
+        if idx < len(avg_temp_line):
             ax1.annotate(
                 f"{avg_temp_line[idx]:.1f}°C",
                 (idx, avg_temp_line[idx]),
                 textcoords="offset points",
-                xytext=(0, 12),
-                ha='center',
-                fontsize=11,
-                fontweight='bold'
+                xytext=(0, 14),
+                ha="center",
+                fontsize=12,
+                fontweight="bold",
+                color="black",
+                bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.7)
             )
 
     ax1.tick_params(axis="y", labelcolor="red")
@@ -116,9 +119,9 @@ def plot_comparison(city, owm_data, wa_data):
 
     ax2.tick_params(axis="y", labelcolor="blue")
 
-    # Custom X-axis ticks (9, 12, 15, 18, 21, 00)
+    # Custom X-axis ticks (9, 12, 15, 18, 21, 00) spaced evenly
     labels = ["9", "12", "15", "18", "21", "00"]
-    tick_positions = np.linspace(0, len(avg_temp_line) - 1, len(labels))
+    tick_positions = np.arange(len(labels))  # 0 to 5
     ax1.set_xticks(tick_positions)
     ax1.set_xticklabels(labels)
 
@@ -129,11 +132,10 @@ def plot_comparison(city, owm_data, wa_data):
 
     plt.tight_layout()
     filename = f"{city.lower()}_comparison.png"
-    plt.savefig(filename, dpi=120)
+    plt.savefig(filename, dpi=120, bbox_inches="tight")
     plt.close()
 
     return filename
-
 
 
 def weather_to_emoji(condition):
