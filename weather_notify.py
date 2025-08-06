@@ -38,7 +38,11 @@ def get_openweather_forecast(lat, lon):
 
     # Extract 3-hourly forecast for tomorrow at target hours
     for item in data["list"]:
-        dt = datetime.fromtimestamp(item["dt"])
+        from pytz import timezone, utc
+paris_tz = timezone("Europe/Paris")
+
+dt_utc = datetime.utcfromtimestamp(item["dt"])   # OWM is UTC
+dt = utc.localize(dt_utc).astimezone(paris_tz)   # convert to Paris local
         if dt.date() == tomorrow and (dt.hour in TARGET_HOURS):
             temp = item["main"]["temp"]
             rain = item.get("pop", 0) * 100  # pop is 0–1 → convert to %
@@ -61,7 +65,12 @@ def get_weatherapi_forecast(city_name):
 
     # Extract hourly forecast for tomorrow and filter target hours
     for hour in data["forecast"]["forecastday"][1]["hour"]:
-        dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
+        from pytz import timezone
+paris_tz = timezone("Europe/Paris")
+
+dt = datetime.strptime(hour["time"], "%Y-%m-%d %H:%M")
+dt = paris_tz.localize(dt)  # explicitly mark as Paris local (avoid naive datetime)
+
         if dt.date() == tomorrow and (dt.hour in TARGET_HOURS):
             temp = hour["temp_c"]
             rain = float(hour["chance_of_rain"])  # already %
