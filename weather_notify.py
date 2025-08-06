@@ -117,7 +117,6 @@ def create_summary(city_name, avg_temp, avg_rain, condition):
     emoji = weather_to_emoji(condition)
     return f"{city_name}: {emoji} {avg_temp:.1f}°C, {avg_rain:.0f}% rain"
 
-
 def send_pushover(message, image_path=None):
     """Send Pushover notification with optional image"""
     files = {}
@@ -132,7 +131,6 @@ def send_pushover(message, image_path=None):
     }, files=files)
     return response.json()
 
-
 # --- MAIN SCRIPT ---
 
 def main():
@@ -146,21 +144,24 @@ def main():
             send_pushover(f"{city}: Weather data unavailable.")
             continue
 
-        # Consensus summary
+        # --- CONSENSUS AVERAGES ---
         avg_temp = (sum(t[1] for t in owm_data) / len(owm_data) + sum(t[1] for t in wa_data) / len(wa_data)) / 2
         avg_rain = (sum(t[2] for t in owm_data) / len(owm_data) + sum(t[2] for t in wa_data) / len(wa_data)) / 2
 
-        message = (f"{city} tomorrow:\n"
-                   f"Avg Temp: {avg_temp:.1f}°C\n"
-                   f"Avg Rain: {avg_rain:.0f}% chance\n"
-                   "See graph for details.")
+        # --- DETERMINE CONDITION FOR EMOJI ---
+        if avg_rain > 30:
+            condition = "rain"
+        elif avg_rain > 5:
+            condition = "cloud"
+        else:
+            condition = "clear"
 
-        # Create graph
+        # --- BUILD EMOJI SUMMARY ---
+        message = create_summary(city, avg_temp, avg_rain, condition)
+
+        # --- GENERATE GRAPH & SEND ---
         graph_file = plot_comparison(city, owm_data, wa_data)
-
-        # Send notification
         send_pushover(message, graph_file)
-
 
 if __name__ == "__main__":
     main()
