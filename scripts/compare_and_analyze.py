@@ -78,7 +78,7 @@ You also have:
 Your job is to:
 1. Compare the original forecast to the scraped data.
 2. Say whether the other sources confirm, differ from, or add nuance to it — especially regarding temperature and rain.
-3. If forecasts differ significantly, start with \u26a0\ufe0f and highlight the main difference.
+3. If forecasts differ significantly, start with ⚠️ and highlight the main difference.
 4. If they align, say so simply — no filler needed.
 5. Use a neutral tone by default, but feel free to add a light, human remark *if it naturally fits*, like referencing the day (e.g., "a dry start to the week" or "perfect for a lazy Sunday"). Don’t force it.
 
@@ -91,21 +91,20 @@ Limit the response to a maximum of 3 short sentences — fewer if nothing notabl
         temperature=0.7,
     )
     comment = response.choices[0].message.content.strip()
+    comment_lower = comment.lower()
 
-    # --- Determine alignment ---
-    first_line = comment.lower().splitlines()[0]
-    if "divergent" in first_line or "big mismatch" in first_line:
+    # --- Improved alignment detection ---
+    if "⚠️" in comment or "big mismatch" in comment_lower or "major difference" in comment_lower:
         alignment = "divergent"
-    elif "partial" in first_line or "some sources" in first_line or "slightly off" in first_line:
+    elif any(word in comment_lower for word in ["slightly off", "some sources", "partial", "nuance", "slightly lower", "adds nuance", "not all sources"]):
         alignment = "partial"
-    elif "aligned" in first_line or "consistent" in first_line or "all sources agree" in first_line:
+    elif any(word in comment_lower for word in ["align", "match", "agree", "consistent", "in line", "all sources"]):
         alignment = "full"
-    elif first_line.startswith("\u26a0\ufe0f"):
-        alignment = "partial"
     else:
         alignment = "unknown"
 
     return comment, alignment
+
 
 # --- MAIN ---
 
