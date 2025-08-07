@@ -31,11 +31,11 @@ jobs:
           WEATHERAPI_API_KEY: ${{ secrets.WEATHERAPI_API_KEY }}
         run: python weather_notify.py
 
-     -  name: Commit and push forecast files
+      - name: Commit and push forecast files
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name "github-actions[bot]"
+          git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
           git add docs/*.json docs/*.png
