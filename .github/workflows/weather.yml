@@ -29,3 +29,11 @@ jobs:
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
           WEATHERAPI_API_KEY: ${{ secrets.WEATHERAPI_API_KEY }}
         run: python weather_notify.py
+
+      - name: Commit and push forecast files
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add docs/*.json
+          git commit -m "Update forecast data [skip ci]" || echo "No changes to commit"
+          git push
