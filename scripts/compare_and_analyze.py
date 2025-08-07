@@ -3,8 +3,11 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-import openai  # ✅ FIXED this line
-openai.api_key = OPENAI_API_KEY  # ✅ Add this line
+import openai  # ✅ correct import
+
+load_dotenv("weather.env")  # ✅ load the .env file before using the key
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # ✅ now it's defined
+openai.api_key = OPENAI_API_KEY  # ✅ now you can safely assign it
 
 load_dotenv("weather.env")
 
