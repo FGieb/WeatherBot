@@ -12,6 +12,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 CITIES = ["Brussels", "Paris"]
 
+
 def load_forecast(city):
     with open(f"docs/{city.lower()}_forecast.json") as f:
         return json.load(f)
@@ -22,7 +23,7 @@ def scrape_forecast_yr(city):
     if city.lower() == "brussels":
         url = "https://www.yr.no/en/forecast/daily-table/2-2800866/Belgium/Brussels-Capital/Brussels"
     elif city.lower() == "paris":
-        url = "https://www.yr.no/en/forecast/daily-table/2-2988507/France/Île-de-France/Paris"
+        url = "https://www.yr.no/en/forecast/daily-table/2-2988507/France/\u00cele-de-France/Paris"
     else:
         return "Unsupported city"
     try:
@@ -64,23 +65,24 @@ def scrape_forecast_meteoblue(city):
 
 def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue):
     prompt = f"""
-You're a savvy weather analyst AI. Here's tomorrow’s forecast summary for {city}, based on data from OpenWeatherMap and WeatherAPI:
+You're a concise weather analyst AI helping to enrich a forecast summary for {city}, based on OpenWeatherMap and WeatherAPI:
 
+Original forecast:
 {summary}
 
-You've also got additional forecasts from:
+You also have:
 - YR.no: {yr}
 - KNMI: {knmi}
 - Meteoblue: {meteoblue}
 
-Your job:
-1. Compare the summary to the scraped data.
-2. Call out any big differences — especially in temperature or rain.
-3. Say how confident we should be in the original forecast.
-4. Keep it short (3–4 sentences), slightly playful, and clear.
-5. If the scraped data looks way off from the original forecast, start with a ⚠️.
+Your job is to:
+1. Compare the original forecast to the scraped data.
+2. Say whether the other sources confirm, differ from, or add nuance to it — especially regarding temperature and rain.
+3. If forecasts differ significantly, start with \u26a0\ufe0f and highlight the main difference.
+4. If they align, say so simply — no filler needed.
+5. Use a neutral tone by default, but feel free to add a light, human remark *if it naturally fits*, like referencing the day (e.g., "a dry start to the week" or "perfect for a lazy Sunday"). Don’t force it.
 
-Write like a weather-savvy friend giving a quick but informed heads-up. Return only your final paragraph.
+Limit the response to a maximum of 3 short sentences — fewer if nothing notable. Return only your final text.
 """
 
     response = client.chat.completions.create(
@@ -88,7 +90,22 @@ Write like a weather-savvy friend giving a quick but informed heads-up. Return o
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
     )
-    return response.choices[0].message.content.strip()
+    comment = response.choices[0].message.content.strip()
+
+    # --- Determine alignment ---
+    first_line = comment.lower().splitlines()[0]
+    if "divergent" in first_line or "big mismatch" in first_line:
+        alignment = "divergent"
+    elif "partial" in first_line or "some sources" in first_line or "slightly off" in first_line:
+        alignment = "partial"
+    elif "aligned" in first_line or "consistent" in first_line or "all sources agree" in first_line:
+        alignment = "full"
+    elif first_line.startswith("\u26a0\ufe0f"):
+        alignment = "partial"
+    else:
+        alignment = "unknown"
+
+    return comment, alignment
 
 # --- MAIN ---
 
@@ -102,13 +119,14 @@ def main():
             knmi = scrape_forecast_knmi(city)
             meteoblue = scrape_forecast_meteoblue(city)
 
-            gpt_comment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue)
+            gpt_comment, alignment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue)
             forecast["gpt_comment"] = gpt_comment
+            forecast["alignment"] = alignment
 
             with open(f"docs/{city.lower()}_forecast.json", "w") as f:
                 json.dump(forecast, f, indent=2)
 
-            print(f"✅ Updated {city} forecast with GPT comment.")
+            print(f"✅ Updated {city} forecast with GPT comment and alignment: {alignment.upper()}.")
         except Exception as e:
             print(f"❌ Error updating {city}: {e}")
 
