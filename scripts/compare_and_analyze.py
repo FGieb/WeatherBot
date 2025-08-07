@@ -82,7 +82,7 @@ Your task is to:
 1. Compare the original forecast summary with the scraped forecasts.
 2. Identify any major discrepancies (e.g., big differences in temperature or rain).
 3. Comment on how confident we should be in the original forecast.
-4. Keep the tone professional, but feel free to be playfully cautious if you spot something strange.
+4. Keep the tone professional and factual but feel free to be playfully cautious if you spot something strange.
 5. If the scraped data significantly disagrees with the original forecast, include a ⚠️ warning at the top.
 
 Return only your final assessment paragraph.
