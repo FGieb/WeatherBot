@@ -68,7 +68,7 @@ def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue):
 You are a weather analyst AI assistant. You are given the forecast summary below for {city}, based on API data from OpenWeatherMap and WeatherAPI:
 
 SUMMARY:
-{forecast['summary']}
+{summary}
 
 You are also given scraped textual forecasts for the same city from three external websites (YR.no, KNMI, Meteoblue). These sites may describe the forecast differently, in words rather than numbers.
 
