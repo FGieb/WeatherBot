@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests matplotlib python-dotenv
+          pip install requests matplotlib python-dotenv openai
 
       - name: Run Weather Bot
         env:
@@ -28,7 +28,7 @@ jobs:
           PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
           OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
           WEATHERAPI_API_KEY: ${{ secrets.WEATHERAPI_API_KEY }}
-        run: python weather_notify.py
+        run: python scripts/weather_notify.py
 
       - name: Commit and push forecast files
         env:
@@ -38,17 +38,13 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
-          git status
           git add docs/*.json docs/*.png
-          git status
-          git diff --cached
           git commit -m "Update forecast data [skip ci]" || echo "No changes to commit"
           git push origin HEAD:main
 
       - name: Send Pushover notification
-      run: python scripts/send_to_pushover.py
-      env:
-        PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
-        PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
-
-    
+        run: python scripts/send_to_pushover.py
+        env:
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
