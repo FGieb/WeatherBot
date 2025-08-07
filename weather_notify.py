@@ -111,8 +111,9 @@ def plot_comparison(city, owm_data, wa_data):
             )
 
     fig.suptitle(f"{city} Tomorrow – Day Forecast", fontsize=12)
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    fig.text(0.99, 0.01, f"Updated: {timestamp}", fontsize=2, ha='right', va='bottom', color='gray')
     fig.tight_layout()
-
     filename = f"docs/{city.lower()}_comparison.png"
     plt.savefig(filename)
     plt.close()
