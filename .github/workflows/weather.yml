@@ -31,12 +31,11 @@ jobs:
         run: python weather_notify.py
 
       - name: Commit and push forecast files
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/*.json
           git commit -m "Update forecast data [skip ci]" || echo "No changes to commit"
-          git push origin HEAD:main
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
