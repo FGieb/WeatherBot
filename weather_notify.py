@@ -152,18 +152,6 @@ def create_summary(city_name, avg_temp, avg_rain, high_temp, low_temp, temp_rang
     ).strip()
     return summary
 
-def send_pushover(message, image_path=None):
-    files = {}
-    if image_path:
-        files['attachment'] = ('image.png', open(image_path, 'rb'), 'image/png')
-    response = requests.post("https://api.pushover.net/1/messages.json", data={
-        "token": PUSHOVER_API_TOKEN,
-        "user": PUSHOVER_USER_KEY,
-        "message": message,
-        "priority": 1,
-        "sound": "pushover"
-    }, files=files)
-    return response.json()
 
 def main():
     for city in CITIES:
@@ -171,7 +159,7 @@ def main():
         wa_data = get_weatherapi_forecast(city)
 
         if not owm_data or not wa_data:
-            send_pushover(f"{city}: Weather data unavailable.")
+            print(f"{city}: Weather data unavailable.")
             continue
 
         temps_owm = [t[1] for t in owm_data]
@@ -188,7 +176,24 @@ def main():
 
         message = create_summary(city, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range)
         graph_file = plot_comparison(city, owm_data, wa_data)
-        send_pushover(message, graph_file)
+
+        # Save output to JSON
+        import json
+        output = {
+            "city": city,
+            "avg_temp": avg_temp,
+            "avg_rain": avg_rain,
+            "high_temp": high_temp,
+            "low_temp": low_temp,
+            "temp_range": temp_range,
+            "rain_range": rain_range,
+            "summary": message,
+            "graph_file": graph_file
+        }
+
+        with open(f"docs/{city.lower()}_forecast.json", "w") as f:
+            json.dump(output, f)
+
 
 if __name__ == "__main__":
     main()
