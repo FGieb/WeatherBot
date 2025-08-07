@@ -65,7 +65,7 @@ def scrape_forecast_meteoblue(city):
 
 def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue):
     prompt = f"""
-You are a weather analyst AI assistant. You are given the forecast summary below for {city_name}, based on API data from OpenWeatherMap and WeatherAPI:
+You are a weather analyst AI assistant. You are given the forecast summary below for {city}, based on API data from OpenWeatherMap and WeatherAPI:
 
 SUMMARY:
 {forecast['summary']}
