@@ -112,13 +112,13 @@ ax1.legend([line_owm, line_wa, line_avg],
            loc="upper left", fontsize=9)
 
 
-    # X-axis formatting
-    tick_hours = [9, 12, 15, 18, 21]
-    tick_labels = ["9", "12", "15", "18", "21"]
-    ax1.set_xticks([t for t in times if t.hour in tick_hours])
-    ax1.set_xticklabels([tick_labels[tick_hours.index(t.hour)] for t in times if t.hour in tick_hours])
+# X-axis formatting
+tick_hours = [9, 12, 15, 18, 21]
+tick_labels = ["9", "12", "15", "18", "21"]
+ax1.set_xticks([t for t in times if t.hour in tick_hours])
+ax1.set_xticklabels([tick_labels[tick_hours.index(t.hour)] for t in times if t.hour in tick_hours])
 
-    # Bold annotations at 12 & 18
+# Bold annotations at 12 & 18
     for target_hour in [12, 18]:
         if any(t.hour == target_hour for t in times):
             idx = next(i for i, t in enumerate(times) if t.hour == target_hour)
