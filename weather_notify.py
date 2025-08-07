@@ -190,6 +190,7 @@ def main():
             "rain_range": rain_range,
             "summary": message,
             "graph_file": graph_file
+            "timestamp": datetime.utcnow().isoformat()
         }
 
         with open(f"docs/{city.lower()}_forecast.json", "w") as f:
