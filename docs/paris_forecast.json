@@ -8,6 +8,6 @@
   "rain_range": 0.0,
   "summary": "Paris: \u2600\ufe0f Avg 27.1\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 31\u00b0C / Low 22\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "Meteoblue's data aligns with the original forecast, indicating a sunny day in Paris with no rain. The high temperature is slightly lower at 29.4\u00b0C, while the low is slightly higher at 17.2\u00b0C. It's going to be a lovely warm day, perfect for a stroll by the Seine.",
-  "alignment": "unknown"
+  "gpt_comment": "Meteoblue indicates a slightly higher temperature for Paris, with highs around 29.4\u00b0C (85\u00b0F) and lows around 17.2\u00b0C (63\u00b0F). It also suggests a more breezy day at 7 mph, but aligns with the original forecast of no rain.",
+  "alignment": "full"
 }
