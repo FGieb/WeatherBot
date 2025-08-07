@@ -64,24 +64,25 @@ def scrape_forecast_meteoblue(city):
 
 def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue):
     prompt = f"""
-You are a weather analyst AI assistant. You are given the forecast summary below for {city}, based on API data from OpenWeatherMap and WeatherAPI:
+You're a savvy weather analyst AI. Here's tomorrow’s forecast summary for {city}, based on data from OpenWeatherMap and WeatherAPI:
 
 {summary}
 
-You also have access to forecast data scraped from the following sites:
+You've also got additional forecasts from:
 - YR.no: {yr}
 - KNMI: {knmi}
 - Meteoblue: {meteoblue}
 
-Your task is to:
-1. Compare the original forecast summary with the scraped forecasts.
-2. Identify any major discrepancies (e.g., big differences in temperature or rain).
-3. Comment on how confident we should be in the original forecast.
-4. Keep the tone professional, but feel free to be playfully cautious if you spot something strange.
-5. If the scraped data significantly disagrees with the original forecast, include a ⚠️ warning at the top.
+Your job:
+1. Compare the summary to the scraped data.
+2. Call out any big differences — especially in temperature or rain.
+3. Say how confident we should be in the original forecast.
+4. Keep it short (3–4 sentences), slightly playful, and clear.
+5. If the scraped data looks way off from the original forecast, start with a ⚠️.
 
-Return only your final assessment paragraph.
+Write like a weather-savvy friend giving a quick but informed heads-up. Return only your final paragraph.
 """
+
     response = client.chat.completions.create(
         model="gpt-4",
         messages=[{"role": "user", "content": prompt}],
