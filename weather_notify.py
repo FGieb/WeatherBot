@@ -90,21 +90,27 @@ def plot_comparison(city, owm_data, wa_data):
     # Plot
     fig, ax1 = plt.subplots(figsize=(8, 4))
 
-    # Temperature lines
-    ax1.plot(times, temps_owm, label="Temp OWM", color="red")
-    ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
-    ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
+   # Temperature lines (legend only for temps)
+line_owm, = ax1.plot(times, temps_owm, label="Temp OWM", color="red")
+line_wa, = ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
+line_avg, = ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
 
-    ax1.set_ylabel("Temperature (°C)", color="red")
-    ax1.tick_params(axis="y", labelcolor="red")
+ax1.set_ylabel("Temperature (°C)", color="red")
+ax1.tick_params(axis="y", labelcolor="red")
 
-    # Rain probability lines (secondary axis)
-    ax2 = ax1.twinx()
-    ax2.plot(times, rains_owm, label="Rain% OWM", color="blue", linestyle="-.")
-    ax2.plot(times, rains_wa, label="Rain% WeatherAPI", color="cyan", linestyle=":")
-    ax2.set_ylabel("Rain Probability (%)", color="blue")
-    ax2.tick_params(axis="y", labelcolor="blue")
-    ax2.set_ylim(0, 100)
+# Rain probability lines (secondary axis, no legend)
+ax2 = ax1.twinx()
+ax2.plot(times, rains_owm, color="blue", linestyle="-.")
+ax2.plot(times, rains_wa, color="cyan", linestyle=":")
+ax2.set_ylabel("Rain Probability (%)", color="blue")
+ax2.tick_params(axis="y", labelcolor="blue")
+ax2.set_ylim(0, 100)
+
+# Simplified legend (temperature only)
+ax1.legend([line_owm, line_wa, line_avg],
+           ["Temp OWM", "Temp WeatherAPI", "Avg Temp"],
+           loc="upper left", fontsize=9)
+
 
     # X-axis formatting
     tick_hours = [9, 12, 15, 18, 21]
@@ -128,7 +134,7 @@ def plot_comparison(city, owm_data, wa_data):
             )
 
     # Title & layout
-    fig.suptitle(f"{city} Tomorrow – Temp & Rain", fontsize=12)
+    fig.suptitle(f"{city} Tomorrow – Day Forecast", fontsize=12)
     fig.tight_layout()
 
     filename = f"{city.lower()}_comparison.png"
