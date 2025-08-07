@@ -177,7 +177,11 @@ def main():
         message = create_summary(city, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range)
         graph_file = plot_comparison(city, owm_data, wa_data)
 
-        # Save output to JSON
+               # Create summary and graph
+        message = create_summary(city, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range)
+        graph_file = plot_comparison(city, owm_data, wa_data)
+
+        # Prepare output JSON
         import json
         output = {
             "city": city,
@@ -191,9 +195,10 @@ def main():
             "graph_file": graph_file
         }
 
+        # Save JSON to the 'docs' folder
         with open(f"docs/{city.lower()}_forecast.json", "w") as f:
             json.dump(output, f)
 
-
 if __name__ == "__main__":
     main()
+
