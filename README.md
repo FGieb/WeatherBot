@@ -30,6 +30,115 @@ Every day, the bot:
 
 ---
 
+# 🌦️ WeatherBot Automation – System Overview
+
+## 1. 🎯 Goal
+
+Automatically compare weather forecasts from two APIs with forecasts from public weather websites, generate a clean summary using ChatGPT, and send it daily via Pushover.
+
+---
+
+## 2. 🔁 Current Workflow
+
+The automation runs **daily via GitHub Actions** and consists of three main Python scripts located in the `scripts/` folder:
+
+### ✔ `weather_notify.py`
+- **Purpose**: Fetches forecast data from:
+  - OpenWeatherMap
+  - WeatherAPI
+- **Output**:
+  - JSON summary → `docs/{city}_forecast.json`
+  - Chart image → `docs/{city}_comparison.png`
+- **Includes**:
+  - Average temperature & rain probability
+  - High/low temps
+  - Comparison between APIs
+
+### ⏳ `compare_and_analyze.py` *(to be developed)*
+- **Purpose**:
+  - Reads the JSON files created by `weather_notify.py`
+  - Scrapes weather forecasts from specific websites (e.g., **KNMI**, **YR.no**)
+  - Compares scraped data with API-based forecasts
+  - Uses **OpenAI GPT API** to generate:
+    - Natural language summary
+    - Alerts or comments if forecasts significantly diverge
+- **Output**:
+  - Appends enriched analysis to the original JSON
+
+### 📲 `send_to_pushover.py` *(to be developed)*
+- **Purpose**:
+  - Sends:
+    - The enriched `.json` summary
+    - The `.png` chart
+  - Delivered via **Pushover API**
+
+---
+
+## 3. ⚙️ Technical Setup
+
+- **GitHub Actions**:
+  - Triggers daily using cron (`19:00 UTC`)
+  - Uses the default `GITHUB_TOKEN` for commits
+- **APIs Used**:
+  - `OpenWeatherMap`
+  - `WeatherAPI`
+- **Output Storage**:
+  - All files saved in the `docs/` directory for public access
+- **Notification**:
+  - Uses **Pushover** for direct push alerts
+- **ChatGPT API**:
+  - Used in `compare_and_analyze.py` to create human-readable summaries
+
+---
+
+## 4. 🧠 No-Zapier Design
+
+Zapier is **not used** to avoid subscription fees. Instead:
+
+- GitHub Actions handles scheduling
+- Pushover and OpenAI API are triggered from Python scripts
+- All logic is internal and runs inside GitHub CI
+
+---
+
+## 5. 🚧 What’s Next
+
+- [ ] Build `compare_and_analyze.py` to scrape KNMI/YR.no and use GPT to generate insights
+- [ ] Build `send_to_pushover.py` to package JSON + image into one daily notification
+- [ ] (Optional) Add exception handling & logs
+- [ ] (Optional) Add more cities or forecast types
+
+---
+
+## 🗂 Directory Summary
+
+```
+scripts/
+├── weather_notify.py           # Main fetch + image/chart generator
+├── compare_and_analyze.py      # Scrapes & uses ChatGPT (todo)
+├── send_to_pushover.py         # Sends enriched output (todo)
+
+docs/
+├── brussels_forecast.json      # Daily summary
+├── brussels_comparison.png     # Daily chart
+├── paris_forecast.json
+├── paris_comparison.png
+```
+
+---
+
+## ✅ Status
+
+- ✔ Fully automated GitHub Actions run
+- ✔ JSON + PNG forecasts generated daily
+- 🚧 GPT-based analysis & external site comparison pending
+- 🚧 Final notification message in development
+
+---
+
+*Built with ❤️ and a lot of debugging.*
+
+
 ## 🗂️ Project Structure
 
 \`\`\`
