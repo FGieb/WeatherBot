@@ -113,7 +113,7 @@ def plot_comparison(city, owm_data, wa_data):
     fig.suptitle(f"{city} Tomorrow – Day Forecast", fontsize=12)
     fig.tight_layout()
 
-    filename = f"{city.lower()}_comparison.png"
+    filename = f"docs/{city.lower()}_comparison.png"
     plt.savefig(filename)
     plt.close()
     return filename
@@ -174,14 +174,11 @@ def main():
         temp_range = abs((sum(temps_owm) / len(temps_owm)) - (sum(temps_wa) / len(temps_wa)))
         rain_range = abs((sum(rain_owm) / len(rain_owm)) - (sum(rain_wa) / len(rain_wa)))
 
+        # Create summary and graph
         message = create_summary(city, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range)
         graph_file = plot_comparison(city, owm_data, wa_data)
 
-               # Create summary and graph
-        message = create_summary(city, avg_temp, avg_rain, high_temp, low_temp, temp_range, rain_range)
-        graph_file = plot_comparison(city, owm_data, wa_data)
-
-        # Prepare output JSON
+        # Save JSON to the 'docs' folder
         import json
         output = {
             "city": city,
@@ -195,10 +192,8 @@ def main():
             "graph_file": graph_file
         }
 
-        # Save JSON to the 'docs' folder
         with open(f"docs/{city.lower()}_forecast.json", "w") as f:
             json.dump(output, f)
 
 if __name__ == "__main__":
     main()
-
