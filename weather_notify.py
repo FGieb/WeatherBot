@@ -111,7 +111,6 @@ ax1.legend([line_owm, line_wa, line_avg],
            ["Temp OWM", "Temp WeatherAPI", "Avg Temp"],
            loc="upper left", fontsize=9)
 
-
 # X-axis formatting
 tick_hours = [9, 12, 15, 18, 21]
 tick_labels = ["9", "12", "15", "18", "21"]
@@ -119,28 +118,28 @@ ax1.set_xticks([t for t in times if t.hour in tick_hours])
 ax1.set_xticklabels([tick_labels[tick_hours.index(t.hour)] for t in times if t.hour in tick_hours])
 
 # Bold annotations at 12 & 18
-    for target_hour in [12, 18]:
-        if any(t.hour == target_hour for t in times):
-            idx = next(i for i, t in enumerate(times) if t.hour == target_hour)
-            ax1.annotate(
-                f"{avg_temp_line[idx]:.1f}°C",
-                (times[idx], avg_temp_line[idx]),
-                textcoords="offset points",
-                xytext=(0, 10),
-                ha='center',
-                fontsize=12,
-                fontweight='bold',
-                color="black"
-            )
+for target_hour in [12, 18]:
+    if any(t.hour == target_hour for t in times):
+        idx = next(i for i, t in enumerate(times) if t.hour == target_hour)
+        ax1.annotate(
+            f"{avg_temp_line[idx]:.1f}°C",
+            (times[idx], avg_temp_line[idx]),
+            textcoords="offset points",
+            xytext=(0, 10),
+            ha='center',
+            fontsize=12,
+            fontweight='bold',
+            color="black"
+        )
 
-    # Title & layout
-    fig.suptitle(f"{city} Tomorrow – Day Forecast", fontsize=12)
-    fig.tight_layout()
+# Title & layout
+fig.suptitle(f"{city} Tomorrow – Day Forecast", fontsize=12)
+fig.tight_layout()
 
-    filename = f"{city.lower()}_comparison.png"
-    plt.savefig(filename)
-    plt.close()
-    return filename
+filename = f"{city.lower()}_comparison.png"
+plt.savefig(filename)
+plt.close()
+return filename
 
 
 def weather_to_emoji(condition):
