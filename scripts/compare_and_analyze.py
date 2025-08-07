@@ -67,32 +67,29 @@ def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue):
     prompt = f"""
 You are a weather analyst AI assistant. You are given the forecast summary below for {city}, based on API data from OpenWeatherMap and WeatherAPI:
 
-SUMMARY:
 {summary}
 
-You are also given scraped textual forecasts for the same city from three external websites (YR.no, KNMI, Meteoblue). These sites may describe the forecast differently, in words rather than numbers.
+You also have access to forecast data scraped from the following sites:
+- YR.no: {yr}
+- KNMI: {knmi}
+- Meteoblue: {meteoblue}
 
-EXTERNAL SOURCES:
-- YR.no: {yr_forecast[:1000]}
-- KNMI: {knmi_forecast[:1000]}
-- Meteoblue: {meteoblue_forecast[:1000]}
+Your task is to:
+1. Compare the original forecast summary with the scraped forecasts.
+2. Identify any major discrepancies (e.g., big differences in temperature or rain).
+3. Comment on how confident we should be in the original forecast.
+4. Keep the tone professional, but feel free to be playfully cautious if you spot something strange.
+5. If the scraped data significantly disagrees with the original forecast, include a ⚠️ warning at the top.
 
-Your task is to briefly assess how well the original forecast matches what the websites say. If the differences are small, just acknowledge and confirm the forecast is consistent. If there are *significant discrepancies* (e.g. APIs say 10% rain but websites talk about heavy showers), then flag this clearly using an appropriate emoji like 🚨 or ⚠️, and briefly explain why.
-
-Be precise, human-readable, keep it to 1-3 sentences maximum — but allow for a slightly playful touch (like you're a smart assistant giving a daily weather vibe check, but have some cheeky humor sometimes). Keep it to 2–3 sentences max.
+Return only your final assessment paragraph.
 """
-   
-    
-    client = OpenAI(api_key=OPENAI_API_KEY)
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-4",
-        messages=[
-            {"role": "system", "content": "You are a helpful weather analyst."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.5
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
     )
-    return response.choices[0].message.content.strip()
+    return response['choices'][0]['message']['content'].strip()
+
 
 # --- MAIN ---
 
@@ -114,3 +111,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
