@@ -3,15 +3,12 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-import openai  # ✅ correct import
+from openai import OpenAI
 
-load_dotenv("weather.env")  # ✅ load the .env file before using the key
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # ✅ now it's defined
-openai.api_key = OPENAI_API_KEY  # ✅ now you can safely assign it
-
+# --- Load environment and initialize OpenAI client ---
 load_dotenv("weather.env")
-
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 CITIES = ["Brussels", "Paris"]
 
@@ -33,22 +30,20 @@ def scrape_forecast_yr(city):
         soup = BeautifulSoup(response.content, "html.parser")
         forecast_block = soup.find("table")
         return forecast_block.text.strip()[:1000] if forecast_block else "Could not extract data from YR.no"
-    except:
-        return "Error scraping YR.no"
+    except Exception as e:
+        return f"Error scraping YR.no: {e}"
 
 def scrape_forecast_knmi(city):
-    if city.lower() == "brussels":
-        return "KNMI does not cover Brussels."
-    elif city.lower() == "paris":
-        return "KNMI does not cover Paris."
+    if city.lower() in ["brussels", "paris"]:
+        return f"KNMI does not cover {city}."
     url = "https://www.knmi.nl/nederland-nu/weer/verwachtingen"
     try:
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
         forecast_block = soup.find("div", class_="content")
         return forecast_block.text.strip()[:1000] if forecast_block else "Could not extract data from KNMI"
-    except:
-        return "Error scraping KNMI"
+    except Exception as e:
+        return f"Error scraping KNMI: {e}"
 
 def scrape_forecast_meteoblue(city):
     if city.lower() == "brussels":
@@ -62,8 +57,8 @@ def scrape_forecast_meteoblue(city):
         soup = BeautifulSoup(response.content, "html.parser")
         text_block = soup.find("div", class_="tab-content")
         return text_block.text.strip()[:1000] if text_block else "Could not extract data from Meteoblue"
-    except:
-        return "Error scraping Meteoblue"
+    except Exception as e:
+        return f"Error scraping Meteoblue: {e}"
 
 # --- GPT ANALYSIS ---
 
@@ -82,37 +77,39 @@ Your task is to:
 1. Compare the original forecast summary with the scraped forecasts.
 2. Identify any major discrepancies (e.g., big differences in temperature or rain).
 3. Comment on how confident we should be in the original forecast.
-4. Keep the tone professional and factual but feel free to be playfully cautious if you spot something strange.
+4. Keep the tone professional, but feel free to be playfully cautious if you spot something strange.
 5. If the scraped data significantly disagrees with the original forecast, include a ⚠️ warning at the top.
 
 Return only your final assessment paragraph.
 """
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
     )
-    return response['choices'][0]['message']['content'].strip()
-
+    return response.choices[0].message.content.strip()
 
 # --- MAIN ---
 
 def main():
     for city in CITIES:
-        forecast = load_forecast(city)
-        summary = forecast.get("summary", "")
+        try:
+            forecast = load_forecast(city)
+            summary = forecast.get("summary", "")
 
-        yr = scrape_forecast_yr(city)
-        knmi = scrape_forecast_knmi(city)
-        meteoblue = scrape_forecast_meteoblue(city)
+            yr = scrape_forecast_yr(city)
+            knmi = scrape_forecast_knmi(city)
+            meteoblue = scrape_forecast_meteoblue(city)
 
-        gpt_comment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue)
-        forecast["gpt_comment"] = gpt_comment
+            gpt_comment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue)
+            forecast["gpt_comment"] = gpt_comment
 
-        with open(f"docs/{city.lower()}_forecast.json", "w") as f:
-            json.dump(forecast, f, indent=2)
-        print(f"Updated {city} forecast with GPT comment.")
+            with open(f"docs/{city.lower()}_forecast.json", "w") as f:
+                json.dump(forecast, f, indent=2)
+
+            print(f"✅ Updated {city} forecast with GPT comment.")
+        except Exception as e:
+            print(f"❌ Error updating {city}: {e}")
 
 if __name__ == "__main__":
     main()
-
