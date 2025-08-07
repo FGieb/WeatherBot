@@ -189,7 +189,7 @@ def main():
             "temp_range": temp_range,
             "rain_range": rain_range,
             "summary": message,
-            "graph_file": graph_file
+            "graph_file": graph_file,
             "timestamp": datetime.utcnow().isoformat()
         }
 
