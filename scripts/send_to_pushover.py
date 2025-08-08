@@ -1,46 +1,70 @@
 import os
 import json
 import requests
+from datetime import datetime
+from dotenv import load_dotenv
 
-# Load your Pushover credentials (use secrets or GitHub Actions env vars!)
+# --- Load environment variables ---
+load_dotenv("weather.env")
 PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
 PUSHOVER_USER = os.getenv("PUSHOVER_USER")
 
-# Paths to the files (adjust if needed)
-JSON_PATH = "docs/forecast.json"
-PNG_PATH = "docs/forecast_chart.png"
+# --- Config ---
+CITIES = ["Paris", "Brussels"]
+ALIGNMENT_EMOJIS = {
+    "full": "✅",
+    "partial": "⚠️",
+    "divergent": "❌",
+    "unknown": "ℹ️"
+}
 
-# Optional: load forecast summary from JSON
-def load_forecast_summary(json_path):
-    with open(json_path, "r") as f:
-        data = json.load(f)
-    # Simplified message – adapt to your needs
-    message = (
-        f"📍 Paris vs Brussels – Tomorrow\n"
-        f"Paris: {data['Paris']['summary']}\n"
-        f"Brussels: {data['Brussels']['summary']}"
-    )
-    return message
+def send_pushover_message(city, forecast):
+    summary = forecast.get("summary", "")
+    gpt_comment = forecast.get("gpt_comment", "(No GPT comment available)")
+    alignment = forecast.get("alignment", "unknown")
+    graph_file = forecast.get("graph_file")
 
-def send_notification(message, image_path=None):
-    url = "https://api.pushover.net/1/messages.json"
+    emoji = ALIGNMENT_EMOJIS.get(alignment, "ℹ️")
+    today = datetime.now().strftime("%b %d")
+    title = f"{emoji} {city} Forecast – {today}"
 
-    data = {
+    message = f"""{summary}
+
+🤖 GPT: {gpt_comment}
+
+📊 Chart attached."""
+
+    # Prepare payload
+    payload = {
         "token": PUSHOVER_TOKEN,
         "user": PUSHOVER_USER,
-        "message": message,
-        "title": "☀️ Daily Weather Update",
-        "priority": 0,
+        "title": title,
+        "message": message
     }
 
-    files = {"attachment": open(image_path, "rb")} if image_path else None
+    # Attach PNG chart
+    files = {
+        "attachment": (os.path.basename(graph_file), open(graph_file, "rb"), "image/png")
+    }
 
-    response = requests.post(url, data=data, files=files)
+    print(f"\nSending notification for {city}...")
+    response = requests.post("https://api.pushover.net/1/messages.json", data=payload, files=files)
+
     if response.status_code == 200:
-        print("✅ Notification sent!")
+        print(f"✅ Notification sent for {city}.")
     else:
-        print(f"❌ Error {response.status_code}: {response.text}")
+        print(f"❌ Failed to send for {city}: {response.text}")
+
+
+def main():
+    for city in CITIES:
+        try:
+            with open(f"docs/{city.lower()}_forecast.json") as f:
+                forecast = json.load(f)
+            send_pushover_message(city, forecast)
+        except Exception as e:
+            print(f"❌ Error processing {city}: {e}")
+
 
 if __name__ == "__main__":
-    summary = load_forecast_summary(JSON_PATH)
-    send_notification(summary, PNG_PATH)
+    main()
