@@ -78,8 +78,8 @@ def plot_comparison(city, owm_data, wa_data):
 
 
     # --- Heat bands (drawn first so they stay in the background) ---
-    ax1.axhspan(24, 30, facecolor='mistyrose', alpha=0.12)   # Warm zone
-    ax1.axhspan(30, 40, facecolor='lightcoral', alpha=0.2) # Hot zone
+    ax1.axhspan(24, 30, facecolor='mistyrose', alpha=0.14)   # Warm zone
+    ax1.axhspan(30, 40, facecolor='lightcoral', alpha=0.18) # Hot zone
 
     # --- Consensus band (between OWM and WeatherAPI) ---
     t_min = [min(a, b) for a, b in zip(temps_owm, temps_wa)]
