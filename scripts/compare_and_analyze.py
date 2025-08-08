@@ -33,18 +33,6 @@ def scrape_forecast_yr(city):
     except Exception as e:
         return f"Error scraping YR.no: {e}"
 
-def scrape_forecast_knmi(city):
-    if city.lower() in ["brussels", "paris"]:
-        return f"KNMI does not cover {city}."
-    url = "https://www.knmi.nl/nederland-nu/weer/verwachtingen"
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.content, "html.parser")
-        forecast_block = soup.find("div", class_="content")
-        return forecast_block.text.strip()[:1000] if forecast_block else "Could not extract data from KNMI"
-    except Exception as e:
-        return f"Error scraping KNMI: {e}"
-
 def scrape_forecast_meteoblue(city):
     if city.lower() == "brussels":
         url = "https://www.meteoblue.com/en/weather/week/brussels_belgium_2800866"
@@ -82,28 +70,29 @@ def scrape_forecast_meteo_belgique():
 
 # --- GPT ANALYSIS ---
 
-def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue, meteo_local):
+def analyze_with_chatgpt(city, summary, yr, meteoblue, meteo_local):
     prompt = f"""
 You're a concise weather analyst AI helping to enrich a forecast summary for {city}, based on OpenWeatherMap and WeatherAPI:
 
 Original forecast:
 {summary}
 
-You also have:
+You also have scraped weather text from:
 - YR.no: {yr}
-- KNMI: {knmi}
 - Meteoblue: {meteoblue}
 - Local Source: {meteo_local}
 
 Your job is to:
-1. Compare the original forecast to the scraped data, but only for the period 09:00 to 21:00.
-2. Identify temperature and rain patterns. If multiple sources agree on key details, treat this as a strong consensus. If one source clearly differs (e.g., predicts rain while others are dry), briefly mention it as an exception. Use phrases like "most sources agree..." or "with the exception of...".
-3. Be concise when there's broad agreement, but give slightly more detail when there's divergence or a curious twist. If the context naturally lends itself to a playful metaphor (like involving monkeys), you may use it — but only if it fits organically. 
-4. Avoid repeating source names unless needed to highlight a contrast. Instead, focus on painting a clear weather picture with human-friendly insights. 
-4. If forecasts differ significantly, start with ⚠️ and highlight the main difference.
-5. Use a neutral tone by default, but feel free to add a light, human remark *if it naturally fits*, like referencing the day (e.g., "a dry start to the week" or "perfect for a lazy Sunday"). Don’t force it.
+1. Compare the original forecast to the scraped sources, but only for the period 09:00 to 21:00.
+2. Identify temperature and rain patterns.
+    • If multiple sources align, treat this as a consensus and say so clearly.
+    • If one source clearly differs (e.g., predicts rain while others don't), briefly explain how — e.g., “...though one expects showers in the afternoon.”
+    • Avoid vague phrases like "most forecasts" without clarifying the exception.
+4. Avoid repeating the source names unless needed to highlight a contrast. Focus instead on painting a clear picture of what kind of day it will be.
+5. If the forecasts differ significantly, begin with ⚠️ and emphasize the main difference (e.g., rain vs no rain, or major temperature mismatch).
+6. Keep a neutral tone by default, but you may add a human remark if it fits organically based on what you would maybe say to a friend, for example based on the day of the week (e.g., “perfect for a café terrace” or “a classic spring day in {city}”). More specifically whenever there is a reason (do not force it) to include a reference to a monkey you can, but don't force it it needs to be natural.
 
-Limit the response to a maximum of 3 short sentences — fewer if nothing notable. Return only your final text.
+Respond in **a maximum of 3 short sentences** — fewer if nothing stands out. Return only your final comment, no explanation.
 """
 
     response = client.chat.completions.create(
@@ -114,7 +103,6 @@ Limit the response to a maximum of 3 short sentences — fewer if nothing notabl
     comment = response.choices[0].message.content.strip()
     comment_lower = comment.lower()
 
-    # --- Smarter alignment detection based on GPT phrasing ---
     if "⚠️" in comment or any(phrase in comment_lower for phrase in [
         "big mismatch", "major difference", "does not match", "conflict between sources", "no agreement"
     ]):
@@ -132,7 +120,6 @@ Limit the response to a maximum of 3 short sentences — fewer if nothing notabl
         alignment = "unknown"
 
     return comment, alignment
-    
 
 # --- MAIN ---
 
@@ -143,11 +130,10 @@ def main():
             summary = forecast.get("summary", "")
 
             yr = scrape_forecast_yr(city)
-            knmi = scrape_forecast_knmi(city)
             meteoblue = scrape_forecast_meteoblue(city)
             meteo_local = scrape_forecast_meteo_france() if city.lower() == "paris" else scrape_forecast_meteo_belgique()
 
-            gpt_comment, alignment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue, meteo_local)
+            gpt_comment, alignment = analyze_with_chatgpt(city, summary, yr, meteoblue, meteo_local)
             forecast["gpt_comment"] = gpt_comment
             forecast["alignment"] = alignment
 
