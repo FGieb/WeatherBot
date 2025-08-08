@@ -2,7 +2,7 @@ name: Daily Weather Bot
 
 on:
   schedule:
-    - cron: '55 19 * * *'   # 19:00 UTC = 21:00 CET daily
+    - cron: '25 19 * * *'   # 19:00 UTC = 21:00 CET daily
   workflow_dispatch:        # Allow manual trigger from GitHub
 
 jobs:
