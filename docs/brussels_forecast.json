@@ -8,6 +8,6 @@
   "rain_range": 0.0,
   "summary": "Brussels: \u2600\ufe0f Avg 23.8\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 29\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "The weather in Brussels is set to be sunny, with temperatures peaking at 29\u00b0C and dipping to a cool 17\u00b0C at night. There's a general consensus on no rainfall during the day. Seems like an ideal day for lounging in the park, perhaps even spot some playful monkeys in the Brussels' Zoo.",
+  "gpt_comment": "In Brussels, it's set to be a sunny day with average temperatures around 23.8\u00b0C, peaking at 29\u00b0C and dipping to 17\u00b0C at night. There's no rain expected according to all the available sources. Perfect weather to enjoy a day out, maybe even spot some monkeys at the local zoo.",
   "alignment": "unknown"
 }
