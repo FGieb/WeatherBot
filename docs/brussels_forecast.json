@@ -8,6 +8,6 @@
   "rain_range": 0.0,
   "summary": "Brussels: \u2600\ufe0f Avg 24.1\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 29\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "Meteoblue aligns with the original forecast, indicating a dry day in Brussels with similar temperature ranges (24\u00b0C-29\u00b0C). It adds that there might be a light breeze of 8 mph. Enjoy the sunny weather!",
+  "gpt_comment": "Meteoblue aligns with the original forecast, indicating a similar temperature range (approximately 24\u00b0C to 18\u00b0C) and no rainfall for Brussels today. It also adds that there will be a mild wind speed of 8 mph and 2 hours of sunshine. A sunny, mild Friday ahead.",
   "alignment": "full"
 }
