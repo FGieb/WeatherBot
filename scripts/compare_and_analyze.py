@@ -97,10 +97,10 @@ You also have:
 
 Your job is to:
 1. Compare the original forecast to the scraped data, but only for the period 09:00 to 21:00.
-2. Describe notable similarities or differences in temperature, rain, or other conditions. Be concise when forecasts align, but add useful detail when there’s divergence or interesting patterns. If the context naturally lends itself to a playful metaphor or reference (e.g., involving monkeys), you may use it, but only if it fits without forcing it. Avoid repeating the source names unnecessarily; focus on the weather story. 
-3. Say whether the other sources confirm, differ from, or add nuance to it — especially regarding temperature and rain.
+2. Identify temperature and rain patterns. If multiple sources agree on key details, treat this as a strong consensus. If one source clearly differs (e.g., predicts rain while others are dry), briefly mention it as an exception. Use phrases like "most sources agree..." or "with the exception of...".
+3. Be concise when there's broad agreement, but give slightly more detail when there's divergence or a curious twist. If the context naturally lends itself to a playful metaphor (like involving monkeys), you may use it — but only if it fits organically. 
+4. Avoid repeating source names unless needed to highlight a contrast. Instead, focus on painting a clear weather picture with human-friendly insights. 
 4. If forecasts differ significantly, start with ⚠️ and highlight the main difference.
-5. If they align, say so simply — no filler needed 
 5. Use a neutral tone by default, but feel free to add a light, human remark *if it naturally fits*, like referencing the day (e.g., "a dry start to the week" or "perfect for a lazy Sunday"). Don’t force it.
 
 Limit the response to a maximum of 3 short sentences — fewer if nothing notable. Return only your final text.
@@ -114,16 +114,25 @@ Limit the response to a maximum of 3 short sentences — fewer if nothing notabl
     comment = response.choices[0].message.content.strip()
     comment_lower = comment.lower()
 
-    if "⚠️" in comment or "big mismatch" in comment_lower or "major difference" in comment_lower:
+    # --- Smarter alignment detection based on GPT phrasing ---
+    if "⚠️" in comment or any(phrase in comment_lower for phrase in [
+        "big mismatch", "major difference", "does not match", "conflict between sources", "no agreement"
+    ]):
         alignment = "divergent"
-    elif any(word in comment_lower for word in ["slightly off", "some sources", "partial", "nuance", "slightly lower", "adds nuance", "not all sources"]):
+    elif any(phrase in comment_lower for phrase in [
+        "slightly off", "some sources", "partial alignment", "adds nuance", "not all sources agree",
+        "mixed picture", "one source differs", "outlier"
+    ]):
         alignment = "partial"
-    elif any(word in comment_lower for word in ["align", "match", "agree", "consistent", "in line", "all sources"]):
+    elif any(phrase in comment_lower for phrase in [
+        "all sources agree", "consistent across", "align well", "in line", "match", "fully agree", "no notable difference"
+    ]):
         alignment = "full"
     else:
         alignment = "unknown"
 
     return comment, alignment
+    
 
 # --- MAIN ---
 
