@@ -106,7 +106,6 @@ def plot_comparison(city, owm_data, wa_data):
     ax2.tick_params(axis="y", labelcolor="blue")
     ax2.set_ylim(0, 100)
 
-
     # Add rain emojis based on severity at matching time slots
     for i, t in enumerate(times):
         r1 = rains_owm[i]
@@ -115,18 +114,11 @@ def plot_comparison(city, owm_data, wa_data):
 
         if max_rain >= 60:
             emoji = "🌧️"  # Heavy rain
+            ax2.annotate(emoji, (t, 5), ha='center', fontsize=12)
         elif max_rain >= 30:
             emoji = "☔️"  # Light rain
-        else:
-            continue  # Skip low rain chances
-
-    ax2.annotate(
-        emoji,
-        (t, 5),  # adjust Y if needed
-        ha='center',
-        fontsize=12
-    )
-
+            ax2.annotate(emoji, (t, 5), ha='center', fontsize=12)
+        # else: skip low rain chances
 
     # X-axis ticks (time)
     tick_hours = [9, 12, 15, 18, 21]
@@ -155,7 +147,7 @@ def plot_comparison(city, owm_data, wa_data):
     fig.tight_layout()
 
     filename = f"docs/{city.lower()}_comparison.png"
-    plt.savefig(filename)
+    plt.savefig(filename, dpi=150, bbox_inches="tight")
     plt.close()
     return filename
 
