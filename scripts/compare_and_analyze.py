@@ -76,10 +76,11 @@ You also have:
 - Meteoblue: {meteoblue}
 
 Your job is to:
-1. Compare the original forecast to the scraped data.
-2. Say whether the other sources confirm, differ from, or add nuance to it — especially regarding temperature and rain.
-3. If forecasts differ significantly, start with ⚠️ and highlight the main difference.
-4. If they align, say so simply — no filler needed.
+1. Compare the original forecast to the scraped data, but only for the period 09:00 to 21:00.
+2. Describe notable similarities or differences in temperature, rain, or other conditions. Be concise when forecasts align, but add useful detail when there’s divergence or interesting patterns. If the context naturally lends itself to a playful metaphor or reference (e.g., involving monkeys), you may use it, but only if it fits without forcing it. Avoid repeating the source names unnecessarily; focus on the weather story. 
+3. Say whether the other sources confirm, differ from, or add nuance to it — especially regarding temperature and rain.
+4. If forecasts differ significantly, start with ⚠️ and highlight the main difference.
+5. If they align, say so simply — no filler needed 
 5. Use a neutral tone by default, but feel free to add a light, human remark *if it naturally fits*, like referencing the day (e.g., "a dry start to the week" or "perfect for a lazy Sunday"). Don’t force it.
 
 Limit the response to a maximum of 3 short sentences — fewer if nothing notable. Return only your final text.
