@@ -12,7 +12,6 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 CITIES = ["Brussels", "Paris"]
 
-
 def load_forecast(city):
     with open(f"docs/{city.lower()}_forecast.json") as f:
         return json.load(f)
@@ -23,7 +22,7 @@ def scrape_forecast_yr(city):
     if city.lower() == "brussels":
         url = "https://www.yr.no/en/forecast/daily-table/2-2800866/Belgium/Brussels-Capital/Brussels"
     elif city.lower() == "paris":
-        url = "https://www.yr.no/en/forecast/daily-table/2-2988507/France/\u00cele-de-France/Paris"
+        url = "https://www.yr.no/en/forecast/daily-table/2-2988507/France/Île-de-France/Paris"
     else:
         return "Unsupported city"
     try:
@@ -61,9 +60,29 @@ def scrape_forecast_meteoblue(city):
     except Exception as e:
         return f"Error scraping Meteoblue: {e}"
 
+def scrape_forecast_meteo_france():
+    url = "https://meteofrance.com/previsions-meteo-france/paris/75000"
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, "html.parser")
+        div = soup.find("div", class_="day-summary")
+        return div.text.strip()[:1000] if div else "Could not extract data from Météo France"
+    except Exception as e:
+        return f"Error scraping Météo France: {e}"
+
+def scrape_forecast_meteo_belgique():
+    url = "https://www.meteo.be/en"
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, "html.parser")
+        div = soup.find("div", class_="daily-forecast")
+        return div.text.strip()[:1000] if div else "Could not extract data from Météo Belgique"
+    except Exception as e:
+        return f"Error scraping Météo Belgique: {e}"
+
 # --- GPT ANALYSIS ---
 
-def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue):
+def analyze_with_chatgpt(city, summary, yr, knmi, meteoblue, meteo_local):
     prompt = f"""
 You're a concise weather analyst AI helping to enrich a forecast summary for {city}, based on OpenWeatherMap and WeatherAPI:
 
@@ -74,6 +93,7 @@ You also have:
 - YR.no: {yr}
 - KNMI: {knmi}
 - Meteoblue: {meteoblue}
+- Local Source: {meteo_local}
 
 Your job is to:
 1. Compare the original forecast to the scraped data, but only for the period 09:00 to 21:00.
@@ -94,7 +114,6 @@ Limit the response to a maximum of 3 short sentences — fewer if nothing notabl
     comment = response.choices[0].message.content.strip()
     comment_lower = comment.lower()
 
-    # --- Improved alignment detection ---
     if "⚠️" in comment or "big mismatch" in comment_lower or "major difference" in comment_lower:
         alignment = "divergent"
     elif any(word in comment_lower for word in ["slightly off", "some sources", "partial", "nuance", "slightly lower", "adds nuance", "not all sources"]):
@@ -105,7 +124,6 @@ Limit the response to a maximum of 3 short sentences — fewer if nothing notabl
         alignment = "unknown"
 
     return comment, alignment
-
 
 # --- MAIN ---
 
@@ -118,8 +136,9 @@ def main():
             yr = scrape_forecast_yr(city)
             knmi = scrape_forecast_knmi(city)
             meteoblue = scrape_forecast_meteoblue(city)
+            meteo_local = scrape_forecast_meteo_france() if city.lower() == "paris" else scrape_forecast_meteo_belgique()
 
-            gpt_comment, alignment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue)
+            gpt_comment, alignment = analyze_with_chatgpt(city, summary, yr, knmi, meteoblue, meteo_local)
             forecast["gpt_comment"] = gpt_comment
             forecast["alignment"] = alignment
 
