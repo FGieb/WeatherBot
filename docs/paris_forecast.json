@@ -8,6 +8,6 @@
   "rain_range": 0.0,
   "summary": "Paris: \u2600\ufe0f Avg 28.0\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 32\u00b0C / Low 23\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "The forecast aligns, presenting a sun-filled day with zero chance of rain. Temperature predictions are consistent, with a high around 32\u00b0C (89\u00b0F) and a low near 23\u00b0C (73\u00b0F). Parisians can expect a warm, dry day, perfect for a stroll along the Seine.",
-  "alignment": "full"
+  "gpt_comment": "Most forecasts agree on a sunny day ahead for Paris, with an average of 28\u00b0C. Expect a gentle breeze of around 7 mph to keep things pleasant despite the high of 32\u00b0C. Perfect weather to enjoy a leisurely stroll along the Seine!",
+  "alignment": "unknown"
 }
