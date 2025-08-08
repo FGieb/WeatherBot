@@ -1,12 +1,11 @@
 # 🌦️ WeatherBot Automation – Updated System Overview (August 2025)
 
 ## 1. 🎯 Goal
-Automatically analyze and compare weather forecasts from multiple APIs and public sources, generate a clean, insightful summary with ChatGPT, and send it daily via Pushover — fully automated with GitHub Actions. Smart workarounds (like avoiding Zapier and using cookie-based GitHub deployments) make this efficient, affordable, and fun.
-
+Automatically analyze and compare weather forecasts from multiple APIs and public sources, generate a clean, insightful summary with ChatGPT, and send it daily via Pushover — fully automated with GitHub Actions.
 ---
 
 ## 2. 🔁 Workflow Overview
-The automation runs daily at 21:00 CET and consists of three main Python scripts:
+The automation runs daily at 21:00 and consists of three main Python scripts:
 
 ### ✔ `weather_notify.py`
 - **Purpose:** Fetch forecast data from:
@@ -64,7 +63,7 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
 
 ### Scraping
 - HTML scraping of YR.no, Meteoblue, Météo France, and Météo Belgique using BeautifulSoup
-- Rate-limiting and errors are gracefully handled
+- Rate-limiting and errors are handled
 
 ### Output Storage
 - All outputs saved to `docs/` folder
@@ -100,15 +99,6 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
 - Labels at 12:00 & 18:00
 - Title format: `Paris Tomorrow – Day Forecast`
 
----
-
-## 5. 🧠 No-Zapier Design
-To avoid dependency on Zapier:
-- GitHub Actions handles all automation
-- Python scripts control scraping, analysis, and notification
-- All logic runs in CI — self-contained, replicable, and cheap
-
----
 
 ## 6. ✅ Status
 - ✔ Daily GitHub Action is live
@@ -179,18 +169,6 @@ python scripts/compare_and_analyze.py
 python scripts/send_to_pushover.py
 ```
 
----
-
-## 🧠 Smart Things (That Took Way Too Long to Get Right)
-- Fine-tuned alpha values for visibility of bands vs chart lines
-- Alignment categorization via GPT response parsing
-- Friendly tone blending factual forecast + casual insights
-- Flexible scraping with fallback text if blocked
-- Full automation with no 3rd-party scheduler
-- Single-message-per-city Pushover formatting with chart and GPT summary
-
----
-
 ## 🚀 Future Ideas
 - Expand to more cities (e.g., Amsterdam, Berlin)
 - Weekend trends or weekly summaries
@@ -214,12 +192,6 @@ High 31°C / Low 22°C
 ---
 
 ## ❓ FAQ
-
-**Q: Why isn’t `.env` in the repo?**  
-A: To protect API keys — it's only for local use. GitHub Actions uses encrypted Secrets.
-
-**Q: How do I run it manually?**  
-A: Just run `python scripts/weather_notify.py` → `compare_and_analyze.py` → `send_to_pushover.py`
 
 **Q: Can I add someone else to receive alerts?**  
 A: Yes, just update your secret:
