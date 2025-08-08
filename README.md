@@ -1,5 +1,3 @@
-
-
 # 🌦️ WeatherBot Automation – Updated System Overview (August 2025)
 
 ## 1. 🎯 Goal
@@ -38,14 +36,16 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
   - Appends `gpt_comment` and `alignment` to each city's forecast JSON
   - Comments are short, optionally playful, and context-aware (e.g., "cozy Sunday", "good start to the week")
 
-### 📲 `send_to_pushover.py` (in progress)
+### ✅ `send_to_pushover.py`
 - **Purpose:**
-  - Reads enriched forecast JSON + chart
-  - Sends:
-    - Title + summary
-    - PNG chart
-    - GPT comment
-  - Via Pushover API
+  - Reads enriched forecast JSON + PNG chart
+  - Sends a clean and structured Pushover notification per city
+  - Includes:
+    - Summary (from JSON)
+    - GPT insight comment
+    - Attached PNG chart
+    - Title includes alignment emoji (✅, ⚠️, ❌)
+- **Multi-user support:** You can add multiple recipients by comma-separating user keys in the `PUSHOVER_USER_KEY` secret
 
 ---
 
@@ -53,8 +53,7 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
 
 ### GitHub Actions
 - Trigger: Daily at **21:00 CET** (19:00 UTC)
-- Uses a personal access token (GH_PAT) stored in GitHub Secrets to commit and push forecast files.
-(This allows write access to the repo, which GITHUB_TOKEN alone may not permit depending on branch protection or permission scope.
+- Uses `main.yml` workflow and `GH_PAT` secret to auto-commit outputs (not the default `GITHUB_TOKEN`)
 
 ### APIs Used
 - OpenWeatherMap
@@ -72,6 +71,7 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
 ### Notifications
 - Uses Pushover for direct push alerts
 - Image, text, and summaries are sent with rich formatting + emojis
+- One message per city, combining summary + GPT insight + PNG chart
 
 ### Alignment Detection (new)
 - GPT comment now includes implicit analysis type:
@@ -95,7 +95,7 @@ To avoid dependency on Zapier:
 - ✔ JSON & PNG generated for Paris and Brussels
 - ✔ ChatGPT analysis integrated
 - ✔ Alignment detection working
-- 🚧 Pushover notification script in progress
+- ✔ Pushover notification now fully working 🎉
 
 ---
 
@@ -105,7 +105,7 @@ To avoid dependency on Zapier:
 scripts/
 ├── weather_notify.py         # Fetch APIs + generate chart
 ├── compare_and_analyze.py    # Scrapes + GPT + alignment tagging
-├── send_to_pushover.py       # Push alert sender (in development)
+├── send_to_pushover.py       # Push alert sender (final step)
 
 docs/
 ├── paris_forecast.json       # JSON summary
@@ -137,12 +137,15 @@ docs/
 ### Secrets (for CI)
 Add these under GitHub → Settings → Actions → Secrets:
 ```env
-PUSHOVER_USER_KEY=...
-PUSHOVER_API_TOKEN=...
-OPENWEATHER_API_KEY=...
-WEATHERAPI_API_KEY=...
-OPENAI_API_KEY=...
+GH_PAT=your_personal_token
+OPENWEATHER_API_KEY=your_openweather_key
+WEATHERAPI_API_KEY=your_weatherapi_key
+OPENAI_API_KEY=your_openai_key
+PUSHOVER_API_TOKEN=your_app_token
+PUSHOVER_USER_KEY=your_user_key[,your_boyfriends_key]
 ```
+
+You can add multiple user keys to `PUSHOVER_USER_KEY` by comma-separating them. No spaces.
 
 ---
 
@@ -166,6 +169,7 @@ pip install -r requirements.txt
 ```bash
 python scripts/weather_notify.py
 python scripts/compare_and_analyze.py
+python scripts/send_to_pushover.py
 ```
 
 ---
@@ -175,11 +179,11 @@ python scripts/compare_and_analyze.py
 - Friendly tone blending factual forecast + casual insights
 - Flexible scraping with fallback text if blocked
 - Full automation with no 3rd-party scheduler
+- Single-message-per-city Pushover formatting with chart and GPT summary
 
 ---
 
 ## 🚀 Future Ideas
-- Add `send_to_pushover.py` integration
 - Expand to more cities (e.g., Amsterdam, Berlin)
 - Weekend trends or weekly summaries
 - Archive via GitHub Pages
@@ -194,7 +198,9 @@ Pushover Message:
 Paris: ☀️ Avg 27.1°C (0°C range), 0% rain
 High 31°C / Low 22°C
 
-🤖 GPT: Forecasts line up well, with minor variations. Should be smooth sailing for your Monday. ☀️
+🤖 GPT: Forecasts align well — looks like a warm, dry day. Perfect for a stroll by the Seine.
+
+📊 Chart attached.
 ```
 
 Graph:
@@ -209,12 +215,15 @@ Graph:
 A: To protect API keys — it's only for local use. GitHub Actions uses encrypted Secrets.
 
 **Q: How do I run it manually?**  
-A: Just run `python scripts/weather_notify.py` and then `compare_and_analyze.py`
+A: Just run `python scripts/weather_notify.py` → `compare_and_analyze.py` → `send_to_pushover.py`
 
 **Q: Can I add someone else to receive alerts?**  
-A: Yes, Pushover supports multiple user keys:  
+A: Yes, just update your secret:
 ```env
-PUSHOVER_USER_KEY=key1,key2
+PUSHOVER_USER_KEY=your_key,partner_key
 ```
+Pushover will send to both recipients at once.
 
 ---
+
+Built for curiosity, consistency, and comparing clouds ☁️
