@@ -75,6 +75,12 @@ def plot_comparison(city, owm_data, wa_data):
     avg_temp_line = [(a + b) / 2 for a, b in zip(temps_owm, temps_wa)]
 
     fig, ax1 = plt.subplots(figsize=(8, 4))
+
+    # --- Add background shading for warm and hot zones ---
+    ax1.axhspan(24, 30, facecolor='mistyrose', alpha=0.4)   # Warm: 24–29.9°C
+    ax1.axhspan(30, 40, facecolor='lightcoral', alpha=0.3)  # Hot: 30°C and above
+
+    # --- Temperature lines ---
     line_owm, = ax1.plot(times, temps_owm, label="Temp OWM", color="red")
     line_wa, = ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
     line_avg, = ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
@@ -82,19 +88,54 @@ def plot_comparison(city, owm_data, wa_data):
     ax1.set_ylabel("Temperature (°C)", color="red")
     ax1.tick_params(axis="y", labelcolor="red")
 
+    # --- Rain Data Visualization ---
     ax2 = ax1.twinx()
-    ax2.plot(times, rains_owm, color="blue", linestyle="-.")
-    ax2.plot(times, rains_wa, color="cyan", linestyle=":")
+
+    # Rain from OpenWeatherMap (blue spikes)
+    (markerline1, stemlines1, baseline1) = ax2.stem(times, rains_owm, linefmt="b-", markerfmt=" ", basefmt=" ")
+    plt.setp(stemlines1, linewidth=1.5, color="blue")
+    plt.setp(baseline1, visible=False)
+
+    # Rain from WeatherAPI (cyan spikes)
+    (markerline2, stemlines2, baseline2) = ax2.stem(times, rains_wa, linefmt="c-", markerfmt=" ", basefmt=" ")
+    plt.setp(stemlines2, linewidth=1.5, color="cyan")
+    plt.setp(baseline2, visible=False)
+
+    # Rain axis formatting
     ax2.set_ylabel("Rain Probability (%)", color="blue")
     ax2.tick_params(axis="y", labelcolor="blue")
     ax2.set_ylim(0, 100)
 
-    ax1.legend([line_owm, line_wa, line_avg], ["Temp OWM", "Temp WeatherAPI", "Avg Temp"], loc="upper left", fontsize=9)
 
+    # Add rain emojis based on severity at matching time slots
+    for i, t in enumerate(times):
+        r1 = rains_owm[i]
+        r2 = rains_wa[i]
+        max_rain = max(r1, r2)
+
+        if max_rain >= 60:
+            emoji = "🌧️"  # Heavy rain
+        elif max_rain >= 30:
+            emoji = "☔️"  # Light rain
+        else:
+            continue  # Skip low rain chances
+
+    ax2.annotate(
+        emoji,
+        (t, 5),  # adjust Y if needed
+        ha='center',
+        fontsize=12
+    )
+
+
+    # X-axis ticks (time)
     tick_hours = [9, 12, 15, 18, 21]
     tick_labels = ["9", "12", "15", "18", "21"]
     ax1.set_xticks([t for t in times if t.hour in tick_hours])
     ax1.set_xticklabels([tick_labels[tick_hours.index(t.hour)] for t in times if t.hour in tick_hours])
+
+    # Temperature legend
+    ax1.legend([line_owm, line_wa, line_avg], ["Temp OWM", "Temp WeatherAPI", "Avg Temp"], loc="upper left", fontsize=9)
 
     for target_hour in [12, 18]:
         if any(t.hour == target_hour for t in times):
