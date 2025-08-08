@@ -76,6 +76,21 @@ def plot_comparison(city, owm_data, wa_data):
 
     fig, ax1 = plt.subplots(figsize=(8, 4))
 
+    # --- Heat bands (keep these first so they're at the very back) ---
+    ax1.axhspan(24, 30, facecolor='mistyrose',  alpha=0.4)  # warm
+    ax1.axhspan(30, 40, facecolor='lightcoral', alpha=0.3)  # hot
+
+    # --- Consensus band (OWM vs WeatherAPI only) ---
+    t_min = [min(a, b) for a, b in zip(temps_owm, temps_wa)]
+    t_max = [max(a, b) for a, b in zip(temps_owm, temps_wa)]
+    ax1.fill_between(times, t_min, t_max, color="grey", alpha=0.12, label="Consensus band")
+
+    # --- Temperature lines (on top) ---
+    line_owm, = ax1.plot(times, temps_owm, label="Temp OWM", color="red")
+    line_wa,  = ax1.plot(times, temps_wa,  label="Temp WeatherAPI", color="orange", linestyle="--")
+    line_avg, = ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
+
+
     # --- Add background shading for warm and hot zones ---
     ax1.axhspan(24, 30, facecolor='mistyrose', alpha=0.4)   # Warm: 24–29.9°C
     ax1.axhspan(30, 40, facecolor='lightcoral', alpha=0.3)  # Hot: 30°C and above
@@ -83,7 +98,7 @@ def plot_comparison(city, owm_data, wa_data):
     # --- Temperature lines ---
     line_owm, = ax1.plot(times, temps_owm, label="Temp OWM", color="red")
     line_wa, = ax1.plot(times, temps_wa, label="Temp WeatherAPI", color="orange", linestyle="--")
-    line_avg, = ax1.plot(times, avg_temp_line, label="Avg Temp", color="black", linestyle=":")
+    line_avg, = ax1.plot(times, avg_temp_line, color="black", linestyle=":", linewidth=1.0, alpha=0.6, label="Avg Temp")
 
     ax1.set_ylabel("Temperature (°C)", color="red")
     ax1.tick_params(axis="y", labelcolor="red")
