@@ -79,6 +79,16 @@ The automation runs daily at 21:00 and consists of three main Python scripts:
   - `alignment = "full"` → forecasts agree
   - `alignment = "partial"` → minor differences or slight outlier
   - `alignment = "divergent"` → major mismatch (e.g. rain vs no rain)
+ 
+## 📡 Why These Weather Sources?
+
+Forecast validation includes scraped data from **trusted meteorological services**, chosen for their reputation and accuracy:
+
+- **YR.no** 🇳🇴 – From the Norwegian Meteorological Institute, widely praised for scientific rigor across Europe.
+- **Météo France / Météo Belgique** 🇫🇷 🇧🇪 – Official government agencies, known for high-resolution local accuracy.
+- **Meteoblue** 🌍 – Swiss-based ensemble forecaster, known for clarity and consistency across Europe.
+
+These sources form a "ground truth" to assess API forecasts.
 
 ---
 
