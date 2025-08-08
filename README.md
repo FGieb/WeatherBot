@@ -26,15 +26,17 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
   - Scrapes forecast data from public sources:
     - YR.no
     - Meteoblue
-    - (KNMI placeholder included)
+    - Météo France (for Paris) or Météo Belgique (for Brussels)
   - Uses GPT-4 (OpenAI API) to:
-    - Compare forecasts
+    - Compare forecasts only between 09:00–21:00
     - Assess confidence in API predictions
-    - Add a clear, natural-language `gpt_comment`
+    - Add a human-readable, natural-language `gpt_comment`
     - Classify alignment as: `full`, `partial`, or `divergent`
+    - Comment intelligently avoids vague phrases like “most forecasts agree” unless exceptions are made explicit
+
 - **Output:**
   - Appends `gpt_comment` and `alignment` to each city's forecast JSON
-  - Comments are short, optionally playful, and context-aware (e.g., "cozy Sunday", "good start to the week")
+  - Comments are short, optionally playful, and context-aware (e.g., “cozy Sunday”, “good start to the week”)
 
 ### ✅ `send_to_pushover.py`
 - **Purpose:**
@@ -61,8 +63,8 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
 - OpenAI GPT-4 API
 
 ### Scraping
-- HTML scraping of YR.no and Meteoblue using BeautifulSoup
-- Limited by rate-limiting and content availability — gracefully handled
+- HTML scraping of YR.no, Meteoblue, Météo France, and Météo Belgique using BeautifulSoup
+- Rate-limiting and errors are gracefully handled
 
 ### Output Storage
 - All outputs saved to `docs/` folder
@@ -73,16 +75,34 @@ The automation runs daily at 21:00 CET and consists of three main Python scripts
 - Image, text, and summaries are sent with rich formatting + emojis
 - One message per city, combining summary + GPT insight + PNG chart
 
-### Alignment Detection (new)
-- GPT comment now includes implicit analysis type:
+### Alignment Detection
+- GPT comment is parsed to detect forecast agreement level:
   - `alignment = "full"` → forecasts agree
-  - `alignment = "partial"` → minor differences
-  - `alignment = "divergent"` → major mismatch
-- Useful for logic filters, alerts, or archiving
+  - `alignment = "partial"` → minor differences or slight outlier
+  - `alignment = "divergent"` → major mismatch (e.g. rain vs no rain)
 
 ---
 
-## 4. 🧠 No-Zapier Design
+## 4. 📊 Chart Features
+
+- Temperature lines:
+  - 🔴 OpenWeatherMap
+  - 🟠 WeatherAPI
+  - ⚫ Average temp (thin dotted line)
+- Rain lines (dashed bars):
+  - 🔵 OWM
+  - 🔹 WeatherAPI
+- **Grey Band:** Fills the gap between the OWM and WeatherAPI temperature forecasts to show uncertainty/disagreement — clearly visible but not intrusive
+- **Heat Bands:**
+  - Warm zone (24–29.9°C): light pink (`mistyrose`, `alpha=0.12`)
+  - Hot zone (30°C+): darker red (`lightcoral`, `alpha=0.2`)
+  - Deliberate alpha choices ensure the consensus band remains clearly visible even in hot or warm conditions
+- Labels at 12:00 & 18:00
+- Title format: `Paris Tomorrow – Day Forecast`
+
+---
+
+## 5. 🧠 No-Zapier Design
 To avoid dependency on Zapier:
 - GitHub Actions handles all automation
 - Python scripts control scraping, analysis, and notification
@@ -90,12 +110,12 @@ To avoid dependency on Zapier:
 
 ---
 
-## 5. ✅ Status
+## 6. ✅ Status
 - ✔ Daily GitHub Action is live
 - ✔ JSON & PNG generated for Paris and Brussels
 - ✔ ChatGPT analysis integrated
 - ✔ Alignment detection working
-- ✔ Pushover notification now fully working 🎉
+- ✔ Pushover notification fully automated 🎉
 
 ---
 
@@ -116,23 +136,10 @@ docs/
 
 ---
 
-## 📊 Graph Features
-- Temperature lines:
-  - 🔴 OpenWeatherMap
-  - 🟠 WeatherAPI
-  - ⚫ Average
-- Rain lines (dotted):
-  - 🔵 OWM
-  - 🔹 WeatherAPI
-- Labels at 12:00 & 18:00
-- Chart title: `Paris Tomorrow – Day Forecast`
-
----
-
 ## ☁️ GitHub Actions (Daily Forecast)
 
 ### Schedule
-- Daily at 10:00 CET (or 21:00 for latest data)
+- Daily at 21:00 CET
 
 ### Secrets (for CI)
 Add these under GitHub → Settings → Actions → Secrets:
@@ -145,7 +152,7 @@ PUSHOVER_API_TOKEN=your_app_token
 PUSHOVER_USER_KEY=your_user_key[,your_boyfriends_key]
 ```
 
-You can add multiple user keys to `PUSHOVER_USER_KEY` by comma-separating them. No spaces.
+You can add multiple user keys by comma-separating them. No spaces.
 
 ---
 
@@ -175,6 +182,7 @@ python scripts/send_to_pushover.py
 ---
 
 ## 🧠 Smart Things (That Took Way Too Long to Get Right)
+- Fine-tuned alpha values for visibility of bands vs chart lines
 - Alignment categorization via GPT response parsing
 - Friendly tone blending factual forecast + casual insights
 - Flexible scraping with fallback text if blocked
@@ -202,10 +210,6 @@ High 31°C / Low 22°C
 
 📊 Chart attached.
 ```
-
-Graph:
-- Clearly annotated
-- Easily interpreted at a glance
 
 ---
 
