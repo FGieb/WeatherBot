@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 27.558,
+  "avg_temp": 27.318,
   "avg_rain": 0.0,
-  "high_temp": 32.0,
+  "high_temp": 31.94,
   "low_temp": 22.18,
-  "temp_range": 0.16400000000000503,
+  "temp_range": 0.3159999999999954,
   "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 27.6\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 32\u00b0C / Low 22\u00b0C",
+  "summary": "Paris: \u2600\ufe0f Avg 27.3\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 32\u00b0C / Low 22\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u2600\ufe0f The day in Paris will be warm with an average temperature of 27.6\u00b0C, peaking at 32\u00b0C and dropping to a comfortable 22\u00b0C at night. No rain is expected as per all available forecasts. Perfect conditions for a stroll by the Seine, just remember to stay hydrated!",
+  "gpt_comment": "Paris is set for a sunny day with an average temperature of 27.3\u00b0C, peaking at 32\u00b0C and dipping as low as 22\u00b0C. Meteoblue's forecast aligns with this, predicting highs of around 85\u00b0F (29\u00b0C). It's a perfect day for an afternoon at the Jardin du Luxembourg, maybe you'll even spot a monkey at the Menagerie!",
   "alignment": "unknown"
 }

@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 23.433999999999997,
+  "avg_temp": 23.194,
   "avg_rain": 0.0,
-  "high_temp": 28.2,
+  "high_temp": 27.9,
   "low_temp": 17.05,
-  "temp_range": 0.37200000000000344,
+  "temp_range": 0.10799999999999699,
   "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 23.4\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 28\u00b0C / Low 17\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 23.2\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 28\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "The weather in Brussels will generally be sunny, with temperatures averaging 23.4\u00b0C, peaking to 28\u00b0C and dipping to 17\u00b0C. There's no indication of any rain, perfect for a leisurely stroll in the park. It's a typical summer day, maybe even warm enough for monkeys at the zoo to enjoy an ice cream!",
+  "gpt_comment": "The forecast for Brussels today aligns across sources, predicting sunny weather with an average temperature of 23.2\u00b0C, reaching up to 28\u00b0C. No rain is expected throughout the day. Sounds like a lovely day to perhaps see some monkeys at the city zoo!",
   "alignment": "unknown"
 }
