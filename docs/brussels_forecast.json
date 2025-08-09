@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 22.993000000000002,
+  "avg_temp": 23.423000000000002,
   "avg_rain": 0.0,
-  "high_temp": 27.43,
-  "low_temp": 16.95,
-  "temp_range": 0.2940000000000005,
+  "high_temp": 27.48,
+  "low_temp": 19.2,
+  "temp_range": 0.16600000000000037,
   "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 23.0\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 27\u00b0C / Low 17\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 23.4\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 27\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "The forecast for Brussels shows a sunny day with an average temperature of 23.0\u00b0C, peaking at 27\u00b0C and dipping to 17\u00b0C. Meteoblue aligns with this, predicting similar temperatures with a gentle breeze. A perfect day to visit the Monkey Island at the Brussels Zoo.",
-  "alignment": "unknown"
+  "gpt_comment": "The weather in Brussels appears consistent across sources, with an average temperature of 23.4\u00b0C and no expected rainfall. A minor breeze at 8mph will accompany the balmy temperatures, making it a perfect day for a stroll in the park. If you spot a monkey in the Brussels city park, remember it's just as much a fan of warm, sunny days as you are!",
+  "alignment": "full"
 }
