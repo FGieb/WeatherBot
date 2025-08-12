@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 30.282999999999998,
-  "avg_rain": 2.0,
-  "high_temp": 35.1,
-  "low_temp": 23.53,
-  "temp_range": 0.5939999999999941,
-  "rain_range": 4.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 30.3\u00b0C (1\u00b0C range), 2% rain (4% range)\nHigh 35\u00b0C / Low 24\u00b0C",
+  "avg_temp": 30.089,
+  "avg_rain": 12.1,
+  "high_temp": 35.9,
+  "low_temp": 24.23,
+  "temp_range": 0.9820000000000064,
+  "rain_range": 15.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 30.1\u00b0C (1\u00b0C range), 12% rain (16% range)\nHigh 36\u00b0C / Low 24\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "Expect a sunny day in Brussels with an average temperature of around 30.3\u00b0C, peaking at 35\u00b0C and dipping to a low of 24\u00b0C. The chance of rain is minimal at 2%, so it's likely to stay dry. Perfect weather for exploring the city, just remember to stay hydrated, and maybe spot a few monkeys at the local zoo.",
+  "gpt_comment": "Brussels is set for a warm day with an average temperature of 30.1\u00b0C, reaching up to 36\u00b0C, and a low chance of rain at 12%. Meteoblue aligns with this, predicting a high of 92\u00b0F (about 33\u00b0C) and minimal rainfall. Perfect weather to enjoy a cold drink on a terrace and maybe spot a monkey at the local zoo!",
   "alignment": "unknown"
 }
