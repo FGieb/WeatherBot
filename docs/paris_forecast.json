@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 30.552999999999997,
+  "avg_temp": 29.984,
   "avg_rain": 0.0,
-  "high_temp": 35.08,
-  "low_temp": 25.3,
-  "temp_range": 0.3740000000000059,
+  "high_temp": 34.5,
+  "low_temp": 23.53,
+  "temp_range": 1.1519999999999975,
   "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 30.6\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 35\u00b0C / Low 25\u00b0C",
+  "summary": "Paris: \u2600\ufe0f Avg 30.0\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 34\u00b0C / Low 24\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "Paris is set for a sunny day with averages around 30.6\u00b0C, peaking at 35\u00b0C, and a minimal chance of rain. Meteoblue aligns, indicating around the same temperatures and virtually no precipitation. Ideal for a stroll down the Seine, but don't forget your water bottle - it's going to be a hot one!",
+  "gpt_comment": "The day in Paris promises clear skies with an average temperature of 30\u00b0C, reaching up to 34\u00b0C at its peak. There's zero chance of rain according to all available forecasts. Perfect weather to enjoy a caf\u00e9 terrace, just remember to keep cool like a monkey in the shade.",
   "alignment": "unknown"
 }
