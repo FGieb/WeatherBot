@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 20.923,
+  "avg_temp": 21.859,
   "avg_rain": 0.0,
-  "high_temp": 25.94,
-  "low_temp": 16.59,
-  "temp_range": 0.6739999999999995,
+  "high_temp": 26.18,
+  "low_temp": 16.9,
+  "temp_range": 0.11799999999999855,
   "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 20.9\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 26\u00b0C / Low 17\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 21.9\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 26\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "The weather in Brussels is set to be sunny, with temperatures peaking at 26\u00b0C (78.8\u00b0F) and dropping to a comfortable 17\u00b0C (63\u00b0F) at the lowest. There's no sign of rain according to all sources, making it a perfect day for outdoor activities. Perhaps it's a good day for a visit to the Royal Zoological Society of Antwerp, where the monkeys will be enjoying the sunshine as much as you.",
+  "gpt_comment": "The weather in Brussels today is expected to be sunny with an average temperature of 21.9\u00b0C, reaching a high of 26\u00b0C and dropping to a low of 17\u00b0C. Meteoblue indicates a slightly cooler day with a high of 73\u00b0F (about 22.8\u00b0C). No chances of rain forecasted, making it a perfect day to enjoy a caf\u00e9 terrace.",
   "alignment": "unknown"
 }
