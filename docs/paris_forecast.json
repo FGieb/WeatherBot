@@ -8,6 +8,6 @@
   "rain_range": 33.8,
   "summary": "Paris: \ud83c\udf27\ufe0f Avg 18.5\u00b0C (0\u00b0C range), 83% rain (34% range)\nHigh 19\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The weather outlook for Paris varies between sources. Meteoblue predicts a high temperature of 29\u00b0C (10.5\u00b0C delta) and rain duration of 3 hours, contrasting the baseline's 19\u00b0C high and no specified rain duration. Given the significant temperature difference, it might be wise to pack for both warm and cool conditions.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a significantly higher temperature (29\u00b0C vs 18.5\u00b0C). Rain probability and other data were not stated. The day in Paris might be warmer than expected, perfect for an outdoor stroll or perhaps a visit to the zoo to see the monkeys.",
   "alignment": "divergent"
 }
