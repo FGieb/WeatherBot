@@ -72,27 +72,28 @@ def scrape_forecast_meteo_belgique():
 
 def analyze_with_chatgpt(city, summary, yr, meteoblue, meteo_local):
     prompt = f"""
-You're a concise weather analyst AI helping to enrich a forecast summary for {city}, based on OpenWeatherMap and WeatherAPI:
 
-Original forecast:
+You're a concise weather verifier. Analyze only 09:00–21:00 local time for {city}.
+
+BASELINE (from OWM+WeatherAPI):
 {summary}
 
-You also have scraped weather text from:
-- YR.no: {yr}
-- Meteoblue: {meteoblue}
-- Local Source: {meteo_local}
+OTHER SOURCES:
+• YR.no: {yr}
+• Meteoblue: {meteoblue}
+• Local: {meteo_local}
 
-Your job is to:
-1. Compare the original forecast to the scraped sources, but only for the period 09:00 to 21:00.
-2. Identify temperature and rain patterns.
-    • If multiple sources align, treat this as a consensus and say so clearly.
-    • If one source clearly differs (e.g., predicts rain while others don't), briefly explain how — e.g., “...though one expects showers in the afternoon.”
-    • Avoid vague phrases like "most forecasts" without clarifying the exception.
-4. Avoid repeating the source names unless needed to highlight a contrast. Focus instead on painting a clear picture of what kind of day it will be.
-5. If the forecasts differ significantly, begin with ⚠️ and emphasize the main difference (e.g., rain vs no rain, or major temperature mismatch).
-6. Keep a neutral tone by default, but you may add a human remark if it fits organically based on what you would maybe say to a friend, for example based on the day of the week (e.g., “perfect for a café terrace” or “a classic spring day in {city}”). More specifically whenever there is a reason (do not force it) to include a reference to a monkey you can, but don't force it it needs to be natural.
+Rules:
+- Be concrete. Name the dissenting source(s) and the difference (°C delta, rain probability, and hours).
+- If values aren't explicit, say "not stated".
+- Consider "material" as: rain vs dry OR ≥3°C at peak OR rain prob difference ≥25pp in the same hours.
+- Start with an alignment tag: [FULL], [PARTIAL], or ⚠️[DIVERGENT].
+- Max 3 short sentences. 1st: quick verdict. 2nd: compact diffs like "Meteoblue: 40–60% rain 17–20h vs baseline dry; YR: +2–3°C 14–18h". 3rd: optional natural remark only if it truly fits.
 
-Respond in **a maximum of 3 short sentences** — fewer if nothing stands out. Return only your final comment, no explanation.
+Output only the three sentences—no lists, no bullets, no preamble.
+
+Keep a neutral tone by default, but you may add a human remark if it fits organically based on what you would maybe say to a friend, for example based on the day of the week (e.g., “perfect for a café terrace” or “a classic spring day in {city}”). More specifically whenever there is a reason (do not force it) to include a reference to a monkey, donkey, haring, pig, hyena, gazella or bumblebee you can, but don't force it it needs to be natural.
+
 """
 
     response = client.chat.completions.create(
