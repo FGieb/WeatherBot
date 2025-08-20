@@ -8,6 +8,6 @@
   "rain_range": 33.8,
   "summary": "Paris: \ud83c\udf27\ufe0f Avg 18.5\u00b0C (0\u00b0C range), 83% rain (34% range)\nHigh 19\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a significantly higher temperature (29\u00b0C vs 18.5\u00b0C). Rain probability and other data were not stated. The day in Paris might be warmer than expected, perfect for an outdoor stroll or perhaps a visit to the zoo to see the monkeys.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Forecasts somewhat align but with material differences. Meteoblue indicates a cooler temperature with highs of approx 20\u00b0C and lows of approx 17\u00b0C. Rainfall is also predicted by Meteoblue (0-0.1\") although not specified by the baseline. Paris' unpredictable weather continues, quite the hyena's laugh for forecasters.",
   "alignment": "divergent"
 }
