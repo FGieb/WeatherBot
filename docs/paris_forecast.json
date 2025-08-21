@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 18.517000000000003,
-  "avg_rain": 83.1,
-  "high_temp": 19.4,
-  "low_temp": 17.5,
-  "temp_range": 0.19400000000000617,
-  "rain_range": 33.8,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 18.5\u00b0C (0\u00b0C range), 83% rain (34% range)\nHigh 19\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 21.798000000000002,
+  "avg_rain": 0.0,
+  "high_temp": 24.6,
+  "low_temp": 16.7,
+  "temp_range": 0.9559999999999995,
+  "rain_range": 0.0,
+  "summary": "Paris: \u2600\ufe0f Avg 21.8\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 25\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Forecasts somewhat align but with material differences. Meteoblue indicates a cooler temperature with highs of approx 20\u00b0C and lows of approx 17\u00b0C. Rainfall is also predicted by Meteoblue (0-0.1\") although not specified by the baseline. Paris' unpredictable weather continues, quite the hyena's laugh for forecasters.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All accessible weather sources align with the baseline for Paris. Meteoblue indicates an average of 26.1\u00b0C (79\u00b0F), which matches the baseline's high of 25\u00b0C and no rain. Perfect weather to enjoy a lazy day in a Parisian caf\u00e9, maybe even spot a bumblebee or two.",
+  "alignment": "full"
 }
