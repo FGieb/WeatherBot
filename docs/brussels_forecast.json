@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 16.770000000000003,
-  "avg_rain": 0.0,
-  "high_temp": 21.31,
-  "low_temp": 12.51,
-  "temp_range": 0.05999999999999872,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 16.8\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 21\u00b0C / Low 13\u00b0C",
+  "avg_temp": 16.693,
+  "avg_rain": 6.0,
+  "high_temp": 19.67,
+  "low_temp": 12.46,
+  "temp_range": 0.6939999999999955,
+  "rain_range": 12.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 16.7\u00b0C (1\u00b0C range), 6% rain (12% range)\nHigh 20\u00b0C / Low 12\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] There's complete alignment in the weather forecast for Brussels today. Meteoblue also predicts an average of 16.8\u00b0C with 0% probability of rain. Seems like a perfect day for a relaxing stroll in the park, maybe you'll even spot a bumblebee!",
+  "gpt_comment": "[FULL] All sources align fully with the baseline forecast for Brussels. Meteoblue predicts similar temperatures but does not provide rain information. It seems like a classic spring day in Brussels, with no rain in sight - perfect for observing gazelles at the park, if you're into that.",
   "alignment": "unknown"
 }
