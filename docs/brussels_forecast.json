@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.35,
+  "avg_temp": 22.784,
   "avg_rain": 0.0,
-  "high_temp": 22.88,
-  "low_temp": 14.34,
-  "temp_range": 0.46000000000000085,
+  "high_temp": 26.75,
+  "low_temp": 18.2,
+  "temp_range": 0.6479999999999961,
   "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 19.4\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 23\u00b0C / Low 14\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 22.8\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 27\u00b0C / Low 18\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All available data aligns with the baseline for Brussels today. Meteoblue confirms the average temperature and no rainfall, though the specific temperature range is not stated. Looks like a clear day ahead, perfect for a stroll in the park.",
-  "alignment": "unknown"
+  "gpt_comment": "[FULL] The weather prediction for Brussels aligns across all available sources. Meteoblue indicates sunny weather, in line with the baseline forecast. A classic day in Brussels, perfect for a stroll in the park.",
+  "alignment": "full"
 }
