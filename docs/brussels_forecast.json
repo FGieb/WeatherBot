@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 20.536,
-  "avg_rain": 53.6,
-  "high_temp": 24.35,
-  "low_temp": 15.49,
-  "temp_range": 0.1280000000000001,
-  "rain_range": 27.200000000000003,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 20.5\u00b0C (0\u00b0C range), 54% rain (27% range)\nHigh 24\u00b0C / Low 15\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 17.143,
+  "avg_rain": 58.2,
+  "high_temp": 18.48,
+  "low_temp": 13.73,
+  "temp_range": 0.39399999999999835,
+  "rain_range": 28.400000000000006,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 17.1\u00b0C (0\u00b0C range), 58% rain (28% range)\nHigh 18\u00b0C / Low 14\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a slightly higher temperature range of 26-17\u00b0C. Unfortunately, rain data and other values were not stated. It's a bit warmer than expected, perfect for spotting bumblebees in the park.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue forecasts appear contradictory to the baseline. Meteoblue: 0-0.1\" rain versus baseline 58% rain; temperature values not stated. It seems like the weather's as unpredictable as a monkey swinging in the trees today.",
   "alignment": "divergent"
 }
