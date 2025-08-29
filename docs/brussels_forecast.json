@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 17.143,
-  "avg_rain": 58.2,
-  "high_temp": 18.48,
-  "low_temp": 13.73,
-  "temp_range": 0.39399999999999835,
-  "rain_range": 28.400000000000006,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 17.1\u00b0C (0\u00b0C range), 58% rain (28% range)\nHigh 18\u00b0C / Low 14\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 20.58,
+  "avg_rain": 10.2,
+  "high_temp": 23.27,
+  "low_temp": 17.0,
+  "temp_range": 1.0400000000000027,
+  "rain_range": 12.399999999999999,
+  "summary": "Brussels: \u2601\ufe0f Avg 20.6\u00b0C (1\u00b0C range), 10% rain (12% range)\nHigh 23\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue forecasts appear contradictory to the baseline. Meteoblue: 0-0.1\" rain versus baseline 58% rain; temperature values not stated. It seems like the weather's as unpredictable as a monkey swinging in the trees today.",
-  "alignment": "divergent"
+  "gpt_comment": "[PARTIAL] There's a slight divergence with Meteoblue's forecast. Meteoblue predicts temperatures at 19.4\u00b0C, a 1.2\u00b0C difference from the baseline. It's a classic Spring day in Brussels, perfect for a caf\u00e9 terrace visit.",
+  "alignment": "unknown"
 }
