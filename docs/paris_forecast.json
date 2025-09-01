@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 19.852,
-  "avg_rain": 20.0,
-  "high_temp": 22.2,
-  "low_temp": 16.15,
-  "temp_range": 0.21600000000000108,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2601\ufe0f Avg 19.9\u00b0C (0\u00b0C range), 20% rain (0% range)\nHigh 22\u00b0C / Low 16\u00b0C",
+  "avg_temp": 17.579,
+  "avg_rain": 70.9,
+  "high_temp": 21.1,
+  "low_temp": 15.72,
+  "temp_range": 1.001999999999999,
+  "rain_range": 4.200000000000003,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 17.6\u00b0C (1\u00b0C range), 71% rain (4% range)\nHigh 21\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests light rain, unlike the dry baseline. Meteoblue: 0.1-0.2\" rain, not specified when, vs baseline 20% rain. YR.no and M\u00e9t\u00e9o France data were not available for comparison.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue's forecast diverges significantly from the baseline. Meteoblue shows a slightly higher temperature range with a peak at 21.1\u00b0C (70\u00b0F), but doesn't share the rain probability. With this difference in temperature, it's hard to predict whether you'll need an umbrella or a sun hat - a true monkey's wedding of a weather forecast.",
   "alignment": "divergent"
 }
