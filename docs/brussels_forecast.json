@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 20.162,
-  "avg_rain": 2.0,
-  "high_temp": 24.8,
-  "low_temp": 15.4,
-  "temp_range": 0.8760000000000012,
-  "rain_range": 4.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 20.2\u00b0C (1\u00b0C range), 2% rain (4% range)\nHigh 25\u00b0C / Low 15\u00b0C",
+  "avg_temp": 18.131,
+  "avg_rain": 0.0,
+  "high_temp": 22.68,
+  "low_temp": 13.36,
+  "temp_range": 0.5779999999999994,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 18.1\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 23\u00b0C / Low 13\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather forecast for Brussels aligns across all accessible sources. Meteoblue predicts sunny weather, which matches the baseline of sunny and an average of 20.2\u00b0C, with a 2% chance of rain. It's an ideal day for bumblebees to be out pollinating.",
-  "alignment": "full"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue shows a different temperature. Meteoblue: 22.8\u00b0C - 17.8\u00b0C vs baseline 23\u00b0C - 13\u00b0C. Given the warmer evening forecast, it might be a nice night for a stroll, just like a nocturnal bumblebee.",
+  "alignment": "divergent"
 }
