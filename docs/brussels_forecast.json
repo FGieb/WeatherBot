@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 18.131,
-  "avg_rain": 0.0,
-  "high_temp": 22.68,
-  "low_temp": 13.36,
-  "temp_range": 0.5779999999999994,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 18.1\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 23\u00b0C / Low 13\u00b0C",
+  "avg_temp": 19.927,
+  "avg_rain": 19.700000000000003,
+  "high_temp": 22.3,
+  "low_temp": 15.98,
+  "temp_range": 0.5860000000000021,
+  "rain_range": 19.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 19.9\u00b0C (1\u00b0C range), 20% rain (20% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue shows a different temperature. Meteoblue: 22.8\u00b0C - 17.8\u00b0C vs baseline 23\u00b0C - 13\u00b0C. Given the warmer evening forecast, it might be a nice night for a stroll, just like a nocturnal bumblebee.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a cooler temperature range (57\u00b0F to 69\u00b0F, or about 14\u00b0C to 21\u00b0C). This is a 2\u00b0C drop in the low and a 1\u00b0C drop in the high compared to the baseline. The rest of the data is not stated. Seems like a cooler day in Brussels, so maybe not the best for observing bumblebees in the park.",
   "alignment": "divergent"
 }
