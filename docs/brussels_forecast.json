@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.927,
-  "avg_rain": 19.700000000000003,
-  "high_temp": 22.3,
-  "low_temp": 15.98,
-  "temp_range": 0.5860000000000021,
-  "rain_range": 19.8,
-  "summary": "Brussels: \u2601\ufe0f Avg 19.9\u00b0C (1\u00b0C range), 20% rain (20% range)\nHigh 22\u00b0C / Low 16\u00b0C",
+  "avg_temp": 16.493,
+  "avg_rain": 64.6,
+  "high_temp": 20.7,
+  "low_temp": 12.47,
+  "temp_range": 0.26599999999999824,
+  "rain_range": 30.799999999999997,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 16.5\u00b0C (0\u00b0C range), 65% rain (31% range)\nHigh 21\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a cooler temperature range (57\u00b0F to 69\u00b0F, or about 14\u00b0C to 21\u00b0C). This is a 2\u00b0C drop in the low and a 1\u00b0C drop in the high compared to the baseline. The rest of the data is not stated. Seems like a cooler day in Brussels, so maybe not the best for observing bumblebees in the park.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a slightly warmer temperature and less rainfall than the baseline. Meteoblue: 22.2\u00b0C vs baseline's average 16.5\u00b0C; no rain vs baseline's 65% rain probability. Seems like Meteoblue is predicting a bit of a bumblebee's summer day in comparison.",
   "alignment": "divergent"
 }
