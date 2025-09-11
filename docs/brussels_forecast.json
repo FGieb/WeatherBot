@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 16.493,
-  "avg_rain": 64.6,
-  "high_temp": 20.7,
-  "low_temp": 12.47,
-  "temp_range": 0.26599999999999824,
-  "rain_range": 30.799999999999997,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 16.5\u00b0C (0\u00b0C range), 65% rain (31% range)\nHigh 21\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 16.141,
+  "avg_rain": 23.6,
+  "high_temp": 18.66,
+  "low_temp": 12.55,
+  "temp_range": 0.23799999999999955,
+  "rain_range": 22.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 16.1\u00b0C (0\u00b0C range), 24% rain (22% range)\nHigh 19\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a slightly warmer temperature and less rainfall than the baseline. Meteoblue: 22.2\u00b0C vs baseline's average 16.5\u00b0C; no rain vs baseline's 65% rain probability. Seems like Meteoblue is predicting a bit of a bumblebee's summer day in comparison.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports 15 mph winds and a temperature range of 12.8-17.8\u00b0C, in contrast to the baseline's 13-19\u00b0C and unspecified winds. It also predicts a 0-0.1\" rain, not stated in the baseline, and only 2 hours of sunshine. The disparity in the rain prediction and the lower temperature range could make the day feel more like a gazelle's habitat than a typical Brussels day.",
   "alignment": "divergent"
 }
