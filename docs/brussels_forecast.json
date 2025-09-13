@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 16.024,
-  "avg_rain": 68.9,
-  "high_temp": 19.3,
-  "low_temp": 12.52,
-  "temp_range": 0.9520000000000017,
-  "rain_range": 3.3999999999999915,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 16.0\u00b0C (1\u00b0C range), 69% rain (3% range)\nHigh 19\u00b0C / Low 13\u00b0C",
+  "avg_temp": 17.854,
+  "avg_rain": 14.3,
+  "high_temp": 20.16,
+  "low_temp": 13.5,
+  "temp_range": 0.5079999999999956,
+  "rain_range": 11.4,
+  "summary": "Brussels: \u2601\ufe0f Avg 17.9\u00b0C (1\u00b0C range), 14% rain (11% range)\nHigh 20\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a cooler temperature. Meteoblue: 18.3\u00b0C average temperature vs baseline 16\u00b0C; Meteoblue: not stated rain probability, baseline 69%. It seems like the hyenas laughing in the distance might be about the chilly weather, not the rain.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates slightly lower temperatures (19.4\u00b0C) and possible rain, not stated by the baseline. Unfortunately, data from YR.no and M\u00e9t\u00e9o Belgique couldn't be extracted. Maybe carry a light jacket and umbrella, just in case - Brussels can be unpredictable like a monkey with a typewriter.",
   "alignment": "divergent"
 }
