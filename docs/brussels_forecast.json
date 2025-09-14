@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 17.854,
-  "avg_rain": 14.3,
-  "high_temp": 20.16,
-  "low_temp": 13.5,
-  "temp_range": 0.5079999999999956,
-  "rain_range": 11.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 17.9\u00b0C (1\u00b0C range), 14% rain (11% range)\nHigh 20\u00b0C / Low 14\u00b0C",
+  "avg_temp": 17.351,
+  "avg_rain": 26.4,
+  "high_temp": 19.5,
+  "low_temp": 14.62,
+  "temp_range": 0.21799999999999997,
+  "rain_range": 44.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 17.4\u00b0C (0\u00b0C range), 26% rain (45% range)\nHigh 20\u00b0C / Low 15\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates slightly lower temperatures (19.4\u00b0C) and possible rain, not stated by the baseline. Unfortunately, data from YR.no and M\u00e9t\u00e9o Belgique couldn't be extracted. Maybe carry a light jacket and umbrella, just in case - Brussels can be unpredictable like a monkey with a typewriter.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a sunny day in Brussels, which diverges from the cloudy baseline with 26% chance of rain. Meteoblue: sun vs baseline: cloudy with 26% rain; temperature and rain amount not stated. With the sun out, it might be a perfect day to spot bumblebees in the local parks.",
   "alignment": "divergent"
 }
