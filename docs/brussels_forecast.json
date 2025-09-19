@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 24.085,
-  "avg_rain": 0.0,
-  "high_temp": 29.18,
-  "low_temp": 19.9,
-  "temp_range": 0.33000000000000185,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 24.1\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 29\u00b0C / Low 20\u00b0C",
+  "avg_temp": 20.822,
+  "avg_rain": 48.2,
+  "high_temp": 26.2,
+  "low_temp": 18.8,
+  "temp_range": 1.436,
+  "rain_range": 27.199999999999996,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 20.8\u00b0C (1\u00b0C range), 48% rain (27% range)\nHigh 26\u00b0C / Low 19\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue forecasts a lower temperature than the baseline. Meteoblue: 18.9\u00b0C vs baseline's average of 24.1\u00b0C. Looks like the bumblebees will enjoy a cooler day in Brussels.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast is divergent. Meteoblue suggests a higher temperature peak at approximately 29.4\u00b0C, a significant 8.6\u00b0C difference from the baseline. As for rainfall, specific data isn't stated. Looks like conditions are still pretty uncertain, so keep an umbrella handy just in case.",
   "alignment": "divergent"
 }
