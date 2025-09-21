@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 15.381,
-  "avg_rain": 72.1,
-  "high_temp": 18.22,
-  "low_temp": 13.34,
-  "temp_range": 0.1180000000000021,
-  "rain_range": 18.999999999999993,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 15.4\u00b0C (0\u00b0C range), 72% rain (19% range)\nHigh 18\u00b0C / Low 13\u00b0C",
+  "avg_temp": 15.174,
+  "avg_rain": 0.1,
+  "high_temp": 18.0,
+  "low_temp": 12.71,
+  "temp_range": 0.8919999999999995,
+  "rain_range": 0.2,
+  "summary": "Paris: \u2600\ufe0f Avg 15.2\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 18\u00b0C / Low 13\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: While the temperature is roughly aligned, there's a discrepancy in rain probability. Meteoblue predicts 0-0.2\" of rain, contradicting the baseline's 72% chance of rain. Seems like today might be a surprise, so keep an eye out and maybe pack an umbrella just in case.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Paris weather sources disagree. Meteoblue predicts light precipitation (0.1-0.2\") while baseline forecasts a dry day. Just a heads up, you might need an umbrella, don't let the rain surprise you like a monkey stealing your banana.",
   "alignment": "divergent"
 }
