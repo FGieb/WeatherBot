@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 14.989,
-  "avg_rain": 14.2,
-  "high_temp": 17.53,
-  "low_temp": 11.9,
-  "temp_range": 0.1379999999999999,
-  "rain_range": 28.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 15.0\u00b0C (0\u00b0C range), 14% rain (28% range)\nHigh 18\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 14.544999999999998,
+  "avg_rain": 0.0,
+  "high_temp": 17.2,
+  "low_temp": 11.5,
+  "temp_range": 0.15000000000000036,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 14.5\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 17\u00b0C / Low 12\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue gives different temperature data for Brussels. Temperatures are 16\u00b0C (avg), with a high of 16\u00b0C and a low of 9\u00b0C. Rain probability and wind speed are not stated. It's a fair bit cooler than expected, perhaps a good day for a jacket rather than a t-shirt.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] The weather forecasts for Brussels align completely. Meteoblue predicts a temperature between 10\u00b0C and 16\u00b0C, which is close to the baseline's 12-17\u00b0C range, and both predict no rainfall. Seems like a good day to spot a bumblebee in the park.",
+  "alignment": "unknown"
 }
