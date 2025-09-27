@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 15.715,
-  "avg_rain": 16.5,
-  "high_temp": 19.0,
-  "low_temp": 13.0,
-  "temp_range": 0.02999999999999936,
-  "rain_range": 33.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 15.7\u00b0C (0\u00b0C range), 16% rain (33% range)\nHigh 19\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 16.532,
+  "avg_rain": 0.0,
+  "high_temp": 20.8,
+  "low_temp": 13.1,
+  "temp_range": 0.5760000000000005,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 16.5\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 21\u00b0C / Low 13\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a slightly colder day. Meteoblue: 16.1\u00b0C average vs baseline 15.7\u00b0C; Rain and wind levels not stated. Hope your Friday isn't affected by these minor temperature discrepancies, Brussels!",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All available sources align with the baseline for Brussels' weather today. Meteoblue predicts a high of 63\u00b0F (17.2\u00b0C) and a low of 49\u00b0F (9.4\u00b0C), which is within the baseline's range. The sunshine duration of 6 hours also matches the baseline's sunny forecast.",
+  "alignment": "full"
 }
