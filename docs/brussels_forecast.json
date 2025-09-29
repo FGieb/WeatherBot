@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 16.57,
-  "avg_rain": 16.2,
-  "high_temp": 19.9,
-  "low_temp": 13.0,
-  "temp_range": 0.020000000000003126,
-  "rain_range": 32.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 16.6\u00b0C (0\u00b0C range), 16% rain (32% range)\nHigh 20\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 15.553999999999998,
+  "avg_rain": 27.4,
+  "high_temp": 18.41,
+  "low_temp": 12.0,
+  "temp_range": 0.2279999999999962,
+  "rain_range": 46.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 15.6\u00b0C (0\u00b0C range), 27% rain (47% range)\nHigh 18\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue forecasts a sunny day, contradicting the baseline's cloudy forecast. Meteoblue did not provide data on temperature or rain probability. Despite the divergence, it's hard to say what the day will look like without more concrete data.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast is uncertain, with Meteoblue stating different figures. Meteoblue: 19\u00b0C (delta 3.4\u00b0C), not stated rain probability, not stated hours. Seems like the weather is as unpredictable as a monkey's antics today.",
   "alignment": "divergent"
 }
