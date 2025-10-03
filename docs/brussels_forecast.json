@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.27,
-  "avg_rain": 30.0,
-  "high_temp": 15.6,
+  "avg_temp": 12.382,
+  "avg_rain": 57.3,
+  "high_temp": 14.3,
   "low_temp": 11.33,
-  "temp_range": 0.3000000000000025,
-  "rain_range": 20.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 13.3\u00b0C (0\u00b0C range), 30% rain (20% range)\nHigh 16\u00b0C / Low 11\u00b0C",
+  "temp_range": 0.07600000000000051,
+  "rain_range": 26.599999999999994,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 12.4\u00b0C (0\u00b0C range), 57% rain (27% range)\nHigh 14\u00b0C / Low 11\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue displays significantly lower temperatures (18.3\u00b0C vs 13.3\u00b0C avg) but no explicit rain data. Without YR.no and M\u00e9t\u00e9o Belgique data, the divergence can't be fully assessed. Despite the chill, it might be a good day to take a brisk walk, just like a gazelle in the savannah.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue reports slightly different weather conditions for Brussels. Meteoblue predicts 0.1-0.2\" of rain, whereas the baseline forecast shows 57% chance of rain. With these differing forecasts, it sounds like a classic day of uncertainty in Brussels - might want to bring an umbrella just in case, unless you'd prefer to dance in the rain like a gazelle.",
   "alignment": "divergent"
 }
