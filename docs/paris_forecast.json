@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 14.367,
-  "avg_rain": 49.8,
-  "high_temp": 17.1,
-  "low_temp": 11.94,
-  "temp_range": 0.34600000000000186,
-  "rain_range": 11.600000000000001,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 14.4\u00b0C (0\u00b0C range), 50% rain (12% range)\nHigh 17\u00b0C / Low 12\u00b0C",
+  "avg_temp": 15.376,
+  "avg_rain": 30.2,
+  "high_temp": 17.66,
+  "low_temp": 12.9,
+  "temp_range": 0.23199999999999932,
+  "rain_range": 44.4,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 15.4\u00b0C (0\u00b0C range), 30% rain (44% range)\nHigh 18\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The weather in Paris diverges among sources. Meteoblue predicts a slightly lower temperature range (12.8-16\u00b0C) and 0.1-0.2\" of rainfall not stated in the baseline. It feels like a classic spring day in Paris, just a bit wetter than a gazelle would prefer.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a possibility of light rain differing from the baseline's dry forecast. Meteoblue: 0.1-0.2\" of rain expected. Looks like a good day to stay indoors, unless you're a duck who enjoys a little drizzle.",
   "alignment": "divergent"
 }
