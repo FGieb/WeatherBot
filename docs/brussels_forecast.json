@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 14.323,
+  "avg_temp": 15.779,
   "avg_rain": 0.0,
-  "high_temp": 17.9,
-  "low_temp": 11.3,
-  "temp_range": 0.07399999999999807,
+  "high_temp": 19.37,
+  "low_temp": 12.5,
+  "temp_range": 0.4380000000000024,
   "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 14.3\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 18\u00b0C / Low 11\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 15.8\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 19\u00b0C / Low 12\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] Weather forecasts for Brussels align across available sources. Meteoblue predicts a similar temperature range but does not specify rain probability. The lack of data from YR.no and M\u00e9t\u00e9o Belgique means there's no material dissent.",
+  "gpt_comment": "[FULL] All sources align with the baseline for Brussels today: sunny with an average of 15.8\u00b0C and no rain. Meteoblue states a similar temperature range (12.8-15\u00b0C). Seems like a perfect day for bumblebees to enjoy the Brussels' blossoms.",
   "alignment": "unknown"
 }
