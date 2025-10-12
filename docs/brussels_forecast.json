@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 15.425999999999998,
-  "avg_rain": 0.0,
-  "high_temp": 18.6,
-  "low_temp": 12.0,
-  "temp_range": 0.17200000000000237,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 15.4\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 19\u00b0C / Low 12\u00b0C",
+  "avg_temp": 14.78,
+  "avg_rain": 7.3,
+  "high_temp": 16.87,
+  "low_temp": 12.7,
+  "temp_range": 0.5599999999999987,
+  "rain_range": 14.6,
+  "summary": "Brussels: \u2601\ufe0f Avg 14.8\u00b0C (1\u00b0C range), 7% rain (15% range)\nHigh 17\u00b0C / Low 13\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] Weather reports align across all sources. Meteoblue suggests a temperature of around 15.6\u00b0C, which is consistent with the baseline. Other sources either couldn't provide data or weren't explicit.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Verdict is unclear due to lack of data from YR.no and M\u00e9t\u00e9o Belgique. Meteoblue indicates sun but does not provide temperature or rain details. Seems like a potentially good day for bumblebees in Brussels, but more data would be helpful.",
+  "alignment": "divergent"
 }
