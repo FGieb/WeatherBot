@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.994000000000002,
-  "avg_rain": 23.7,
-  "high_temp": 15.6,
-  "low_temp": 12.4,
-  "temp_range": 0.6280000000000001,
-  "rain_range": 39.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 14.0\u00b0C (1\u00b0C range), 24% rain (39% range)\nHigh 16\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 12.418000000000001,
+  "avg_rain": 22.4,
+  "high_temp": 14.03,
+  "low_temp": 11.29,
+  "temp_range": 0.4039999999999999,
+  "rain_range": 44.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 12.4\u00b0C (0\u00b0C range), 22% rain (45% range)\nHigh 14\u00b0C / Low 11\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Verification is limited due to missing data from multiple sources. Meteoblue reports a temperature range of approximately 9-13\u00b0C, which is slightly cooler than the baseline's 12-16\u00b0C. Unfortunately, with no data from YR.no and M\u00e9t\u00e9o Belgique, the forecast remains uncertain.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue seems to contradict the baseline, but YR.no and M\u00e9t\u00e9o Belgique data couldn't be extracted. Meteoblue's temperatures aren't stated, but it indicates no rain, diverging from the baseline's 22% chance of precipitation. Given the uncertainty, perhaps it's best to carry an umbrella in case the baseline is closer to the mark - you wouldn't want to be caught in the rain like a wet monkey.",
   "alignment": "divergent"
 }
