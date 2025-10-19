@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.971,
-  "avg_rain": 33.0,
-  "high_temp": 16.89,
-  "low_temp": 11.4,
-  "temp_range": 0.34199999999999875,
-  "rain_range": 14.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 14.0\u00b0C (0\u00b0C range), 33% rain (14% range)\nHigh 17\u00b0C / Low 11\u00b0C",
+  "avg_temp": 14.763000000000002,
+  "avg_rain": 72.0,
+  "high_temp": 17.3,
+  "low_temp": 13.09,
+  "temp_range": 1.3539999999999992,
+  "rain_range": 16.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 14.8\u00b0C (1\u00b0C range), 72% rain (16% range)\nHigh 17\u00b0C / Low 13\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue hinted at rain but without explicit values. YR.no and M\u00e9t\u00e9o Belgique didn't provide data. Not an ideal day for a bumblebee to venture out without knowing the rain specifics.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a dry day, contradicting the baseline's 72% rain probability. Meteoblue: Dry vs baseline: 72% rain. Given the discrepancy, don't forget your umbrella just in case - better safe than a soaked hyena!",
   "alignment": "divergent"
 }
