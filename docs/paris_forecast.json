@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 15.699,
-  "avg_rain": 62.900000000000006,
-  "high_temp": 18.2,
-  "low_temp": 13.65,
-  "temp_range": 0.0779999999999994,
-  "rain_range": 28.6,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 15.7\u00b0C (0\u00b0C range), 63% rain (29% range)\nHigh 18\u00b0C / Low 14\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 14.691000000000003,
+  "avg_rain": 20.0,
+  "high_temp": 16.86,
+  "low_temp": 12.38,
+  "temp_range": 0.5820000000000025,
+  "rain_range": 0.0,
+  "summary": "Paris: \u2601\ufe0f Avg 14.7\u00b0C (1\u00b0C range), 20% rain (0% range)\nHigh 17\u00b0C / Low 12\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue's forecast significantly differs from the baseline. Meteoblue predicts a cooler day with temperatures around 14\u00b0C vs baseline's 15.7\u00b0C; rain not stated. With the cooler weather, it's a perfect day for Parisians to enjoy a warm caf\u00e9 au lait indoors.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue shows different temperature values for Paris. Meteoblue: 17.2\u201312.2\u00b0C vs baseline average 14.7\u00b0C (1\u00b0C range); rain and other factors not stated. If you planned a day out, don't forget to take a scarf with you, Paris can be a tricky monkey weather-wise.",
   "alignment": "divergent"
 }

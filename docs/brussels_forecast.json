@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.919999999999998,
-  "avg_rain": 35.5,
-  "high_temp": 16.28,
-  "low_temp": 11.59,
-  "temp_range": 0.40000000000000036,
-  "rain_range": 27.400000000000002,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 13.9\u00b0C (0\u00b0C range), 36% rain (27% range)\nHigh 16\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 13.17,
+  "avg_rain": 0.0,
+  "high_temp": 15.7,
+  "low_temp": 10.88,
+  "temp_range": 0.620000000000001,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 13.2\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 16\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels' weather forecast shows some divergence. Meteoblue reports light rain of 0.1-0.2\" while baseline predicts 0% rain. It's going to be a bit wetter than expected, so don't forget your umbrella if you're stepping out!",
+  "alignment": "divergent"
 }
