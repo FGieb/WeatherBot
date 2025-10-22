@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 14.691000000000003,
-  "avg_rain": 20.0,
-  "high_temp": 16.86,
-  "low_temp": 12.38,
-  "temp_range": 0.5820000000000025,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2601\ufe0f Avg 14.7\u00b0C (1\u00b0C range), 20% rain (0% range)\nHigh 17\u00b0C / Low 12\u00b0C",
+  "avg_temp": 11.379000000000001,
+  "avg_rain": 75.2,
+  "high_temp": 13.9,
+  "low_temp": 10.05,
+  "temp_range": 0.07800000000000118,
+  "rain_range": 28.0,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 11.4\u00b0C (0\u00b0C range), 75% rain (28% range)\nHigh 14\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue shows different temperature values for Paris. Meteoblue: 17.2\u201312.2\u00b0C vs baseline average 14.7\u00b0C (1\u00b0C range); rain and other factors not stated. If you planned a day out, don't forget to take a scarf with you, Paris can be a tricky monkey weather-wise.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue disagrees with the baseline. Meteoblue: not stated temp; 0-0.1\" rainfall vs baseline 75% rain; wind speed 14mph not stated in baseline. Given the weather, it's a good day for Parisian bumblebees to stay in their hives.",
   "alignment": "divergent"
 }
