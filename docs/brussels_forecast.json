@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 9.630999999999998,
-  "avg_rain": 80.1,
-  "high_temp": 12.06,
-  "low_temp": 7.8,
-  "temp_range": 0.062000000000001165,
-  "rain_range": 29.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.6\u00b0C (0\u00b0C range), 80% rain (29% range)\nHigh 12\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 9.370999999999999,
+  "avg_rain": 64.4,
+  "high_temp": 10.97,
+  "low_temp": 7.3,
+  "temp_range": 0.4219999999999988,
+  "rain_range": 9.600000000000001,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.4\u00b0C (0\u00b0C range), 64% rain (10% range)\nHigh 11\u00b0C / Low 7\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue's forecast disagrees with the baseline. Meteoblue: no rain or 0-0.1\" vs baseline 80% rain; not stated temperatures. It seems like the day might be drier than expected, good news for the donkeys in Brussels who prefer a dry day.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue differs in temperature. Meteoblue indicates a high of 15\u00b0C and a low of 9.4\u00b0C, a significant departure from the baseline's 11\u00b0C / 7\u00b0C. Rain volume and sunshine duration aren't stated.",
   "alignment": "divergent"
 }

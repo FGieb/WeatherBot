@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 11.379000000000001,
-  "avg_rain": 75.2,
-  "high_temp": 13.9,
-  "low_temp": 10.05,
-  "temp_range": 0.07800000000000118,
-  "rain_range": 28.0,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 11.4\u00b0C (0\u00b0C range), 75% rain (28% range)\nHigh 14\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 11.748000000000001,
+  "avg_rain": 47.699999999999996,
+  "high_temp": 14.12,
+  "low_temp": 8.7,
+  "temp_range": 0.25599999999999845,
+  "rain_range": 45.8,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 11.7\u00b0C (0\u00b0C range), 48% rain (46% range)\nHigh 14\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue disagrees with the baseline. Meteoblue: not stated temp; 0-0.1\" rainfall vs baseline 75% rain; wind speed 14mph not stated in baseline. Given the weather, it's a good day for Parisian bumblebees to stay in their hives.",
+  "gpt_comment": "\u26a0\ufe0f [DIVERGENT]. Meteoblue forecasts a temperature range between 11.7\u00b0C and 10.6\u00b0C (not explicitly stated) in contrast to the baseline 14\u00b0C / 9\u00b0C. Rainfall data and data from YR.no and M\u00e9t\u00e9o France are not stated. Given the uncertainty, it might be wise to carry an umbrella like a prepared bumblebee ready for a sudden shower.",
   "alignment": "divergent"
 }
