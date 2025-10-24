@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 9.370999999999999,
-  "avg_rain": 64.4,
-  "high_temp": 10.97,
-  "low_temp": 7.3,
-  "temp_range": 0.4219999999999988,
-  "rain_range": 9.600000000000001,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.4\u00b0C (0\u00b0C range), 64% rain (10% range)\nHigh 11\u00b0C / Low 7\u00b0C",
+  "avg_temp": 8.753,
+  "avg_rain": 96.8,
+  "high_temp": 9.77,
+  "low_temp": 6.7,
+  "temp_range": 0.2539999999999978,
+  "rain_range": 6.400000000000006,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.8\u00b0C (0\u00b0C range), 97% rain (6% range)\nHigh 10\u00b0C / Low 7\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue differs in temperature. Meteoblue indicates a high of 15\u00b0C and a low of 9.4\u00b0C, a significant departure from the baseline's 11\u00b0C / 7\u00b0C. Rain volume and sunshine duration aren't stated.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests slightly cooler temperatures (around 10\u00b0C vs baseline's 8.8\u00b0C). Rainfall not stated. Seems like the weather might be more suited for a hyena who enjoys cooler climates than a bumblebee who prefers it a bit warmer!",
   "alignment": "divergent"
 }
