@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 12.197,
-  "avg_rain": 74.4,
-  "high_temp": 14.0,
-  "low_temp": 10.45,
-  "temp_range": 0.2060000000000013,
-  "rain_range": 24.39999999999999,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.2\u00b0C (0\u00b0C range), 74% rain (24% range)\nHigh 14\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 10.581,
+  "avg_rain": 33.9,
+  "high_temp": 12.46,
+  "low_temp": 8.5,
+  "temp_range": 0.6020000000000021,
+  "rain_range": 59.8,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 10.6\u00b0C (1\u00b0C range), 34% rain (60% range)\nHigh 12\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Sources are not in agreement. Meteoblue forecasts a temperature of around 13.3\u00b0C (56\u00b0F), slightly higher than the baseline's average of 12.2\u00b0C. Rainfall is not explicitly stated by Meteoblue. The lack of data from other sources adds to the uncertainty of the forecast. This might just be one of those days where you feel like a donkey, not knowing whether to carry an umbrella or not.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a slightly colder day at around 13.9\u00b0C compared to the baseline's average of 10.6\u00b0C. Rainfall is not stated. Quite the Parisian spring day, just remember to take a jacket.",
   "alignment": "divergent"
 }

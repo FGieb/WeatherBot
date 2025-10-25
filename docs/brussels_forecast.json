@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.753,
-  "avg_rain": 96.8,
-  "high_temp": 9.77,
-  "low_temp": 6.7,
-  "temp_range": 0.2539999999999978,
-  "rain_range": 6.400000000000006,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.8\u00b0C (0\u00b0C range), 97% rain (6% range)\nHigh 10\u00b0C / Low 7\u00b0C",
+  "avg_temp": 7.936999999999999,
+  "avg_rain": 28.7,
+  "high_temp": 9.41,
+  "low_temp": 5.8,
+  "temp_range": 0.8739999999999988,
+  "rain_range": 48.199999999999996,
+  "summary": "Brussels: \u2601\ufe0f Avg 7.9\u00b0C (1\u00b0C range), 29% rain (48% range)\nHigh 9\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests slightly cooler temperatures (around 10\u00b0C vs baseline's 8.8\u00b0C). Rainfall not stated. Seems like the weather might be more suited for a hyena who enjoys cooler climates than a bumblebee who prefers it a bit warmer!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecasts are somewhat discordant. Meteoblue predicts a temperature range of 7\u201311\u00b0C, which is noticeably warmer than the baseline's 6-9\u00b0C. Without explicit data from other sources, it's hard to make a definitive call, but it seems like you might want to dress a bit warmer than the baseline suggests.",
   "alignment": "divergent"
 }
