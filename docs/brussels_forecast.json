@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 7.936999999999999,
-  "avg_rain": 28.7,
-  "high_temp": 9.41,
-  "low_temp": 5.8,
-  "temp_range": 0.8739999999999988,
-  "rain_range": 48.199999999999996,
-  "summary": "Brussels: \u2601\ufe0f Avg 7.9\u00b0C (1\u00b0C range), 29% rain (48% range)\nHigh 9\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 9.405000000000001,
+  "avg_rain": 83.6,
+  "high_temp": 10.76,
+  "low_temp": 7.1,
+  "temp_range": 0.20999999999999908,
+  "rain_range": 15.200000000000003,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.4\u00b0C (0\u00b0C range), 84% rain (15% range)\nHigh 11\u00b0C / Low 7\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecasts are somewhat discordant. Meteoblue predicts a temperature range of 7\u201311\u00b0C, which is noticeably warmer than the baseline's 6-9\u00b0C. Without explicit data from other sources, it's hard to make a definitive call, but it seems like you might want to dress a bit warmer than the baseline suggests.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a dry day while baseline predicts 84% rain. Meteoblue: not stated temperature range. Hopefully, the bumblebees in Brussels will enjoy the drier conditions if Meteoblue's prediction holds true.",
   "alignment": "divergent"
 }

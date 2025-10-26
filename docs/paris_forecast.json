@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 10.581,
-  "avg_rain": 33.9,
-  "high_temp": 12.46,
-  "low_temp": 8.5,
-  "temp_range": 0.6020000000000021,
-  "rain_range": 59.8,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 10.6\u00b0C (1\u00b0C range), 34% rain (60% range)\nHigh 12\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 12.564,
+  "avg_rain": 47.4,
+  "high_temp": 14.3,
+  "low_temp": 11.2,
+  "temp_range": 0.15200000000000102,
+  "rain_range": 14.799999999999997,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.6\u00b0C (0\u00b0C range), 47% rain (15% range)\nHigh 14\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a slightly colder day at around 13.9\u00b0C compared to the baseline's average of 10.6\u00b0C. Rainfall is not stated. Quite the Parisian spring day, just remember to take a jacket.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a dry day in Paris, conflicting with the baseline's 47% rain forecast. No other data available for comparison. This disagreement makes it a bit of a gamble whether to carry an umbrella or not - don't make a donkey decision, check closer to the time.",
   "alignment": "divergent"
 }
