@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 12.514,
-  "avg_rain": 63.4,
-  "high_temp": 14.2,
-  "low_temp": 10.94,
-  "temp_range": 0.22799999999999798,
-  "rain_range": 22.799999999999997,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 12.5\u00b0C (0\u00b0C range), 63% rain (23% range)\nHigh 14\u00b0C / Low 11\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 12.620000000000001,
+  "avg_rain": 50.0,
+  "high_temp": 14.67,
+  "low_temp": 11.16,
+  "temp_range": 0.32000000000000206,
+  "rain_range": 20.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 12.6\u00b0C (0\u00b0C range), 50% rain (20% range)\nHigh 15\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue shows a different weather forecast for Brussels. Meteoblue predicts 0-0.1\" rainfall, contradicting the baseline's 63% rain prediction. Seems like the weather is as unpredictable as a monkey's antics today.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a drier day with only 2 hours of potential rain, unlike the baseline's 50% chance. Temperature details from Meteoblue aren't stated. A day with less rain? Sounds like a bumblebee's delight for more chances of pollination.",
   "alignment": "divergent"
 }
