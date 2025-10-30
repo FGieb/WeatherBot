@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 11.048,
-  "avg_rain": 0.0,
-  "high_temp": 13.8,
-  "low_temp": 7.5,
-  "temp_range": 0.2560000000000002,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 11.0\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 14\u00b0C / Low 8\u00b0C",
+  "avg_temp": 13.43,
+  "avg_rain": 45.9,
+  "high_temp": 14.9,
+  "low_temp": 11.96,
+  "temp_range": 0.6999999999999957,
+  "rain_range": 68.2,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 13.4\u00b0C (1\u00b0C range), 46% rain (68% range)\nHigh 15\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All forecasts align for Brussels today. Meteoblue also predicts an average temperature of 11\u00b0C and no rainfall. Perfect weather for a stroll in the park, just keep a lookout for bumblebees enjoying the sunshine too.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Forecast for Brussels is partially aligned. Meteoblue suggests warmer temperatures (19\u00b0C vs 13.4\u00b0C baseline) but does not state rain probability or hours. With such a pleasant temperature, it's a perfect day for the bumblebees in Brussels to get busy.",
+  "alignment": "divergent"
 }
