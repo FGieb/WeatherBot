@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.43,
-  "avg_rain": 45.9,
-  "high_temp": 14.9,
-  "low_temp": 11.96,
-  "temp_range": 0.6999999999999957,
-  "rain_range": 68.2,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 13.4\u00b0C (1\u00b0C range), 46% rain (68% range)\nHigh 15\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 11.803999999999998,
+  "avg_rain": 57.4,
+  "high_temp": 14.2,
+  "low_temp": 10.04,
+  "temp_range": 1.072000000000001,
+  "rain_range": 34.8,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 11.8\u00b0C (1\u00b0C range), 57% rain (35% range)\nHigh 14\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Forecast for Brussels is partially aligned. Meteoblue suggests warmer temperatures (19\u00b0C vs 13.4\u00b0C baseline) but does not state rain probability or hours. With such a pleasant temperature, it's a perfect day for the bumblebees in Brussels to get busy.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels. Meteoblue indicates a temperature range of 8-14\u00b0C, which corresponds to the baseline's average of 11.8\u00b0C within a 1\u00b0C margin. Rain probability and specific hours are not stated. Seems like a good day to be a bumblebee in Brussels, with mild temperatures and potential for some rain.",
+  "alignment": "unknown"
 }
