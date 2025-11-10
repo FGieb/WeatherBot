@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 10.691,
-  "avg_rain": 46.1,
-  "high_temp": 12.03,
-  "low_temp": 8.13,
-  "temp_range": 0.9419999999999966,
-  "rain_range": 12.200000000000003,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 10.7\u00b0C (1\u00b0C range), 46% rain (12% range)\nHigh 12\u00b0C / Low 8\u00b0C",
+  "avg_temp": 12.169,
+  "avg_rain": 0.0,
+  "high_temp": 14.99,
+  "low_temp": 8.88,
+  "temp_range": 0.058000000000001606,
+  "rain_range": 0.0,
+  "summary": "Paris: \u2600\ufe0f Avg 12.2\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 15\u00b0C / Low 9\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a dry day, contrasting the baseline's 46% rain prediction. No explicit temperature or rain probability stated by Meteoblue. Despite the disagreement, it seems like Paris might have a changeable weather today - better pack an umbrella, just in case.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] The weather today in Paris aligns across all sources. Meteoblue reports a similar temperature range of 8\u201312\u00b0C and no rain, matching the baseline forecast. The lack of data from YR.no and M\u00e9t\u00e9o France doesn't impact the overall consensus.",
+  "alignment": "full"
 }
