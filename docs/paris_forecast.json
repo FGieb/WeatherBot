@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 15.892,
-  "avg_rain": 0.0,
-  "high_temp": 18.7,
-  "low_temp": 11.4,
-  "temp_range": 0.5039999999999978,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 15.9\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 19\u00b0C / Low 11\u00b0C",
+  "avg_temp": 16.368000000000002,
+  "avg_rain": 28.6,
+  "high_temp": 18.75,
+  "low_temp": 12.5,
+  "temp_range": 1.336000000000002,
+  "rain_range": 22.8,
+  "summary": "Paris: \u2601\ufe0f Avg 16.4\u00b0C (1\u00b0C range), 29% rain (23% range)\nHigh 19\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Paris' weather for today shows disagreement between sources. Meteoblue suggests a cooler day with a high of 15.5\u00b0C (60\u00b0F) compared to the baseline's 19\u00b0C. Sadly, no bumblebees basking in Parisian sunshine today, it seems a bit too chilly.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: While the baseline predicts an average of 16.4\u00b0C and 29% rain, Meteoblue forecasts a dry day. Meteoblue: 17.2\u00b0C average (0.8\u00b0C delta vs baseline) and 0% rain. Better grab your sunglasses rather than your umbrella, it seems like a lovely day to spot bumblebees in the Jardin du Luxembourg!",
   "alignment": "divergent"
 }

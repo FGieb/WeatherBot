@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 14.668000000000001,
-  "avg_rain": 0.0,
-  "high_temp": 16.8,
-  "low_temp": 12.8,
-  "temp_range": 0.2240000000000002,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 14.7\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 17\u00b0C / Low 13\u00b0C",
+  "avg_temp": 14.206,
+  "avg_rain": 3.5,
+  "high_temp": 16.05,
+  "low_temp": 11.3,
+  "temp_range": 1.8919999999999977,
+  "rain_range": 7.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 14.2\u00b0C (2\u00b0C range), 4% rain (7% range)\nHigh 16\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels. Meteoblue predicts a temperature range of 50\u00b0F to 58\u00b0F, which converts to approximately 10\u00b0C to 14.4\u00b0C, falling within the baseline's range. The wind speed or rain probability was not stated by Meteoblue.",
+  "gpt_comment": "[PARTIAL] The weather forecast for Brussels partially aligns. Meteoblue suggests a slightly cooler temperature with highs of 16\u00b0C (61\u00b0F) and lows of 14\u00b0C (57\u00b0F), but rain data is not stated. With temperatures like this, it feels like a typical spring day in Brussels.",
   "alignment": "unknown"
 }
