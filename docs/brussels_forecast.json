@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 10.406,
-  "avg_rain": 48.3,
-  "high_temp": 15.28,
-  "low_temp": 6.7,
-  "temp_range": 6.092000000000002,
-  "rain_range": 88.6,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 10.4\u00b0C (6\u00b0C range), 48% rain (89% range)\nHigh 15\u00b0C / Low 7\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.678,
+  "avg_rain": 0.0,
+  "high_temp": 10.4,
+  "low_temp": 7.0,
+  "temp_range": 0.7639999999999976,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 8.7\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 10\u00b0C / Low 7\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue data differs from the baseline. Meteoblue states rain amount as 0.1-0.2\", while baseline has 48% rain probability, but the amount is not stated. A rainy day in Brussels, perfect for indoor activities, maybe a museum visit?",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts light rain, conflicting with the baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated when. If you're planning to be outside today in Brussels, better bring an umbrella just like a wise monkey would do.",
   "alignment": "divergent"
 }
