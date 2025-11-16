@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.678,
-  "avg_rain": 0.0,
-  "high_temp": 10.4,
-  "low_temp": 7.0,
-  "temp_range": 0.7639999999999976,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 8.7\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 10\u00b0C / Low 7\u00b0C",
+  "avg_temp": 6.375,
+  "avg_rain": 53.5,
+  "high_temp": 8.12,
+  "low_temp": 4.4,
+  "temp_range": 0.34999999999999964,
+  "rain_range": 29.400000000000006,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.4\u00b0C (0\u00b0C range), 54% rain (29% range)\nHigh 8\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts light rain, conflicting with the baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated when. If you're planning to be outside today in Brussels, better bring an umbrella just like a wise monkey would do.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a dry day unlike the baseline's 54% rain probability. Temperature data and rain hours not stated by Meteoblue. It seems like the weather is playing a game of hide and seek, just like a mischievous monkey.",
   "alignment": "divergent"
 }
