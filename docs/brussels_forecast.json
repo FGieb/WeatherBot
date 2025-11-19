@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 4.866999999999999,
-  "avg_rain": 78.2,
-  "high_temp": 6.61,
-  "low_temp": 3.0,
-  "temp_range": 1.2939999999999996,
-  "rain_range": 3.5999999999999943,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 4.9\u00b0C (1\u00b0C range), 78% rain (4% range)\nHigh 7\u00b0C / Low 3\u00b0C",
+  "avg_temp": 2.482,
+  "avg_rain": 70.8,
+  "high_temp": 3.41,
+  "low_temp": 1.04,
+  "temp_range": 0.03600000000000003,
+  "rain_range": 4.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 2.5\u00b0C (0\u00b0C range), 71% rain (4% range)\nHigh 3\u00b0C / Low 1\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates lower temperatures compared to the baseline, but the exact numbers are not stated. Meteoblue also suggests some precipitation, but the amount and probability are not explicitly given. Seems like it might be a good day to stay in and enjoy some indoor activities.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue reports different weather conditions for Brussels. Meteoblue: high 6.7\u00b0C / low 3.3\u00b0C vs baseline high 3\u00b0C / low 1\u00b0C; not stated rain probability and hours. It seems like a good time for Brussels' bumblebees to stay in their hives with this cold weather!",
   "alignment": "divergent"
 }
