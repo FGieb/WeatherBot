@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 3.645,
-  "avg_rain": 35.9,
-  "high_temp": 6.9,
-  "low_temp": 1.64,
-  "temp_range": 1.63,
-  "rain_range": 63.8,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 3.6\u00b0C (2\u00b0C range), 36% rain (64% range)\nHigh 7\u00b0C / Low 2\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 3.378,
+  "avg_rain": 18.599999999999998,
+  "high_temp": 5.2,
+  "low_temp": 0.84,
+  "temp_range": 0.12400000000000011,
+  "rain_range": 36.4,
+  "summary": "Paris: \u2601\ufe0f Avg 3.4\u00b0C (0\u00b0C range), 19% rain (36% range)\nHigh 5\u00b0C / Low 1\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Forecast is inconsistent due to lack of data from multiple sources. Meteoblue indicates a slightly higher temperature with a range of 5-7\u00b0C. With such a sparse data, it's like trying to spot a gazelle in a dense forest - not impossible, but definitely challenging.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs from the baseline. It shows a possible temperature difference of up to 3.3\u00b0C (40\u00b0F vs 5\u00b0C high), but rain quantity isn't stated. It seems like a perfect day to observe the playful energy of a gazella, but remember to layer up!",
   "alignment": "divergent"
 }
