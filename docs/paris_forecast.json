@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 3.378,
-  "avg_rain": 18.599999999999998,
-  "high_temp": 5.2,
-  "low_temp": 0.84,
-  "temp_range": 0.12400000000000011,
-  "rain_range": 36.4,
-  "summary": "Paris: \u2601\ufe0f Avg 3.4\u00b0C (0\u00b0C range), 19% rain (36% range)\nHigh 5\u00b0C / Low 1\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 5.622,
+  "avg_rain": 60.9,
+  "high_temp": 8.1,
+  "low_temp": 0.56,
+  "temp_range": 1.516,
+  "rain_range": 16.200000000000003,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 5.6\u00b0C (2\u00b0C range), 61% rain (16% range)\nHigh 8\u00b0C / Low 1\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs from the baseline. It shows a possible temperature difference of up to 3.3\u00b0C (40\u00b0F vs 5\u00b0C high), but rain quantity isn't stated. It seems like a perfect day to observe the playful energy of a gazella, but remember to layer up!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue suggests a colder day than indicated by the base forecast. Meteoblue: 3.9\u00b0C average, 0.1 inches possible rain (not stated hours) vs baseline 5.6\u00b0C average, 61% rain (not stated hours). A chilly day, keep your jackets handy, like a monkey would its bananas.",
   "alignment": "divergent"
 }

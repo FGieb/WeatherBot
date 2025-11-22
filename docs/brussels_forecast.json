@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 2.0869999999999997,
-  "avg_rain": 10.0,
-  "high_temp": 3.43,
-  "low_temp": -0.2,
-  "temp_range": 0.4540000000000002,
-  "rain_range": 20.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 2.1\u00b0C (0\u00b0C range), 10% rain (20% range)\nHigh 3\u00b0C / Low -0\u00b0C",
+  "avg_temp": 2.991,
+  "avg_rain": 61.4,
+  "high_temp": 5.24,
+  "low_temp": -0.67,
+  "temp_range": 0.017999999999999794,
+  "rain_range": 32.39999999999999,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 3.0\u00b0C (0\u00b0C range), 61% rain (32% range)\nHigh 5\u00b0C / Low -1\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a warmer day than the baseline suggests. Meteoblue indicates a temperature around 4.4\u00b0C, which is a significant 2.3\u00b0C increase from the baseline's 2.1\u00b0C average. Rain and specific hours are not stated by Meteoblue.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecasts are inconsistent today. Meteoblue predicts a high of 4\u00b0C (39\u00b0F), which is slightly warmer than the baseline's 3\u00b0C, and a low of -2\u00b0C (28\u00b0F) which is colder than the baseline's -1\u00b0C. The rain probability and wind speed were not stated.",
   "alignment": "divergent"
 }
