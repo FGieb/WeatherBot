@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 5.734,
-  "avg_rain": 73.5,
-  "high_temp": 6.58,
-  "low_temp": 5.29,
-  "temp_range": 0.10800000000000054,
-  "rain_range": 53.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.7\u00b0C (0\u00b0C range), 74% rain (53% range)\nHigh 7\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 5.667,
+  "avg_rain": 46.0,
+  "high_temp": 7.21,
+  "low_temp": 3.86,
+  "temp_range": 0.0940000000000003,
+  "rain_range": 68.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.7\u00b0C (0\u00b0C range), 46% rain (68% range)\nHigh 7\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue predicts a dry day in contrast to the baseline's 74% rain probability. The temperature difference is not stated. Remember, never trust a monkey with your umbrella, especially in Brussels.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue data differs from the baseline. Meteoblue shows a slightly higher rain volume (0.1-0.2\" vs. baseline not stated). Rest of the data from YR.no and M\u00e9t\u00e9o Belgique are not available. It's a bit of a pig in a poke today, so better grab an umbrella just in case.",
   "alignment": "divergent"
 }
