@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 5.667,
-  "avg_rain": 46.0,
-  "high_temp": 7.21,
-  "low_temp": 3.86,
-  "temp_range": 0.0940000000000003,
-  "rain_range": 68.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.7\u00b0C (0\u00b0C range), 46% rain (68% range)\nHigh 7\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 4.354,
+  "avg_rain": 0.0,
+  "high_temp": 7.33,
+  "low_temp": 2.0,
+  "temp_range": 0.8280000000000007,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 4.4\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 7\u00b0C / Low 2\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue data differs from the baseline. Meteoblue shows a slightly higher rain volume (0.1-0.2\" vs. baseline not stated). Rest of the data from YR.no and M\u00e9t\u00e9o Belgique are not available. It's a bit of a pig in a poke today, so better grab an umbrella just in case.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue deviates from the baseline with a 0-0.1\" rain prediction, while the baseline suggests a dry day. Meteoblue also shows slightly higher temperatures of 39-42\u00b0F (comparable to 3.9-5.5\u00b0C) as opposed to the baseline average of 4.4\u00b0C. Perfect day for bumblebees to enjoy the raindrops.",
   "alignment": "divergent"
 }
