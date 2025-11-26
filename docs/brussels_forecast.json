@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 4.354,
-  "avg_rain": 0.0,
-  "high_temp": 7.33,
-  "low_temp": 2.0,
-  "temp_range": 0.8280000000000007,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 4.4\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 7\u00b0C / Low 2\u00b0C",
+  "avg_temp": 4.5,
+  "avg_rain": 2.0,
+  "high_temp": 6.09,
+  "low_temp": 0.9,
+  "temp_range": 1.52,
+  "rain_range": 4.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 4.5\u00b0C (2\u00b0C range), 2% rain (4% range)\nHigh 6\u00b0C / Low 1\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue deviates from the baseline with a 0-0.1\" rain prediction, while the baseline suggests a dry day. Meteoblue also shows slightly higher temperatures of 39-42\u00b0F (comparable to 3.9-5.5\u00b0C) as opposed to the baseline average of 4.4\u00b0C. Perfect day for bumblebees to enjoy the raindrops.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The weather forecast for Brussels is notably different on Meteoblue. Meteoblue predicts temperatures of around 6.6\u00b0C\u20132.2\u00b0C, which is 2.1\u20131.2\u00b0C higher than the baseline. Meteoblue does not provide information on rainfall or sunshine duration. With slightly warmer temperatures, it could be a good day for a walk, just keep an eye out for any rogue bumblebees enjoying the warmth.",
   "alignment": "divergent"
 }
