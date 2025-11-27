@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 4.5,
-  "avg_rain": 2.0,
-  "high_temp": 6.09,
-  "low_temp": 0.9,
-  "temp_range": 1.52,
-  "rain_range": 4.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 4.5\u00b0C (2\u00b0C range), 2% rain (4% range)\nHigh 6\u00b0C / Low 1\u00b0C",
+  "avg_temp": 8.32,
+  "avg_rain": 46.6,
+  "high_temp": 9.7,
+  "low_temp": 6.4,
+  "temp_range": 0.8399999999999999,
+  "rain_range": 53.2,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.3\u00b0C (1\u00b0C range), 47% rain (53% range)\nHigh 10\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The weather forecast for Brussels is notably different on Meteoblue. Meteoblue predicts temperatures of around 6.6\u00b0C\u20132.2\u00b0C, which is 2.1\u20131.2\u00b0C higher than the baseline. Meteoblue does not provide information on rainfall or sunshine duration. With slightly warmer temperatures, it could be a good day for a walk, just keep an eye out for any rogue bumblebees enjoying the warmth.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs significantly with the baseline. Meteoblue: not stated temperature but implies colder with 45\u00b0F (7.2\u00b0C) / 37\u00b0F (2.7\u00b0C); not stated rain probability or hours. It seems like a day more suited for a hibernating bumblebee than an outdoor activity in Brussels.",
   "alignment": "divergent"
 }
