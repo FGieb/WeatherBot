@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.32,
-  "avg_rain": 46.6,
-  "high_temp": 9.7,
-  "low_temp": 6.4,
-  "temp_range": 0.8399999999999999,
-  "rain_range": 53.2,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.3\u00b0C (1\u00b0C range), 47% rain (53% range)\nHigh 10\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 9.056999999999999,
+  "avg_rain": 22.0,
+  "high_temp": 11.06,
+  "low_temp": 6.2,
+  "temp_range": 2.194000000000001,
+  "rain_range": 4.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 9.1\u00b0C (2\u00b0C range), 22% rain (4% range)\nHigh 11\u00b0C / Low 6\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs significantly with the baseline. Meteoblue: not stated temperature but implies colder with 45\u00b0F (7.2\u00b0C) / 37\u00b0F (2.7\u00b0C); not stated rain probability or hours. It seems like a day more suited for a hibernating bumblebee than an outdoor activity in Brussels.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] The weather forecasts align well. Meteoblue suggests similar temperatures around 9.4\u00b0C but rain details are not stated. Guess it's the kind of day when the bumblebees stay in their hives, waiting for sunnier times.",
+  "alignment": "full"
 }
