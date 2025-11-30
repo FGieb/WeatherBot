@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 5.74,
-  "avg_rain": 23.7,
-  "high_temp": 7.89,
-  "low_temp": 3.3,
-  "temp_range": 0.5200000000000005,
-  "rain_range": 47.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 5.7\u00b0C (1\u00b0C range), 24% rain (47% range)\nHigh 8\u00b0C / Low 3\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 5.36,
+  "avg_rain": 0.0,
+  "high_temp": 7.18,
+  "low_temp": 2.0,
+  "temp_range": 1.92,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 5.4\u00b0C (2\u00b0C range), 0% rain (0% range)\nHigh 7\u00b0C / Low 2\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Forecasts are inconsistent today. Meteoblue suggests a slight chance of rain (0-0.1\") that wasn't stated in the baseline. Too bad we don't have more sources to confirm, it's like trying to catch a bumblebee in the Brussels mist!",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] The weather forecasts align today. Meteoblue also predicts sunny weather, but the temperature is not stated. A classic spring day in Brussels, perfect for a caf\u00e9 terrace.",
+  "alignment": "unknown"
 }
