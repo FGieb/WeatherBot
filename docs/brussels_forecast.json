@@ -1,13 +1,1 @@
-{
-  "city": "Brussels",
-  "avg_temp": 6.68,
-  "avg_rain": 0.0,
-  "high_temp": 7.65,
-  "low_temp": 5.4,
-  "temp_range": 1.2799999999999985,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 6.7\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 8\u00b0C / Low 5\u00b0C",
-  "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] The weather is mostly consistent across sources, with one exception. Meteoblue indicates a bit lower temperature range with 7.2\u00b0C to 2.8\u00b0C vs the baseline's 8\u00b0C/5\u00b0C. Given the lower temperatures, it might be a good day for the bumblebees to stay in their hives.",
-  "alignment": "full"
-}
+{"city": "Brussels", "avg_temp": 6.272, "avg_rain": 0.0, "high_temp": 8.87, "low_temp": 4.2, "temp_range": 1.0639999999999992, "rain_range": 0.0, "summary": "Brussels: \u2600\ufe0f Avg 6.3\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 9\u00b0C / Low 4\u00b0C", "graph_file": "docs/brussels_comparison.png"}
