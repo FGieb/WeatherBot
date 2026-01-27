@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 7.3660000000000005,
-  "avg_rain": 58.6,
-  "high_temp": 9.5,
-  "low_temp": 5.46,
-  "temp_range": 0.37200000000000166,
-  "rain_range": 37.2,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 7.4\u00b0C (0\u00b0C range), 59% rain (37% range)\nHigh 10\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 6.0360000000000005,
+  "avg_rain": 0.0,
+  "high_temp": 7.64,
+  "low_temp": 4.1,
+  "temp_range": 0.1120000000000001,
+  "rain_range": 0.0,
+  "summary": "Paris: \u2600\ufe0f Avg 6.0\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 8\u00b0C / Low 4\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The weather forecast for Paris shows some variance. Meteoblue suggests a slightly higher temperature around 8.3\u00b0C but does not state rain probability. Seems like a typical spring day in Paris, perfect for a stroll if you don't mind a bit of chill.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests there might be light rain, contradicting baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated hours, vs baseline 0% rain. The weather might get a bit tricky for bumblebees out there.",
   "alignment": "divergent"
 }
