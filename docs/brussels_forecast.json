@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 2.3360000000000003,
-  "avg_rain": 0.0,
-  "high_temp": 3.71,
-  "low_temp": 1.19,
-  "temp_range": 0.23200000000000065,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 2.3\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 4\u00b0C / Low 1\u00b0C",
+  "avg_temp": 4.141,
+  "avg_rain": 24.0,
+  "high_temp": 5.54,
+  "low_temp": 2.1,
+  "temp_range": 0.0019999999999997797,
+  "rain_range": 32.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 4.1\u00b0C (0\u00b0C range), 24% rain (32% range)\nHigh 6\u00b0C / Low 2\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a higher temperature range with a high of 5.6\u00b0C (42\u00b0F) and a low of 3.3\u00b0C (38\u00b0F), compared to the baseline's 4\u00b0C/1\u00b0C. No other deviations or data from other sources. Seems like a typical winter day in Brussels, just a bit chillier than the baseline predicted.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue data differs from the baseline. Meteoblue indicates a lower temperature range of 0.5-1\u00b0C (33-37\u00b0F) and does not provide rain probability or hours. The absence of other sources increases forecast uncertainty.",
   "alignment": "divergent"
 }
