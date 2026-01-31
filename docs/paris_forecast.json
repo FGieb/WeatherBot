@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 7.948,
-  "avg_rain": 0.0,
-  "high_temp": 9.65,
-  "low_temp": 5.5,
-  "temp_range": 0.34399999999999853,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 7.9\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 10\u00b0C / Low 6\u00b0C",
+  "avg_temp": 6.849,
+  "avg_rain": 51.2,
+  "high_temp": 7.55,
+  "low_temp": 5.2,
+  "temp_range": 0.4980000000000011,
+  "rain_range": 31.199999999999996,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 6.8\u00b0C (0\u00b0C range), 51% rain (31% range)\nHigh 8\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts light rain, contrary to the baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated when. Seems like the weather might be as unpredictable as a monkey on a bicycle today in Paris.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Some discrepancy with Meteoblue's data. Meteoblue indicates a temperature of around 8\u00b0C (not stated range), but no explicit data on rainfall probability. In absence of complete data, it's a bit of a guessing game, like trying to spot a donkey playing hide and seek in the Parisian fog.",
   "alignment": "divergent"
 }
