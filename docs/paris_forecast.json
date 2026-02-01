@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 6.849,
-  "avg_rain": 51.2,
-  "high_temp": 7.55,
-  "low_temp": 5.2,
-  "temp_range": 0.4980000000000011,
-  "rain_range": 31.199999999999996,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 6.8\u00b0C (0\u00b0C range), 51% rain (31% range)\nHigh 8\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.448,
+  "avg_rain": 33.4,
+  "high_temp": 10.4,
+  "low_temp": 5.53,
+  "temp_range": 0.30400000000000027,
+  "rain_range": 13.2,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 8.4\u00b0C (0\u00b0C range), 33% rain (13% range)\nHigh 10\u00b0C / Low 6\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Some discrepancy with Meteoblue's data. Meteoblue indicates a temperature of around 8\u00b0C (not stated range), but no explicit data on rainfall probability. In absence of complete data, it's a bit of a guessing game, like trying to spot a donkey playing hide and seek in the Parisian fog.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a dry day in Paris while baseline predicts 33% rain. Meteoblue does not provide temperature data. It's a classic case of \"monkey weather\"\u2014you never know if you'll get rain or shine!",
   "alignment": "divergent"
 }
