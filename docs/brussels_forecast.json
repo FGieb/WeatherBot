@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 7.406000000000001,
-  "avg_rain": 0.0,
-  "high_temp": 10.2,
-  "low_temp": 3.68,
-  "temp_range": 0.09200000000000141,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 7.4\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 10\u00b0C / Low 4\u00b0C",
+  "avg_temp": 6.558,
+  "avg_rain": 56.9,
+  "high_temp": 7.61,
+  "low_temp": 4.5,
+  "temp_range": 0.12400000000000055,
+  "rain_range": 46.2,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.6\u00b0C (0\u00b0C range), 57% rain (46% range)\nHigh 8\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels weather sources conflict today. Meteoblue predicts a slightly higher temperature range (7.8-8.3\u00b0C) compared to the baseline's 7.4\u00b0C. The other sources were not explicit. Looks like the gazelles at the Brussels zoo might enjoy a slightly warmer afternoon.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The weather forecasts are not aligned today. Meteoblue indicates a higher temperature, with a peak of 11.1\u00b0C versus the baseline's 8\u00b0C. No other sources could provide relevant data.",
   "alignment": "divergent"
 }
