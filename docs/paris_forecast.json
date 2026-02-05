@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 9.58,
-  "avg_rain": 47.5,
-  "high_temp": 10.92,
-  "low_temp": 8.5,
-  "temp_range": 0.03999999999999915,
-  "rain_range": 11.799999999999997,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 9.6\u00b0C (0\u00b0C range), 48% rain (12% range)\nHigh 11\u00b0C / Low 8\u00b0C",
+  "avg_temp": 9.855,
+  "avg_rain": 25.7,
+  "high_temp": 11.3,
+  "low_temp": 8.6,
+  "temp_range": 0.05000000000000071,
+  "rain_range": 51.4,
+  "summary": "Paris: \u2601\ufe0f Avg 9.9\u00b0C (0\u00b0C range), 26% rain (51% range)\nHigh 11\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Weather sources present conflicting data. Meteoblue suggests a much colder day with a high of 11.6\u00b0C and a low of 3.8\u00b0C. No specific rain probability or hours were stated by Meteoblue. Grab your coat if you're heading out, it's a bit chillier than expected!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates slight rain (0.1-0.2\") whereas baseline predicts a 26% chance of rain. Temperature details are not stated by Meteoblue. This might be the day to carry an umbrella, just in case, even if the rain seems more like a timid gazelle than a roaring lion.",
   "alignment": "divergent"
 }

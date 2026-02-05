@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 6.558,
-  "avg_rain": 56.9,
-  "high_temp": 7.61,
-  "low_temp": 4.5,
-  "temp_range": 0.12400000000000055,
-  "rain_range": 46.2,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.6\u00b0C (0\u00b0C range), 57% rain (46% range)\nHigh 8\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.053,
+  "avg_rain": 55.3,
+  "high_temp": 9.4,
+  "low_temp": 5.21,
+  "temp_range": 0.8140000000000018,
+  "rain_range": 30.599999999999994,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.1\u00b0C (1\u00b0C range), 55% rain (31% range)\nHigh 9\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The weather forecasts are not aligned today. Meteoblue indicates a higher temperature, with a peak of 11.1\u00b0C versus the baseline's 8\u00b0C. No other sources could provide relevant data.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts less rainfall (0-0.1\") than the baseline (55% probability). The temperatures from other sources were not stated. Despite the divergence, it seems like an ideal day for those who prefer less rainfall, perfect for a stroll in the park.",
   "alignment": "divergent"
 }
