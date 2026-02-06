@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.053,
-  "avg_rain": 55.3,
-  "high_temp": 9.4,
-  "low_temp": 5.21,
-  "temp_range": 0.8140000000000018,
-  "rain_range": 30.599999999999994,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.1\u00b0C (1\u00b0C range), 55% rain (31% range)\nHigh 9\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.142,
+  "avg_rain": 0.0,
+  "high_temp": 10.8,
+  "low_temp": 5.1,
+  "temp_range": 0.1559999999999988,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 8.1\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 11\u00b0C / Low 5\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts less rainfall (0-0.1\") than the baseline (55% probability). The temperatures from other sources were not stated. Despite the divergence, it seems like an ideal day for those who prefer less rainfall, perfect for a stroll in the park.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. There's inconsistency in precipitation data. Meteoblue predicts 0.1-0.2\" of rain, while the baseline forecasts 0% rain. Temperature and wind speed were not stated by Meteoblue. Be prepared for possible showers, Brussels!",
   "alignment": "divergent"
 }

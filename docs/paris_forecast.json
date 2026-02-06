@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 9.855,
-  "avg_rain": 25.7,
-  "high_temp": 11.3,
-  "low_temp": 8.6,
-  "temp_range": 0.05000000000000071,
-  "rain_range": 51.4,
-  "summary": "Paris: \u2601\ufe0f Avg 9.9\u00b0C (0\u00b0C range), 26% rain (51% range)\nHigh 11\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 10.081,
+  "avg_rain": 14.8,
+  "high_temp": 12.2,
+  "low_temp": 7.2,
+  "temp_range": 0.40199999999999925,
+  "rain_range": 25.6,
+  "summary": "Paris: \u2601\ufe0f Avg 10.1\u00b0C (0\u00b0C range), 15% rain (26% range)\nHigh 12\u00b0C / Low 7\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates slight rain (0.1-0.2\") whereas baseline predicts a 26% chance of rain. Temperature details are not stated by Meteoblue. This might be the day to carry an umbrella, just in case, even if the rain seems more like a timid gazelle than a roaring lion.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue suggests a slightly cooler day with possible light rain. Meteoblue: 12.2\u00b0C/7.8\u00b0C (roughly -2\u00b0C delta) and 0-0.1\" rainfall, not stated rain probability. Perfect day to be a bumblebee in Paris, enjoying the mild temperatures and possible light drizzle.",
   "alignment": "divergent"
 }
