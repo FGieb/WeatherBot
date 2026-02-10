@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.024000000000001,
-  "avg_rain": 46.9,
-  "high_temp": 9.71,
-  "low_temp": 3.19,
-  "temp_range": 0.9119999999999999,
-  "rain_range": 53.39999999999999,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.0\u00b0C (1\u00b0C range), 47% rain (53% range)\nHigh 10\u00b0C / Low 3\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 9.387999999999998,
+  "avg_rain": 60.3,
+  "high_temp": 10.71,
+  "low_temp": 7.6,
+  "temp_range": 0.14400000000000013,
+  "rain_range": 24.599999999999994,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.4\u00b0C (0\u00b0C range), 60% rain (25% range)\nHigh 11\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Weather predictions are inconsistent, mainly due to lack of data. Meteoblue shows temperatures in Fahrenheit, with a high of 47\u00b0F (8.3\u00b0C) and a low of 38\u00b0F (3.3\u00b0C), which aligns with the baseline. However, the rain probability and wind speed are not stated. Let's hope the weather doesn't act like a stubborn donkey and surprise us.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue forecasts differ from the baseline. Meteoblue suggests a slightly higher rain amount (0.1-0.2\") than baseline. Unfortunately, the temperature specifics from Meteoblue were not stated. The uncertainty in today's weather might have you feeling like a monkey in the mist, Brussels!",
   "alignment": "divergent"
 }
