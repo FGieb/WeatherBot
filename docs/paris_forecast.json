@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 11.144,
-  "avg_rain": 64.2,
-  "high_temp": 12.6,
-  "low_temp": 10.12,
-  "temp_range": 0.272000000000002,
-  "rain_range": 54.0,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 11.1\u00b0C (0\u00b0C range), 64% rain (54% range)\nHigh 13\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 10.001000000000001,
+  "avg_rain": 44.8,
+  "high_temp": 11.4,
+  "low_temp": 8.8,
+  "temp_range": 0.20199999999999996,
+  "rain_range": 42.4,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 10.0\u00b0C (0\u00b0C range), 45% rain (42% range)\nHigh 11\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue forecasts differ from the baseline. Meteoblue suggests lower temperatures (12.8\u00b0C vs 13\u00b0C peak) and more rainfall (0.2-0.4\" vs 64% probability). With such imprecise data, predicting Paris weather today is like trying to catch a hyena by its tail.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The Meteoblue forecast differs significantly from the baseline. Meteoblue predicts rainfall between 0.4-0.8 inches, but the baseline only has a 45% chance of rain. Temperature-wise, Meteoblue doesn't provide explicit data. Looks like bumblebees in Paris might need their tiny raincoats today!",
   "alignment": "divergent"
 }

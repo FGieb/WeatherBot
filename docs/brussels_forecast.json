@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 9.387999999999998,
-  "avg_rain": 60.3,
-  "high_temp": 10.71,
-  "low_temp": 7.6,
-  "temp_range": 0.14400000000000013,
-  "rain_range": 24.599999999999994,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.4\u00b0C (0\u00b0C range), 60% rain (25% range)\nHigh 11\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.983,
+  "avg_rain": 79.6,
+  "high_temp": 10.8,
+  "low_temp": 7.5,
+  "temp_range": 0.045999999999999375,
+  "rain_range": 29.200000000000003,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.0\u00b0C (0\u00b0C range), 80% rain (29% range)\nHigh 11\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue forecasts differ from the baseline. Meteoblue suggests a slightly higher rain amount (0.1-0.2\") than baseline. Unfortunately, the temperature specifics from Meteoblue were not stated. The uncertainty in today's weather might have you feeling like a monkey in the mist, Brussels!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue's forecast contrasts mildly with the baseline, indicating slightly lower temperatures. Specifically, Meteoblue suggests a temperature of around 10.5\u00b0C, compared to the baseline's 9\u00b0C average. Other details, such as rain probability, are not stated. Given the mild difference, it might be a good idea to bring an extra layer, just in case.",
   "alignment": "divergent"
 }
