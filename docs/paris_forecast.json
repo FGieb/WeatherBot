@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 10.001000000000001,
-  "avg_rain": 44.8,
-  "high_temp": 11.4,
-  "low_temp": 8.8,
-  "temp_range": 0.20199999999999996,
-  "rain_range": 42.4,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 10.0\u00b0C (0\u00b0C range), 45% rain (42% range)\nHigh 11\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.109,
+  "avg_rain": 81.5,
+  "high_temp": 9.11,
+  "low_temp": 7.7,
+  "temp_range": 0.13800000000000168,
+  "rain_range": 21.400000000000006,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 8.1\u00b0C (0\u00b0C range), 82% rain (21% range)\nHigh 9\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The Meteoblue forecast differs significantly from the baseline. Meteoblue predicts rainfall between 0.4-0.8 inches, but the baseline only has a 45% chance of rain. Temperature-wise, Meteoblue doesn't provide explicit data. Looks like bumblebees in Paris might need their tiny raincoats today!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The baseline forecast for Paris is not fully aligned with Meteoblue. Meteoblue predicts a slightly higher temperature range of 9.3 - 8.9\u00b0C and a small amount of rainfall (0.1-0.2\"). With such a drizzle, Paris might feel more like London today.",
   "alignment": "divergent"
 }
