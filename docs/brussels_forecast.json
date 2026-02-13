@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 4.635999999999999,
-  "avg_rain": 68.8,
-  "high_temp": 6.65,
-  "low_temp": 2.47,
-  "temp_range": 0.3120000000000003,
-  "rain_range": 15.599999999999994,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 4.6\u00b0C (0\u00b0C range), 69% rain (16% range)\nHigh 7\u00b0C / Low 2\u00b0C",
+  "avg_temp": 1.464,
+  "avg_rain": 0.0,
+  "high_temp": 3.9,
+  "low_temp": -0.2,
+  "temp_range": 0.23199999999999998,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 1.5\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 4\u00b0C / Low -0\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a slightly different temperature and precipitation level. Meteoblue: 10\u00b0C (vs baseline 4.6\u00b0C average); 0.1-0.2\" rain (vs baseline 69% rain probability). Seems like you might need a raincoat today, just like a bumblebee needs its wings in the rain.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a slightly higher temperature. Meteoblue indicates temperatures of 8\u00b0C high and 1.6\u00b0C low, differing from the baseline's high of 4\u00b0C and low of -0\u00b0C. No other material differences detected.",
   "alignment": "divergent"
 }
