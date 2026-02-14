@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 4.023,
-  "avg_rain": 0.0,
-  "high_temp": 6.1,
-  "low_temp": 2.3,
-  "temp_range": 0.7540000000000004,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 4.0\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 6\u00b0C / Low 2\u00b0C",
+  "avg_temp": 3.5490000000000004,
+  "avg_rain": 82.5,
+  "high_temp": 8.33,
+  "low_temp": 1.17,
+  "temp_range": 1.6980000000000004,
+  "rain_range": 5.0,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 3.5\u00b0C (2\u00b0C range), 82% rain (5% range)\nHigh 8\u00b0C / Low 1\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates precipitation, contrary to the baseline's dry forecast. Meteoblue: 0.2-0.4\" rain, not stated when. The damp weather in Paris could have bumblebees seeking shelter.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports a lower temperature range (8\u00b0C to 1\u00b0C) than the baseline (3.5\u00b0C average with a 2\u00b0C range). Rainfall and other data were not stated. Looks like it'll be a chilly day, so wrap up like a monkey in a blanket!",
   "alignment": "divergent"
 }

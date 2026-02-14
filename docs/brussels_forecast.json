@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 1.464,
-  "avg_rain": 0.0,
-  "high_temp": 3.9,
-  "low_temp": -0.2,
-  "temp_range": 0.23199999999999998,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 1.5\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 4\u00b0C / Low -0\u00b0C",
+  "avg_temp": 2.0629999999999997,
+  "avg_rain": 57.2,
+  "high_temp": 3.5,
+  "low_temp": 0.3,
+  "temp_range": 0.4460000000000002,
+  "rain_range": 5.600000000000001,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 2.1\u00b0C (0\u00b0C range), 57% rain (6% range)\nHigh 4\u00b0C / Low 0\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a slightly higher temperature. Meteoblue indicates temperatures of 8\u00b0C high and 1.6\u00b0C low, differing from the baseline's high of 4\u00b0C and low of -0\u00b0C. No other material differences detected.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Weather data from Meteoblue differs slightly from the baseline. Meteoblue doesn't state rain probability or temperature range, but it predicts a higher wind speed of 12 mph. It seems like a good day to fly a kite, just watch out for any mischievous monkeys trying to snatch it!",
   "alignment": "divergent"
 }
