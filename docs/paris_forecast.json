@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 3.5490000000000004,
-  "avg_rain": 82.5,
-  "high_temp": 8.33,
-  "low_temp": 1.17,
-  "temp_range": 1.6980000000000004,
-  "rain_range": 5.0,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 3.5\u00b0C (2\u00b0C range), 82% rain (5% range)\nHigh 8\u00b0C / Low 1\u00b0C",
+  "avg_temp": 7.9190000000000005,
+  "avg_rain": 36.0,
+  "high_temp": 9.48,
+  "low_temp": 6.4,
+  "temp_range": 0.03799999999999937,
+  "rain_range": 48.0,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 7.9\u00b0C (0\u00b0C range), 36% rain (48% range)\nHigh 9\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports a lower temperature range (8\u00b0C to 1\u00b0C) than the baseline (3.5\u00b0C average with a 2\u00b0C range). Rainfall and other data were not stated. Looks like it'll be a chilly day, so wrap up like a monkey in a blanket!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a dry day, versus the baseline's 36% rain probability. Temperature details not stated by Meteoblue. The forecast inconsistencies make it hard to plan the day, just like a monkey trying to herd a gazelle!",
   "alignment": "divergent"
 }

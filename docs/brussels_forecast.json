@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 2.0629999999999997,
-  "avg_rain": 57.2,
-  "high_temp": 3.5,
-  "low_temp": 0.3,
-  "temp_range": 0.4460000000000002,
-  "rain_range": 5.600000000000001,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 2.1\u00b0C (0\u00b0C range), 57% rain (6% range)\nHigh 4\u00b0C / Low 0\u00b0C",
+  "avg_temp": 5.25,
+  "avg_rain": 73.1,
+  "high_temp": 6.7,
+  "low_temp": 4.2,
+  "temp_range": 0.3000000000000007,
+  "rain_range": 13.799999999999997,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.2\u00b0C (0\u00b0C range), 73% rain (14% range)\nHigh 7\u00b0C / Low 4\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Weather data from Meteoblue differs slightly from the baseline. Meteoblue doesn't state rain probability or temperature range, but it predicts a higher wind speed of 12 mph. It seems like a good day to fly a kite, just watch out for any mischievous monkeys trying to snatch it!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue disagrees with the baseline, having no rain expected. Meteoblue: dry all day vs baseline 73% rain. Looks like a classic day of monkey weather in Brussels, unpredictable and full of surprises.",
   "alignment": "divergent"
 }
