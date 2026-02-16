@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 5.25,
-  "avg_rain": 73.1,
-  "high_temp": 6.7,
-  "low_temp": 4.2,
-  "temp_range": 0.3000000000000007,
-  "rain_range": 13.799999999999997,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.2\u00b0C (0\u00b0C range), 73% rain (14% range)\nHigh 7\u00b0C / Low 4\u00b0C",
+  "avg_temp": 3.497,
+  "avg_rain": 73.4,
+  "high_temp": 5.57,
+  "low_temp": 1.31,
+  "temp_range": 0.16599999999999948,
+  "rain_range": 2.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 3.5\u00b0C (0\u00b0C range), 73% rain (2% range)\nHigh 6\u00b0C / Low 1\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue disagrees with the baseline, having no rain expected. Meteoblue: dry all day vs baseline 73% rain. Looks like a classic day of monkey weather in Brussels, unpredictable and full of surprises.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue shows different temperatures for Brussels than OWM+WeatherAPI. Meteoblue suggests a high of 8\u00b0C and a low of 3\u00b0C, a delta of approximately 2-3\u00b0C. The rain probability isn't stated.",
   "alignment": "divergent"
 }
