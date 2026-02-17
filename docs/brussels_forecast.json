@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 3.497,
-  "avg_rain": 73.4,
-  "high_temp": 5.57,
-  "low_temp": 1.31,
-  "temp_range": 0.16599999999999948,
-  "rain_range": 2.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 3.5\u00b0C (0\u00b0C range), 73% rain (2% range)\nHigh 6\u00b0C / Low 1\u00b0C",
+  "avg_temp": 3.98,
+  "avg_rain": 26.0,
+  "high_temp": 5.4,
+  "low_temp": 1.4,
+  "temp_range": 0.20000000000000018,
+  "rain_range": 12.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 4.0\u00b0C (0\u00b0C range), 26% rain (12% range)\nHigh 5\u00b0C / Low 1\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue shows different temperatures for Brussels than OWM+WeatherAPI. Meteoblue suggests a high of 8\u00b0C and a low of 3\u00b0C, a delta of approximately 2-3\u00b0C. The rain probability isn't stated.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Data from Meteoblue contradicts the baseline. Meteoblue: temperature not stated, rain not stated, wind 13 mph. A tricky day to predict\u2014almost like trying to track a haring darting through the woods.",
   "alignment": "divergent"
 }
