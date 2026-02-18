@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 3.98,
-  "avg_rain": 26.0,
-  "high_temp": 5.4,
-  "low_temp": 1.4,
-  "temp_range": 0.20000000000000018,
-  "rain_range": 12.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 4.0\u00b0C (0\u00b0C range), 26% rain (12% range)\nHigh 5\u00b0C / Low 1\u00b0C",
+  "avg_temp": 5.452,
+  "avg_rain": 39.5,
+  "high_temp": 6.2,
+  "low_temp": 4.4,
+  "temp_range": 0.13600000000000012,
+  "rain_range": 51.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.5\u00b0C (0\u00b0C range), 40% rain (51% range)\nHigh 6\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Data from Meteoblue contradicts the baseline. Meteoblue: temperature not stated, rain not stated, wind 13 mph. A tricky day to predict\u2014almost like trying to track a haring darting through the woods.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a different forecast for Brussels. Meteoblue: 6.6\u00b0C (1.1\u00b0C higher), zero rain vs baseline's 40% rain. It seems like the weather gods can't decide if it's going to be a good day for bumblebees or not.",
   "alignment": "divergent"
 }
