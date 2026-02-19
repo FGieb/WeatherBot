@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 5.452,
-  "avg_rain": 39.5,
-  "high_temp": 6.2,
-  "low_temp": 4.4,
-  "temp_range": 0.13600000000000012,
-  "rain_range": 51.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.5\u00b0C (0\u00b0C range), 40% rain (51% range)\nHigh 6\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 7.193,
+  "avg_rain": 28.8,
+  "high_temp": 8.52,
+  "low_temp": 4.59,
+  "temp_range": 0.6659999999999995,
+  "rain_range": 17.6,
+  "summary": "Brussels: \u2601\ufe0f Avg 7.2\u00b0C (1\u00b0C range), 29% rain (18% range)\nHigh 9\u00b0C / Low 5\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a different forecast for Brussels. Meteoblue: 6.6\u00b0C (1.1\u00b0C higher), zero rain vs baseline's 40% rain. It seems like the weather gods can't decide if it's going to be a good day for bumblebees or not.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs significantly from the baseline forecast for Brussels. Meteoblue predicts considerably lower temperatures with highs of 8\u00b0C and lows of 3\u00b0C. Unfortunately, specifics on rain or other weather conditions are not stated.",
   "alignment": "divergent"
 }
