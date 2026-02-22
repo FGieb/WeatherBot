@@ -8,6 +8,6 @@
   "rain_range": 9.400000000000006,
   "summary": "Brussels: \ud83c\udf27\ufe0f Avg 10.8\u00b0C (0\u00b0C range), 79% rain (9% range)\nHigh 12\u00b0C / Low 10\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a slight chance of rain, contrary to the baseline's 79% prediction. Meteoblue: 0.1-0.2\" rain, not stated time or probability vs baseline 79% rain. Nothing beats the unpredictability of Brussels' weather, not even a gazelle's speed.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a dry day while the baseline predicts 79% rain. Meteoblue: 0.1-0.2\" rain not stated when, baseline: constant rain. Seems like a gamble, maybe take an umbrella just in case, you don't want to be caught in the rain like a soaked monkey.",
   "alignment": "divergent"
 }

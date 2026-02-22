@@ -8,6 +8,6 @@
   "rain_range": 16.0,
   "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.2\u00b0C (0\u00b0C range), 52% rain (16% range)\nHigh 14\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] Forecast alignment is complete for Paris. Meteoblue also shows average temperatures around 12.2\u00b0C, but rain values are not stated. Looks like a typical, slightly rainy spring day in Paris, perfect for a walk if you don't mind a bit of drizzle.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a dry day in Paris, contradicting baseline's 52% rain prediction. Meteoblue: dry vs baseline: 52% rain. Seems like a fine day to enjoy a picnic in the park, unless you're a bumblebee awaiting rain for the flowers.",
+  "alignment": "divergent"
 }
