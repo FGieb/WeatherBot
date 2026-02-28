@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.012999999999998,
-  "avg_rain": 64.8,
-  "high_temp": 10.15,
-  "low_temp": 5.52,
-  "temp_range": 0.37400000000000055,
-  "rain_range": 41.599999999999994,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.0\u00b0C (0\u00b0C range), 65% rain (42% range)\nHigh 10\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 9.711,
+  "avg_rain": 0.0,
+  "high_temp": 12.3,
+  "low_temp": 5.9,
+  "temp_range": 0.2619999999999969,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 9.7\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 12\u00b0C / Low 6\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a different temperature range of around 11\u201316\u00b0C, contrasting the baseline's 6\u201310\u00b0C. Meteoblue also anticipates possible rain, while the amount is not stated. If you're planning a day out, better pack an umbrella just in case.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests rain but does not specify the temperature. Meteoblue: 2h rain, against baseline dry; temperature not stated. Seems like a good day for indoor activities, perhaps a visit to the Royal Museum of Fine Arts.",
   "alignment": "divergent"
 }
