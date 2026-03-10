@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 11.177,
-  "avg_rain": 76.4,
-  "high_temp": 14.45,
-  "low_temp": 7.06,
-  "temp_range": 0.6059999999999999,
-  "rain_range": 7.200000000000003,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 11.2\u00b0C (1\u00b0C range), 76% rain (7% range)\nHigh 14\u00b0C / Low 7\u00b0C",
+  "avg_temp": 8.724,
+  "avg_rain": 56.8,
+  "high_temp": 11.05,
+  "low_temp": 5.96,
+  "temp_range": 0.40800000000000125,
+  "rain_range": 25.599999999999994,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.7\u00b0C (0\u00b0C range), 57% rain (26% range)\nHigh 11\u00b0C / Low 6\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels weather reports don't align. Meteoblue states a higher temperature range (20\u201325\u00b0C vs baseline's 7\u201314\u00b0C). YR.no and M\u00e9t\u00e9o Belgique didn't provide data. It seems like the bumblebees will enjoy a warmer day than expected, according to Meteoblue.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels forecasts show a difference in rainfall. Meteoblue predicts 0.1-0.2\" rain, not reflected in the baseline. Just a typical unpredictable day in Brussels, even a weather-savvy monkey would struggle with this one.",
   "alignment": "divergent"
 }
