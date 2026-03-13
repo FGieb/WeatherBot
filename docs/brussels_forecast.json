@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 6.508000000000001,
-  "avg_rain": 100.0,
-  "high_temp": 10.0,
-  "low_temp": 4.9,
-  "temp_range": 0.29600000000000026,
-  "rain_range": 0.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.5\u00b0C (0\u00b0C range), 100% rain (0% range)\nHigh 10\u00b0C / Low 5\u00b0C",
+  "avg_temp": 6.197,
+  "avg_rain": 64.0,
+  "high_temp": 8.5,
+  "low_temp": 3.58,
+  "temp_range": 0.07399999999999984,
+  "rain_range": 30.800000000000004,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.2\u00b0C (0\u00b0C range), 64% rain (31% range)\nHigh 8\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests a slightly higher temperature range (11-6 \u00b0C). The precipitation data isn't stated. If you're heading out, better dress like a gazelle ready for all weather conditions.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast for Brussels is uncertain due to conflicting data. Meteoblue suggests a temperature range of 10-5\u00b0C, differing from the baseline forecast of 8-4\u00b0C. Unfortunately, the rest of the data was not stated, making a full comparison challenging.",
   "alignment": "divergent"
 }

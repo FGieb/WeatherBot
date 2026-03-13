@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 7.962000000000001,
-  "avg_rain": 92.8,
-  "high_temp": 10.8,
-  "low_temp": 6.09,
-  "temp_range": 0.036000000000001364,
-  "rain_range": 14.400000000000006,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 8.0\u00b0C (0\u00b0C range), 93% rain (14% range)\nHigh 11\u00b0C / Low 6\u00b0C",
+  "avg_temp": 8.004999999999999,
+  "avg_rain": 38.900000000000006,
+  "high_temp": 10.05,
+  "low_temp": 4.9,
+  "temp_range": 0.6900000000000004,
+  "rain_range": 20.6,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 8.0\u00b0C (1\u00b0C range), 39% rain (21% range)\nHigh 10\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a different temperature range. Meteoblue shows a high of 12.8\u00b0C and a low of 5.6\u00b0C against the baseline's 11\u00b0C and 6\u00b0C. The Meteoblue temperature range slightly contradicts the baseline, despite the missing data from other sources. The good news is, it's still perfect weather for a leisurely stroll along the Seine, just remember your umbrella.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue provides a different forecast. Meteoblue predicts 0.4-0.8\" rainfall, not stated temperature. The Paris rain might be a bit of a dampener, not exactly a day for a stroll by the Seine.",
   "alignment": "divergent"
 }
