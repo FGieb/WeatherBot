@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 8.004999999999999,
-  "avg_rain": 38.900000000000006,
-  "high_temp": 10.05,
-  "low_temp": 4.9,
-  "temp_range": 0.6900000000000004,
-  "rain_range": 20.6,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 8.0\u00b0C (1\u00b0C range), 39% rain (21% range)\nHigh 10\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 10.335,
+  "avg_rain": 0.0,
+  "high_temp": 13.15,
+  "low_temp": 5.9,
+  "temp_range": 0.6300000000000008,
+  "rain_range": 0.0,
+  "summary": "Paris: \u2600\ufe0f Avg 10.3\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 13\u00b0C / Low 6\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue provides a different forecast. Meteoblue predicts 0.4-0.8\" rainfall, not stated temperature. The Paris rain might be a bit of a dampener, not exactly a day for a stroll by the Seine.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts minor rainfall, contrary to the baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated when. A bit of rain never hurt any Parisian stroll, just don't forget your umbrella in case the sky turns into a watering can!",
   "alignment": "divergent"
 }
