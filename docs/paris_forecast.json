@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 13.776,
+  "avg_temp": 14.36,
   "avg_rain": 0.0,
-  "high_temp": 16.42,
-  "low_temp": 9.7,
-  "temp_range": 0.6320000000000032,
+  "high_temp": 16.8,
+  "low_temp": 11.3,
+  "temp_range": 0.0400000000000027,
   "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 13.8\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 16\u00b0C / Low 10\u00b0C",
+  "summary": "Paris: \u2600\ufe0f Avg 14.4\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 17\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All available sources align with the baseline forecast for Paris, with sunny weather and no rain. Meteoblue predicts a similar temperature range. A classic spring day in Paris, perfect for a caf\u00e9 terrace.",
+  "gpt_comment": "[FULL] All sources align with the baseline weather forecast for Paris. Meteoblue shows a high of 16.6\u00b0C and low of 6.6\u00b0C, which falls within the baseline range. Perfect weather to enjoy a walk along the Seine, but remember your jacket for the cooler evening.",
   "alignment": "unknown"
 }
