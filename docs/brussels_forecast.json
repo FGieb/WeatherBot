@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 6.083,
-  "avg_rain": 82.0,
-  "high_temp": 8.3,
-  "low_temp": 3.8,
-  "temp_range": 0.7659999999999982,
-  "rain_range": 4.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.1\u00b0C (1\u00b0C range), 82% rain (4% range)\nHigh 8\u00b0C / Low 4\u00b0C",
+  "avg_temp": 5.195,
+  "avg_rain": 85.7,
+  "high_temp": 8.14,
+  "low_temp": 2.3,
+  "temp_range": 0.39000000000000057,
+  "rain_range": 13.400000000000006,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 5.2\u00b0C (0\u00b0C range), 86% rain (13% range)\nHigh 8\u00b0C / Low 2\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue data differs materially. Meteoblue: not stated rain, temperature approx. 16.7\u00b0C vs baseline 6.1\u00b0C. No other sources available for comparison; looks like we're flying blind like a bat, not even a bumblebee would dare to go out without a proper forecast.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests slightly warmer temperatures and the possibility of less rain. Meteoblue: 12\u00b0C (delta +6.8\u00b0C) and 0.1-0.2\" of rain, compared to baseline's 5.2\u00b0C and 86% rain. Quite a difference \u2013 seems Brussels weather is as unpredictable as a monkey on a unicycle today!",
   "alignment": "divergent"
 }
