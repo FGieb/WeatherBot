@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 7.773999999999999,
-  "avg_rain": 16.8,
-  "high_temp": 10.2,
-  "low_temp": 4.5,
-  "temp_range": 0.22800000000000065,
-  "rain_range": 25.6,
-  "summary": "Brussels: \u2601\ufe0f Avg 7.8\u00b0C (0\u00b0C range), 17% rain (26% range)\nHigh 10\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 6.49,
+  "avg_rain": 37.9,
+  "high_temp": 8.7,
+  "low_temp": 3.85,
+  "temp_range": 0.21999999999999886,
+  "rain_range": 44.2,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.5\u00b0C (0\u00b0C range), 38% rain (44% range)\nHigh 9\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a slight chance of rain, not mentioned in the baseline. Meteoblue: 0-0.1\" precipitation not stated in baseline. Looks like you might need an umbrella, just to be on the safe side.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts potential rain, but the amount isn't stated, contrasting with the baseline's 38% rain prediction. The temperature difference isn't material. Seems like a classic unpredictable Brussels day!",
   "alignment": "divergent"
 }
