@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 6.49,
-  "avg_rain": 37.9,
-  "high_temp": 8.7,
-  "low_temp": 3.85,
-  "temp_range": 0.21999999999999886,
-  "rain_range": 44.2,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 6.5\u00b0C (0\u00b0C range), 38% rain (44% range)\nHigh 9\u00b0C / Low 4\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.113,
+  "avg_rain": 12.1,
+  "high_temp": 10.71,
+  "low_temp": 4.2,
+  "temp_range": 1.0260000000000016,
+  "rain_range": 15.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 8.1\u00b0C (1\u00b0C range), 12% rain (16% range)\nHigh 11\u00b0C / Low 4\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts potential rain, but the amount isn't stated, contrasting with the baseline's 38% rain prediction. The temperature difference isn't material. Seems like a classic unpredictable Brussels day!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue data differs from baseline. Meteoblue: around 0.1-0.2\" rain, not clear temperature range. With the potential for rain, it might be a day for the ducks rather than the bumblebees in Brussels.",
   "alignment": "divergent"
 }
