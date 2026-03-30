@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 7.215,
-  "avg_rain": 70.2,
-  "high_temp": 9.18,
-  "low_temp": 4.13,
-  "temp_range": 0.23000000000000043,
-  "rain_range": 12.400000000000006,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 7.2\u00b0C (0\u00b0C range), 70% rain (12% range)\nHigh 9\u00b0C / Low 4\u00b0C",
+  "avg_temp": 8.573,
+  "avg_rain": 29.5,
+  "high_temp": 11.23,
+  "low_temp": 5.4,
+  "temp_range": 0.9859999999999989,
+  "rain_range": 43.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 8.6\u00b0C (1\u00b0C range), 30% rain (43% range)\nHigh 11\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a dry day contrary to the baseline's 70% rain probability. Meteoblue's temperature range is not stated. Looks like it might be a good day to spot some bees buzzing around if Meteoblue's forecast holds true.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecasts are partially in alignment but have a notable difference in precipitation. Meteoblue suggests some rainfall, but the amount is not stated. As the forecasts are not fully aligned, it's a good idea to keep an umbrella handy just in case.",
   "alignment": "divergent"
 }
