@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 10.030999999999999,
-  "avg_rain": 0.0,
-  "high_temp": 13.31,
-  "low_temp": 4.2,
-  "temp_range": 1.2219999999999995,
-  "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 10.0\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 13\u00b0C / Low 4\u00b0C",
+  "avg_temp": 13.523,
+  "avg_rain": 16.7,
+  "high_temp": 15.95,
+  "low_temp": 10.5,
+  "temp_range": 1.0859999999999985,
+  "rain_range": 33.4,
+  "summary": "Brussels: \u2601\ufe0f Avg 13.5\u00b0C (1\u00b0C range), 17% rain (33% range)\nHigh 16\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] Weather reports are consistent today. Meteoblue suggests the same average temperature of 10\u00b0C, with no rain. Enjoy this sunny day in Brussels, perfect for a stroll in the park - you might even spot a bumblebee!",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Forecast is uncertain. Meteoblue suggests a temperature of around 12.8\u00b0C (delta -0.7\u00b0C), not stated rain probability, and 2 hours of sunshine. Given the uncertainty, it might be wise to pack a light jacket just in case.",
+  "alignment": "divergent"
 }
