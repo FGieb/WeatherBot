@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.523,
-  "avg_rain": 16.7,
-  "high_temp": 15.95,
-  "low_temp": 10.5,
-  "temp_range": 1.0859999999999985,
-  "rain_range": 33.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 13.5\u00b0C (1\u00b0C range), 17% rain (33% range)\nHigh 16\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 10.554,
+  "avg_rain": 53.599999999999994,
+  "high_temp": 12.59,
+  "low_temp": 7,
+  "temp_range": 0.13200000000000145,
+  "rain_range": 74.4,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 10.6\u00b0C (0\u00b0C range), 54% rain (74% range)\nHigh 13\u00b0C / Low 7\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Forecast is uncertain. Meteoblue suggests a temperature of around 12.8\u00b0C (delta -0.7\u00b0C), not stated rain probability, and 2 hours of sunshine. Given the uncertainty, it might be wise to pack a light jacket just in case.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: There's a noticeable difference between Meteoblue and the baseline forecast for Brussels. Meteoblue suggests a high of 16\u00b0C and a low of 11\u00b0C, which is a significant 3-4\u00b0C warmer compared to the baseline. Seems like a good day for the bumblebees to get busy in Brussels.",
   "alignment": "divergent"
 }
