@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 19.838,
-  "avg_rain": 0.0,
-  "high_temp": 24.04,
-  "low_temp": 12.7,
-  "temp_range": 1.3160000000000025,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 19.8\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 24\u00b0C / Low 13\u00b0C",
+  "avg_temp": 20.372999999999998,
+  "avg_rain": 25.0,
+  "high_temp": 25.58,
+  "low_temp": 14.65,
+  "temp_range": 0.3460000000000001,
+  "rain_range": 16.799999999999997,
+  "summary": "Paris: \u2601\ufe0f Avg 20.4\u00b0C (0\u00b0C range), 25% rain (17% range)\nHigh 26\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue data differs significantly from the baseline. Meteoblue: 24.4\u00b0C vs baseline 19.8\u00b0C; not stated rain. With such a temperature gap, it almost feels like the weather is as unpredictable as a monkey's antics.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a substantially lower temperature range. Meteoblue: High 25.6\u00b0C / Low 11.1\u00b0C vs baseline High 26\u00b0C / Low 15\u00b0C. A bit chilly for Parisian standards, maybe a day for the monkeys at the zoo to stay indoors.",
   "alignment": "divergent"
 }
