@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 18.292,
-  "avg_rain": 22.7,
-  "high_temp": 22.36,
-  "low_temp": 12.9,
-  "temp_range": 0.9439999999999991,
-  "rain_range": 5.399999999999999,
-  "summary": "Brussels: \u2601\ufe0f Avg 18.3\u00b0C (1\u00b0C range), 23% rain (5% range)\nHigh 22\u00b0C / Low 13\u00b0C",
+  "avg_temp": 10.270000000000001,
+  "avg_rain": 0.0,
+  "high_temp": 12.25,
+  "low_temp": 7.4,
+  "temp_range": 0.5399999999999991,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 10.3\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 12\u00b0C / Low 7\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs significantly from the baseline. Meteoblue reports a high temperature of approximately 24\u00b0C (75\u00b0F) versus the baseline's high of 22\u00b0C. The low temperature and rain probability are not stated. Sounds like a day for the gazelles to come out and play in the warmer weather!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue gives a higher temperature, but does not specify the exact values in Celsius. Meteoblue: Not stated temperature in Celsius, 0-0.1\" precipitation when baseline predicts dry. Looks like a classic spring day in Brussels, just watch out for those potential raindrops!",
   "alignment": "divergent"
 }
