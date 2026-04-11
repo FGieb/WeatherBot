@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 11.403,
-  "avg_rain": 38.0,
-  "high_temp": 18.2,
-  "low_temp": 6.15,
-  "temp_range": 1.073999999999998,
-  "rain_range": 4.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 11.4\u00b0C (1\u00b0C range), 38% rain (4% range)\nHigh 18\u00b0C / Low 6\u00b0C",
+  "avg_temp": 11.431999999999999,
+  "avg_rain": 13.7,
+  "high_temp": 14.48,
+  "low_temp": 7.1,
+  "temp_range": 1.224000000000002,
+  "rain_range": 27.4,
+  "summary": "Brussels: \u2601\ufe0f Avg 11.4\u00b0C (1\u00b0C range), 14% rain (27% range)\nHigh 14\u00b0C / Low 7\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] Alignment with Meteoblue. No specific temperature or rain probability data provided by Meteoblue, but the depicted weather suggests cooler temperatures. YR.no and M\u00e9t\u00e9o Belgique data not available for comparison. Looks like a typical day in Brussels; perfect for a hearty Belgian stew.",
+  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels today. Meteoblue indicates a similar temperature range and negligible rainfall, which agrees with the baseline. It's going to be a cool average day in Brussels, perfect for a cozy indoor day with a good book.",
   "alignment": "unknown"
 }
