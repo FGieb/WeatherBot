@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 11.431999999999999,
-  "avg_rain": 13.7,
-  "high_temp": 14.48,
-  "low_temp": 7.1,
-  "temp_range": 1.224000000000002,
-  "rain_range": 27.4,
-  "summary": "Brussels: \u2601\ufe0f Avg 11.4\u00b0C (1\u00b0C range), 14% rain (27% range)\nHigh 14\u00b0C / Low 7\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 11.403,
+  "avg_rain": 35.1,
+  "high_temp": 15.05,
+  "low_temp": 8.27,
+  "temp_range": 1.2059999999999995,
+  "rain_range": 70.2,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 11.4\u00b0C (1\u00b0C range), 35% rain (70% range)\nHigh 15\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels today. Meteoblue indicates a similar temperature range and negligible rainfall, which agrees with the baseline. It's going to be a cool average day in Brussels, perfect for a cozy indoor day with a good book.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast for Brussels is uncertain. Meteoblue suggests it will be sunny, contradicting the baseline's prediction of 35% rain. Enjoy the day, but don't forget your umbrella, just in case you bump into a rain shower.",
+  "alignment": "divergent"
 }

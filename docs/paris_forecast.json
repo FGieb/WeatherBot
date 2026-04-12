@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 12.186,
-  "avg_rain": 27.7,
-  "high_temp": 13.88,
-  "low_temp": 8.2,
-  "temp_range": 0.7319999999999975,
-  "rain_range": 37.4,
-  "summary": "Paris: \u2601\ufe0f Avg 12.2\u00b0C (1\u00b0C range), 28% rain (37% range)\nHigh 14\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 12.151,
+  "avg_rain": 81.0,
+  "high_temp": 14.46,
+  "low_temp": 9.6,
+  "temp_range": 0.7019999999999982,
+  "rain_range": 31.599999999999994,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.2\u00b0C (1\u00b0C range), 81% rain (32% range)\nHigh 14\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts slightly higher temperatures, with a minimum of 47\u00b0F (8.3\u00b0C) vs the baseline's 8\u00b0C. Rain and other data were not stated. Looks like the weather in Paris is as unpredictable as a monkey swinging from the trees.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a dry day as opposed to the 81% rain probability in the baseline. The temperature range is not stated by Meteoblue. This unpredictability is like a mischievous monkey: keep an umbrella handy just in case!",
   "alignment": "divergent"
 }
