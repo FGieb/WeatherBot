@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 14.984000000000002,
-  "avg_rain": 0.0,
-  "high_temp": 18.19,
-  "low_temp": 8.8,
-  "temp_range": 1.0479999999999965,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 15.0\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 18\u00b0C / Low 9\u00b0C",
+  "avg_temp": 14.669,
+  "avg_rain": 3.5,
+  "high_temp": 17.1,
+  "low_temp": 11.2,
+  "temp_range": 0.10199999999999854,
+  "rain_range": 7.0,
+  "summary": "Paris: \u2600\ufe0f Avg 14.7\u00b0C (0\u00b0C range), 4% rain (7% range)\nHigh 17\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All accessible sources align with the baseline for today's Paris weather. Meteoblue indicates a temperature range of 9-14.5\u00b0C, aligning with the baseline's 9-18\u00b0C. It's a perfect day to enjoy a caf\u00e9 terrace, just like a bumblebee would appreciate a sunny day.",
+  "gpt_comment": "[FULL] All sources align with the baseline forecast for Paris. Meteoblue predicts a similar temperature range (17.8\u00b0C-6.1\u00b0C), but wind speed and rain probability are not stated. A perfect day to enjoy a caf\u00e9 terrace with no need for a donkey jacket!",
   "alignment": "unknown"
 }
