@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 16.354,
-  "avg_rain": 10.4,
-  "high_temp": 19.87,
-  "low_temp": 12.8,
-  "temp_range": 0.6679999999999957,
-  "rain_range": 12.8,
-  "summary": "Brussels: \u2601\ufe0f Avg 16.4\u00b0C (1\u00b0C range), 10% rain (13% range)\nHigh 20\u00b0C / Low 13\u00b0C",
+  "avg_temp": 13.061,
+  "avg_rain": 50.1,
+  "high_temp": 15.92,
+  "low_temp": 8.54,
+  "temp_range": 0.1180000000000021,
+  "rain_range": 20.200000000000003,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 13.1\u00b0C (0\u00b0C range), 50% rain (20% range)\nHigh 16\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline weather forecast for Brussels today. Meteoblue indicates similar temperatures but does not provide rain probability. Not a single dissenting monkey in this weather report barrel!",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a large temperature difference, with a high of approx 21\u00b0C and low of 8\u00b0C vs baseline's 16\u00b0C and 9\u00b0C. Rain probability and concrete hours are not stated by Meteoblue. Looks like the weather might be more suitable for a bumblebee's activity than expected.",
+  "alignment": "divergent"
 }

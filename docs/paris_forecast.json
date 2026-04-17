@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 18.268,
-  "avg_rain": 8.6,
-  "high_temp": 20.92,
-  "low_temp": 13.9,
-  "temp_range": 1.7360000000000007,
-  "rain_range": 17.2,
-  "summary": "Paris: \u2601\ufe0f Avg 18.3\u00b0C (2\u00b0C range), 9% rain (17% range)\nHigh 21\u00b0C / Low 14\u00b0C",
+  "avg_temp": 15.837,
+  "avg_rain": 12.0,
+  "high_temp": 17.68,
+  "low_temp": 12.11,
+  "temp_range": 0.07399999999999984,
+  "rain_range": 16.0,
+  "summary": "Paris: \u2601\ufe0f Avg 15.8\u00b0C (0\u00b0C range), 12% rain (16% range)\nHigh 18\u00b0C / Low 12\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All available sources align with the baseline. Meteoblue indicates a temperature range of 19.4\u00b0C to 10.6\u00b0C (converted from Fahrenheit), which falls within the baseline's range, and doesn't provide rain data. The day's weather looks as clear and unpredictable as a monkey's antics, keep an eye on the sky!",
+  "gpt_comment": "[PARTIAL] Alignment with baseline. Meteoblue shows different temperature highs and lows (21.1\u00b0C/9.4\u00b0C) but specific rain probabilities aren't stated. A good day to take a donkey for a walk in Paris, but keep a jacket handy!",
   "alignment": "unknown"
 }
