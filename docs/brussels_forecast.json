@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.061,
-  "avg_rain": 50.1,
-  "high_temp": 15.92,
-  "low_temp": 8.54,
-  "temp_range": 0.1180000000000021,
-  "rain_range": 20.200000000000003,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 13.1\u00b0C (0\u00b0C range), 50% rain (20% range)\nHigh 16\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 11.716000000000001,
+  "avg_rain": 12.0,
+  "high_temp": 15.11,
+  "low_temp": 7.63,
+  "temp_range": 0.5519999999999996,
+  "rain_range": 16.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 11.7\u00b0C (1\u00b0C range), 12% rain (16% range)\nHigh 15\u00b0C / Low 8\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a large temperature difference, with a high of approx 21\u00b0C and low of 8\u00b0C vs baseline's 16\u00b0C and 9\u00b0C. Rain probability and concrete hours are not stated by Meteoblue. Looks like the weather might be more suitable for a bumblebee's activity than expected.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue shows a discrepancy in rainfall. Meteoblue predicts 0.1-0.2\" of rain, while the baseline suggests a 12% probability of rain. Seems like you might need to carry an umbrella today, just in case.",
   "alignment": "divergent"
 }
