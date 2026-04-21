@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 10.767,
-  "avg_rain": 8.3,
-  "high_temp": 12.98,
-  "low_temp": 6.8,
-  "temp_range": 1.0540000000000003,
-  "rain_range": 8.6,
-  "summary": "Brussels: \u2601\ufe0f Avg 10.8\u00b0C (1\u00b0C range), 8% rain (9% range)\nHigh 13\u00b0C / Low 7\u00b0C",
+  "avg_temp": 13.06,
+  "avg_rain": 0.0,
+  "high_temp": 16.06,
+  "low_temp": 8.0,
+  "temp_range": 0.6799999999999997,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 13.1\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 16\u00b0C / Low 8\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for Brussels. Meteoblue states a minor temperature variation but doesn't offer explicit data. A typical day in Brussels, perhaps a good chance for a bumblebee to make the most of it.",
+  "gpt_comment": "[FULL] All available sources align with the baseline. Meteoblue states the temperature range as 59\u00b0F-43\u00b0F (~15-6\u00b0C), which falls within the baseline's 16\u00b0C / 8\u00b0C. Rainfall and other data are not explicitly stated by other sources. Enjoy the sunny day!",
   "alignment": "unknown"
 }
