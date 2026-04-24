@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 14.527000000000001,
+  "avg_temp": 14.049,
   "avg_rain": 0.0,
-  "high_temp": 18.85,
-  "low_temp": 8.0,
-  "temp_range": 1.2539999999999996,
+  "high_temp": 18.5,
+  "low_temp": 9.0,
+  "temp_range": 0.25800000000000267,
   "rain_range": 0.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 14.5\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 19\u00b0C / Low 8\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 14.0\u00b0C (0\u00b0C range), 0% rain (0% range)\nHigh 18\u00b0C / Low 9\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests different temperatures for Brussels, but no rain data is available. Meteoblue: high 20\u00b0C / low 6\u00b0C vs baseline high 19\u00b0C / low 8\u00b0C. It seems we have a slightly cooler morning and warmer afternoon on the cards, maybe a good day for the bees to get busy.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a different temperature range. Meteoblue: 19.4\u00b0C-5\u00b0C vs baseline 14\u00b0C-0\u00b0C range. The missing data from the other sources makes it a bit of a guessing game, not unlike trying to predict a monkey's next move.",
   "alignment": "divergent"
 }
