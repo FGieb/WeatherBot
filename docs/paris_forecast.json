@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 18.064999999999998,
-  "avg_rain": 0.0,
-  "high_temp": 21.13,
-  "low_temp": 12.7,
-  "temp_range": 1.0499999999999972,
-  "rain_range": 0.0,
-  "summary": "Paris: \u2600\ufe0f Avg 18.1\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 21\u00b0C / Low 13\u00b0C",
+  "avg_temp": 17.707,
+  "avg_rain": 6.800000000000001,
+  "high_temp": 21.41,
+  "low_temp": 11.4,
+  "temp_range": 1.3740000000000023,
+  "rain_range": 12.0,
+  "summary": "Paris: \u2601\ufe0f Avg 17.7\u00b0C (1\u00b0C range), 7% rain (12% range)\nHigh 21\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All accessible sources align with the baseline forecast for Paris. Meteoblue predicts 73\u00b0F high and 50\u00b0F low, which is approximately 22.8\u00b0C and 10\u00b0C respectively, fitting within the baseline range. Perfect day for a bumblebee to pollinate around the city of love.",
+  "gpt_comment": "[FULL] Weather sources align fully. Meteoblue predicts similar temperatures but does not provide information on rain probability. It looks like a typical day in Paris, maybe even a good one for a stroll if you're a bumblebee.",
   "alignment": "unknown"
 }
