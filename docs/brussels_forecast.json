@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.998,
-  "avg_rain": 62.0,
-  "high_temp": 23.01,
-  "low_temp": 16.2,
-  "temp_range": 0.8759999999999977,
-  "rain_range": 4.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 20.0\u00b0C (1\u00b0C range), 62% rain (4% range)\nHigh 23\u00b0C / Low 16\u00b0C",
+  "avg_temp": 14.739999999999998,
+  "avg_rain": 64.7,
+  "high_temp": 18.15,
+  "low_temp": 12.88,
+  "temp_range": 0.9599999999999991,
+  "rain_range": 40.6,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 14.7\u00b0C (1\u00b0C range), 65% rain (41% range)\nHigh 18\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] Alignment for Brussels weather. Meteoblue indicates the temperature as 25\u00b0C (77\u00b0F), a 5\u00b0C difference from the baseline. The other sources don't provide explicit data. Not the best day to be a bumblebee in Brussels, with the temperature swinging more than expected.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Only data from Meteoblue is available and it deviates. Meteoblue: 24.4\u201314.4\u00b0C vs baseline 18\u201313\u00b0C; not stated rain. Looks like weather is a bit of a wildcard today in Brussels, just like a cheeky monkey's antics.",
+  "alignment": "divergent"
 }

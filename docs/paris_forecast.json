@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 20.987,
-  "avg_rain": 2.5,
-  "high_temp": 23.89,
-  "low_temp": 15.8,
-  "temp_range": 0.8939999999999984,
-  "rain_range": 5.0,
-  "summary": "Paris: \u2600\ufe0f Avg 21.0\u00b0C (1\u00b0C range), 2% rain (5% range)\nHigh 24\u00b0C / Low 16\u00b0C",
+  "avg_temp": 15.764000000000001,
+  "avg_rain": 79.3,
+  "high_temp": 18.4,
+  "low_temp": 13.5,
+  "temp_range": 1.3679999999999986,
+  "rain_range": 9.400000000000006,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 15.8\u00b0C (1\u00b0C range), 79% rain (9% range)\nHigh 18\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[PARTIAL] Slight divergence due to temperature difference. Meteoblue reports a high of 24.4\u00b0C (3.4\u00b0C delta) and a low of 12.2\u00b0C (3.8\u00b0C delta), but no rain is mentioned. Hopefully, this won't affect the outdoor plans of any Parisian bees, who thrive in warm, dry weather.",
+  "gpt_comment": "[FULL] Weather data for Paris aligns across sources. Meteoblue indicates the same temperature range without stating rain probabilities. The day might feel as unpredictable as a monkey's antics, but at least the temperatures are consistent!",
   "alignment": "unknown"
 }
