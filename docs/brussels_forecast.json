@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 14.739999999999998,
-  "avg_rain": 64.7,
-  "high_temp": 18.15,
-  "low_temp": 12.88,
-  "temp_range": 0.9599999999999991,
-  "rain_range": 40.6,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 14.7\u00b0C (1\u00b0C range), 65% rain (41% range)\nHigh 18\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 15.54,
+  "avg_rain": 61.0,
+  "high_temp": 19.61,
+  "low_temp": 12.76,
+  "temp_range": 0.5999999999999996,
+  "rain_range": 24.400000000000006,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 15.5\u00b0C (1\u00b0C range), 61% rain (24% range)\nHigh 20\u00b0C / Low 13\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Only data from Meteoblue is available and it deviates. Meteoblue: 24.4\u201314.4\u00b0C vs baseline 18\u201313\u00b0C; not stated rain. Looks like weather is a bit of a wildcard today in Brussels, just like a cheeky monkey's antics.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a dry day whereas the baseline predicts 61% chance of rain. Temperature and rain values from YR.no and M\u00e9t\u00e9o Belgique are not stated. Seems like today's weather in Brussels is as unpredictable as a monkey on a trampoline.",
   "alignment": "divergent"
 }
