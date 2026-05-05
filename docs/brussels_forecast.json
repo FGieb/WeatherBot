@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 12.074,
-  "avg_rain": 33.6,
-  "high_temp": 15.01,
-  "low_temp": 10.7,
-  "temp_range": 1.1080000000000005,
-  "rain_range": 42.4,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 12.1\u00b0C (1\u00b0C range), 34% rain (42% range)\nHigh 15\u00b0C / Low 11\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.707,
+  "avg_rain": 54.3,
+  "high_temp": 10,
+  "low_temp": 7.4,
+  "temp_range": 0.613999999999999,
+  "rain_range": 28.599999999999994,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.7\u00b0C (1\u00b0C range), 54% rain (29% range)\nHigh 10\u00b0C / Low 7\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast from Meteoblue disagrees with the baseline. Meteoblue indicates a 0-0.1\" rain, which even though not clearly stated, implies a greater probability of rain than the 34% given in the baseline. Hard to plan a day under such uncertainty, even a donkey would be confused.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The weather sources disagree for Brussels today. Meteoblue reports a lower temperature range of 10-12\u00b0C and unspecified rain chances. It's looking like a classic spring day in Brussels.",
   "alignment": "divergent"
 }

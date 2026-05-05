@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 13.483999999999998,
-  "avg_rain": 95.8,
-  "high_temp": 16.74,
-  "low_temp": 12.2,
-  "temp_range": 0.3280000000000012,
-  "rain_range": 8.400000000000006,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 13.5\u00b0C (0\u00b0C range), 96% rain (8% range)\nHigh 17\u00b0C / Low 12\u00b0C",
+  "avg_temp": 12.526,
+  "avg_rain": 15.0,
+  "high_temp": 15.0,
+  "low_temp": 9.0,
+  "temp_range": 0.6119999999999983,
+  "rain_range": 30.0,
+  "summary": "Paris: \u2601\ufe0f Avg 12.5\u00b0C (1\u00b0C range), 15% rain (30% range)\nHigh 15\u00b0C / Low 9\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue forecasts a lower temperature and more rain. Meteoblue: 16.7\u00b0C vs baseline 13.5\u00b0C; 10\u201320mm rain vs baseline 96%. Sounds like a day for ducks, not bumblebees, in Paris.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts slightly different temperatures, with a high of 15\u00b0C (59\u00b0F) and a low of 12\u00b0C (54\u00b0F), and predicts light rain. The other sources do not provide data. It seems like a day for indoor activities, perhaps a visit to the Louvre.",
   "alignment": "divergent"
 }
