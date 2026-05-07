@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 13.054,
-  "avg_rain": 6.0,
-  "high_temp": 16.02,
-  "low_temp": 8.7,
-  "temp_range": 1.468,
-  "rain_range": 12.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 13.1\u00b0C (1\u00b0C range), 6% rain (12% range)\nHigh 16\u00b0C / Low 9\u00b0C",
+  "avg_temp": 15.652999999999999,
+  "avg_rain": 0.0,
+  "high_temp": 19.57,
+  "low_temp": 11.5,
+  "temp_range": 1.1059999999999999,
+  "rain_range": 0.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 15.7\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 20\u00b0C / Low 12\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather data for Brussels aligns across the sources. Meteoblue suggests similar temperatures and rain probabilities, with no explicit hours stated. Looks like it'll be a typical day in Brussels, not exactly bumblebee-friendly with the cool temperatures and potential for rain.",
-  "alignment": "unknown"
+  "gpt_comment": "[FULL] The weather data for Brussels is consistent across the available sources. Meteoblue reports a high of 15.6\u00b0C (60\u00b0F) and a low of 9.4\u00b0C (49\u00b0F), which aligns with the baseline's range of 12-20\u00b0C. It's a classic spring day in Brussels - perfect for a stroll in the park, just watch out for the bumblebees.",
+  "alignment": "full"
 }
