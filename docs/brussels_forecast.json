@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 14.071000000000002,
-  "avg_rain": 43.2,
-  "high_temp": 17.73,
-  "low_temp": 9.59,
-  "temp_range": 1.0619999999999994,
-  "rain_range": 46.400000000000006,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 14.1\u00b0C (1\u00b0C range), 43% rain (46% range)\nHigh 18\u00b0C / Low 10\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 8.974,
+  "avg_rain": 57.9,
+  "high_temp": 11.84,
+  "low_temp": 5.25,
+  "temp_range": 0.5079999999999991,
+  "rain_range": 30.200000000000003,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.0\u00b0C (1\u00b0C range), 58% rain (30% range)\nHigh 12\u00b0C / Low 5\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue suggests a drier day in Brussels compared to the baseline data. Specifically, Meteoblue doesn't explicitly state rain probabilities, but it implies a dry day with 7 hours of sunshine, unlike the baseline's 43% rain forecast. Seems like the weather may be as unpredictable as a haring darting through a field.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts dry weather contrary to the baseline's 58% rain. Temperature and rain probabilities from YR.no and Local are not stated. Seems like you might need to pack for both rain and sun, a classic spring day in Brussels.",
   "alignment": "divergent"
 }
