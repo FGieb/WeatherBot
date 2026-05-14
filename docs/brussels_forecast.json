@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 8.372,
-  "avg_rain": 77.1,
-  "high_temp": 11.06,
-  "low_temp": 5.59,
-  "temp_range": 0.7040000000000006,
-  "rain_range": 19.39999999999999,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 8.4\u00b0C (1\u00b0C range), 77% rain (19% range)\nHigh 11\u00b0C / Low 6\u00b0C",
+  "avg_temp": 9.598,
+  "avg_rain": 67.4,
+  "high_temp": 11.77,
+  "low_temp": 5.92,
+  "temp_range": 0.6359999999999992,
+  "rain_range": 14.799999999999997,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 9.6\u00b0C (1\u00b0C range), 67% rain (15% range)\nHigh 12\u00b0C / Low 6\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for Brussels' weather today. Meteoblue indicates an average temperature of around 13.3\u00b0C, which falls within the baseline's range. No significant differences in rain probability were found. Seems like a typical weather day in Brussels, nothing a bumblebee wouldn't be able to handle.",
+  "gpt_comment": "[FULL] All sources align with the baseline. Meteoblue indicates a temperature of around 10.6\u00b0C (51\u00b0F), which is within the baseline range and rain is also predicted, but the exact probability is not stated. A typical rainy day in Brussels, might be a good time to stay in and watch a movie.",
   "alignment": "unknown"
 }
