@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 12.839000000000002,
-  "avg_rain": 53.5,
-  "high_temp": 15.49,
-  "low_temp": 8.5,
-  "temp_range": 0.3179999999999996,
-  "rain_range": 27.800000000000004,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.8\u00b0C (0\u00b0C range), 54% rain (28% range)\nHigh 15\u00b0C / Low 8\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 12.017,
+  "avg_rain": 91.1,
+  "high_temp": 15.0,
+  "low_temp": 10.6,
+  "temp_range": 0.23399999999999999,
+  "rain_range": 13.399999999999991,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.0\u00b0C (0\u00b0C range), 91% rain (13% range)\nHigh 15\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a dry day whereas baseline predicts 54% rain. No other significant divergences. Despite the divergence, it seems you won't need to be a rain-hating cat to enjoy Paris today.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a slightly cooler temperature, with a high of around 16\u00b0C vs the baseline's 15\u00b0C. No other differences are stated. It seems like a classic spring day in Paris, perhaps a bit cooler than usual, so don't forget your jacket if you're heading out!",
   "alignment": "divergent"
 }
