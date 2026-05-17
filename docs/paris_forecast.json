@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 12.017,
-  "avg_rain": 91.1,
-  "high_temp": 15.0,
-  "low_temp": 10.6,
-  "temp_range": 0.23399999999999999,
-  "rain_range": 13.399999999999991,
-  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.0\u00b0C (0\u00b0C range), 91% rain (13% range)\nHigh 15\u00b0C / Low 11\u00b0C",
+  "avg_temp": 12.268,
+  "avg_rain": 81.5,
+  "high_temp": 13.93,
+  "low_temp": 10.38,
+  "temp_range": 0.695999999999998,
+  "rain_range": 3.0,
+  "summary": "Paris: \ud83c\udf27\ufe0f Avg 12.3\u00b0C (1\u00b0C range), 82% rain (3% range)\nHigh 14\u00b0C / Low 10\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a slightly cooler temperature, with a high of around 16\u00b0C vs the baseline's 15\u00b0C. No other differences are stated. It seems like a classic spring day in Paris, perhaps a bit cooler than usual, so don't forget your jacket if you're heading out!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue disagrees with the rainy baseline. It predicts a dry day. With no data from YR.no and a failed connection with M\u00e9t\u00e9o France, Meteoblue stands alone in its sun prediction. Looks like a Parisian spring day is playing hide-and-seek like a cheeky monkey.",
   "alignment": "divergent"
 }
