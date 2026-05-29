@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 25.578,
-  "avg_rain": 24.9,
-  "high_temp": 29.41,
-  "low_temp": 18.88,
-  "temp_range": 0.20400000000000063,
-  "rain_range": 9.8,
-  "summary": "Brussels: \u2601\ufe0f Avg 25.6\u00b0C (0\u00b0C range), 25% rain (10% range)\nHigh 29\u00b0C / Low 19\u00b0C",
+  "avg_temp": 24.003,
+  "avg_rain": 38.5,
+  "high_temp": 27.45,
+  "low_temp": 18.86,
+  "temp_range": 0.6460000000000043,
+  "rain_range": 27.400000000000002,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 24.0\u00b0C (1\u00b0C range), 38% rain (27% range)\nHigh 27\u00b0C / Low 19\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecast is mainly consistent, except for temperature differences noted from Meteoblue. Meteoblue reported a high of 28\u00b0C (83\u00b0F), which is roughly 2.4\u00b0C cooler than the baseline's 30.6\u00b0C high. It seems like it might be a slightly cooler day in Brussels than expected, perhaps a good day for a bumblebee to take a break from the heat.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast for Brussels is inconsistent. Meteoblue predicts a high of 32\u00b0C, which is significantly warmer than the baseline's 27\u00b0C. Be prepared for a hotter day, might not be the best for a monkey's picnic in the park.",
   "alignment": "divergent"
 }
