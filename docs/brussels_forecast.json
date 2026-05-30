@@ -8,6 +8,6 @@
   "rain_range": 27.400000000000002,
   "summary": "Brussels: \ud83c\udf27\ufe0f Avg 24.0\u00b0C (1\u00b0C range), 38% rain (27% range)\nHigh 27\u00b0C / Low 19\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The forecast for Brussels is inconsistent. Meteoblue predicts a high of 32\u00b0C, which is significantly warmer than the baseline's 27\u00b0C. Be prepared for a hotter day, might not be the best for a monkey's picnic in the park.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Baseline forecasts and Meteoblue significantly differ. Meteoblue indicates a much higher rain volume (>0.8\") vs. baseline's 38% rain probability, and a cooler peak temperature (28.3\u00b0C vs. baseline's 24\u00b0C). Just remember to pack an umbrella, it seems the weather might be as unpredictable as a monkey's mischief.",
   "alignment": "divergent"
 }
