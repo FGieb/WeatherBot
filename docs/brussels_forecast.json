@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 24.003,
-  "avg_rain": 38.5,
-  "high_temp": 27.45,
-  "low_temp": 18.86,
-  "temp_range": 0.6460000000000043,
-  "rain_range": 27.400000000000002,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 24.0\u00b0C (1\u00b0C range), 38% rain (27% range)\nHigh 27\u00b0C / Low 19\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 20.123,
+  "avg_rain": 10.0,
+  "high_temp": 22.18,
+  "low_temp": 16.4,
+  "temp_range": 0.6859999999999999,
+  "rain_range": 20.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 20.1\u00b0C (1\u00b0C range), 10% rain (20% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Baseline forecasts and Meteoblue significantly differ. Meteoblue indicates a much higher rain volume (>0.8\") vs. baseline's 38% rain probability, and a cooler peak temperature (28.3\u00b0C vs. baseline's 24\u00b0C). Just remember to pack an umbrella, it seems the weather might be as unpredictable as a monkey's mischief.",
-  "alignment": "divergent"
+  "gpt_comment": "[PARTIAL] There's some divergence in sunshine duration. Meteoblue suggests 3 hours of sun, while this isn't stated in the baseline. Just a bit of extra sunshine to enjoy the day in Brussels.",
+  "alignment": "unknown"
 }
