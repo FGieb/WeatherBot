@@ -8,6 +8,6 @@
   "rain_range": 20.0,
   "summary": "Brussels: \u2601\ufe0f Avg 20.1\u00b0C (1\u00b0C range), 10% rain (20% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather forecasts for Brussels align well. Meteoblue indicates a temperature range of 16-20\u00b0C (roughly equivalent to the baseline 16-22\u00b0C) and light rain, although the exact percentage isn't stated. Seems like the city could be as calm as a grazing gazelle today.",
-  "alignment": "full"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Material difference detected. Meteoblue reported a higher chance of rain (0.2-0.4\"). The rest of the data from the other sources was not stated. Looks like you might need a bumblebee-patterned umbrella in Brussels today.",
+  "alignment": "divergent"
 }
