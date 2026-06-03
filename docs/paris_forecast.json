@@ -8,6 +8,6 @@
   "rain_range": 0.0,
   "summary": "Paris: \u2600\ufe0f Avg 22.6\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 26\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] The weather forecasts for Paris align completely. Meteoblue indicates a temperature range of 15-20\u00b0C (not a material difference) and no rainfall, consistent with the baseline forecast. Enjoy the pleasant warmth of the day, perfect for a stroll along the River Seine.",
+  "gpt_comment": "[FULL] All sources align with the baseline: sunny with an average of 22.6\u00b0C in Paris. Meteoblue indicates a possible temperature range of 14.4\u00b0C to 18.9\u00b0C. A classic spring day in Paris, perfect for bumblebees buzzing around the gardens.",
   "alignment": "unknown"
 }
