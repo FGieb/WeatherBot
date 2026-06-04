@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 20.123,
-  "avg_rain": 10.0,
-  "high_temp": 22.18,
-  "low_temp": 16.4,
-  "temp_range": 0.6859999999999999,
-  "rain_range": 20.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 20.1\u00b0C (1\u00b0C range), 10% rain (20% range)\nHigh 22\u00b0C / Low 16\u00b0C",
+  "avg_temp": 15.974,
+  "avg_rain": 48.9,
+  "high_temp": 18.16,
+  "low_temp": 13.6,
+  "temp_range": 1.4679999999999982,
+  "rain_range": 3.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 16.0\u00b0C (1\u00b0C range), 49% rain (3% range)\nHigh 18\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecast is inconsistent. Meteoblue indicates a temperature range of 12.8-17.2\u00b0C, which is cooler than the baseline's 16-22\u00b0C. Unfortunately, it seems like a classic spring day in Brussels might be a bit chillier than expected.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs from the baseline, but YR.no and Local data could not be extracted. Meteoblue shows a temperature range of 14-41\u00b0F, which is significantly lower than the baseline's 16\u00b0C average. Unfortunately, there's no precise data on rainfall or specific hours. So, it seems like you might need a warmer jacket if Meteoblue's prediction holds true - not exactly bumblebee weather.",
   "alignment": "divergent"
 }
