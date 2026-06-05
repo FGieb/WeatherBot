@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 15.974,
-  "avg_rain": 48.9,
-  "high_temp": 18.16,
-  "low_temp": 13.6,
-  "temp_range": 1.4679999999999982,
-  "rain_range": 3.0,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 16.0\u00b0C (1\u00b0C range), 49% rain (3% range)\nHigh 18\u00b0C / Low 14\u00b0C",
+  "avg_temp": 16.059,
+  "avg_rain": 55.6,
+  "high_temp": 18.12,
+  "low_temp": 14.1,
+  "temp_range": 1.2379999999999995,
+  "rain_range": 8.799999999999997,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 16.1\u00b0C (1\u00b0C range), 56% rain (9% range)\nHigh 18\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue differs from the baseline, but YR.no and Local data could not be extracted. Meteoblue shows a temperature range of 14-41\u00b0F, which is significantly lower than the baseline's 16\u00b0C average. Unfortunately, there's no precise data on rainfall or specific hours. So, it seems like you might need a warmer jacket if Meteoblue's prediction holds true - not exactly bumblebee weather.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Data from Meteoblue differs from the baseline. Meteoblue predicts a lower temperature range (17.2-13.3\u00b0C vs 18-14\u00b0C baseline) and unspecified rainfall. Unfortunately, no monkey business here, just a potential for cooler weather in Brussels today.",
   "alignment": "divergent"
 }
