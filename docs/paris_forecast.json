@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 19.401,
-  "avg_rain": 22.200000000000003,
-  "high_temp": 22.76,
-  "low_temp": 15.2,
-  "temp_range": 0.24199999999999733,
-  "rain_range": 16.8,
-  "summary": "Paris: \u2601\ufe0f Avg 19.4\u00b0C (0\u00b0C range), 22% rain (17% range)\nHigh 23\u00b0C / Low 15\u00b0C",
+  "avg_temp": 20.282,
+  "avg_rain": 0.3,
+  "high_temp": 24.96,
+  "low_temp": 14.3,
+  "temp_range": 1.4039999999999964,
+  "rain_range": 0.6,
+  "summary": "Paris: \u2600\ufe0f Avg 20.3\u00b0C (1\u00b0C range), 0% rain (1% range)\nHigh 25\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] The weather forecast aligns across all sources. Meteoblue suggests an average temperature of approx 19\u00b0C (66\u00b0F) which aligns with the baseline. Rain data and specific high/low temperatures are not stated. A typical, mild day for strolling along the Seine.",
+  "gpt_comment": "[FULL] Weather data for Paris aligns across all available sources. Meteoblue reports similar temperature range and no rain, aligning with the baseline. The temperatures are perfect for a relaxing day at a caf\u00e9 terrace, perhaps spotting a bumblebee or two.",
   "alignment": "unknown"
 }
