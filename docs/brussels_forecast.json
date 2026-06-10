@@ -8,6 +8,6 @@
   "rain_range": 58.599999999999994,
   "summary": "Brussels: \ud83c\udf27\ufe0f Avg 15.0\u00b0C (2\u00b0C range), 60% rain (59% range)\nHigh 18\u00b0C / Low 12\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The baseline and Meteoblue disagree on the weather for Brussels. Meteoblue predicts a temperature range of 11-16\u00b0C, versus the baseline's 12-18\u00b0C, and 0-0.1\" of rain, which could be significantly less than the baseline's 60% chance. The forecast uncertainty makes it as unpredictable as a monkey choosing the winning lottery numbers.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a thinner rain volume (0.1-0.2\" vs baseline not stated) and slightly colder temperatures (17.2\u00b0C average vs baseline 15\u00b0C). The missing data from YR.no and M\u00e9t\u00e9o Belgique makes the forecast more uncertain.",
   "alignment": "divergent"
 }
