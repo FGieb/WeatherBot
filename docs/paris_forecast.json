@@ -8,6 +8,6 @@
   "rain_range": 15.2,
   "summary": "Paris: \u2601\ufe0f Avg 16.7\u00b0C (1\u00b0C range), 24% rain (15% range)\nHigh 18\u00b0C / Low 13\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for Paris weather today. Meteoblue suggests a high of 20\u00b0C (68\u00b0F) and low of 11\u00b0C (52\u00b0F), within the acceptable range. A perfect day to sit by the Seine, maybe even catch a glimpse of a bumblebee buzzing by.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Sources disagree on the temperature. Meteoblue reports a higher peak of 18.3\u00b0C (65\u00b0F), 1.6\u00b0C above baseline. Rain probability and hours are not stated. A bit warmer than expected, Paris seems to be flirting with summer temperatures.",
+  "alignment": "divergent"
 }
