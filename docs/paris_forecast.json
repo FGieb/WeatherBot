@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 16.654,
-  "avg_rain": 24.4,
-  "high_temp": 18.5,
-  "low_temp": 13.4,
-  "temp_range": 0.6280000000000001,
-  "rain_range": 15.2,
-  "summary": "Paris: \u2601\ufe0f Avg 16.7\u00b0C (1\u00b0C range), 24% rain (15% range)\nHigh 18\u00b0C / Low 13\u00b0C",
+  "avg_temp": 23.289,
+  "avg_rain": 0.8,
+  "high_temp": 27.61,
+  "low_temp": 17.3,
+  "temp_range": 1.2579999999999991,
+  "rain_range": 1.6,
+  "summary": "Paris: \u2600\ufe0f Avg 23.3\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 28\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Sources disagree on the temperature. Meteoblue reports a higher peak of 18.3\u00b0C (65\u00b0F), 1.6\u00b0C above baseline. Rain probability and hours are not stated. A bit warmer than expected, Paris seems to be flirting with summer temperatures.",
-  "alignment": "divergent"
+  "gpt_comment": "[PARTIAL] Alignment. Most sources suggest similar temperatures but Meteoblue's rain data is not stated. YR.no and M\u00e9t\u00e9o France data could not be extracted. The lack of rain data from other sources makes it a bit of a guessing game, like trying to catch a monkey in a haring race.",
+  "alignment": "unknown"
 }
