@@ -8,6 +8,6 @@
   "rain_range": 1.6,
   "summary": "Paris: \u2600\ufe0f Avg 24.8\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 29\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All available sources align with the baseline data for Paris. Meteoblue indicates sunny weather, aligning with the baseline's sunny forecast. A perfect day for a stroll by the Seine, perhaps spotting a bumblebee or two in the riverside gardens.",
+  "gpt_comment": "[PARTIAL] Alignment with limited data. Meteoblue: not stated \u00b0C, rain 0-0.1\", wind 8 mph. No data from YR.no or M\u00e9t\u00e9o France. The slight chance of rain might add a romantic touch to a Parisian evening.",
   "alignment": "unknown"
 }
