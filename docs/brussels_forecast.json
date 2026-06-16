@@ -8,6 +8,6 @@
   "rain_range": 6.4,
   "summary": "Brussels: \u2600\ufe0f Avg 18.4\u00b0C (1\u00b0C range), 3% rain (6% range)\nHigh 21\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All accessible sources align with the baseline for Brussels. Meteoblue suggests the same temperature range and no rain, while YR.no and Local weather data are not available. A perfect day to be as busy as a bumblebee enjoying the sunny skies.",
+  "gpt_comment": "[PARTIAL] Alignment. Meteoblue suggests slightly different temperatures. Meteoblue shows highs of 25.5\u00b0C and lows of 16\u00b0C, compared to the baseline's 21\u00b0C and 14\u00b0C. Perfect day for a walk in the park, but don't forget your water bottle!",
   "alignment": "unknown"
 }
