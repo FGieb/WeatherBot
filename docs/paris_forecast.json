@@ -8,6 +8,6 @@
   "rain_range": 1.6,
   "summary": "Paris: \u2600\ufe0f Avg 24.8\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 29\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue reports significantly hotter weather. The peak temperature difference is around 5.6\u00b0C higher on Meteoblue (34.4\u00b0C vs 29\u00b0C baseline). Rain and low temperature data were not stated. It's going to be a hot day, perfect for a visit to a shady park, but don't forget your water bottle!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a significantly higher daily temperature. Meteoblue: High of 35.6\u00b0C vs baseline 29\u00b0C; Low of 24.4\u00b0C vs baseline 17\u00b0C. Such heat in Paris may make the city feel like a natural sauna, certainly not the best day for a bumblebee in flight.",
   "alignment": "divergent"
 }
