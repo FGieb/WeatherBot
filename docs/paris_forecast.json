@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 24.781,
-  "avg_rain": 0.8,
-  "high_temp": 28.8,
-  "low_temp": 17.1,
-  "temp_range": 0.8419999999999952,
-  "rain_range": 1.6,
-  "summary": "Paris: \u2600\ufe0f Avg 24.8\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 29\u00b0C / Low 17\u00b0C",
+  "avg_temp": 30.045,
+  "avg_rain": 15.8,
+  "high_temp": 34.8,
+  "low_temp": 23.3,
+  "temp_range": 0.889999999999997,
+  "rain_range": 14.0,
+  "summary": "Paris: \u2601\ufe0f Avg 30.0\u00b0C (1\u00b0C range), 16% rain (14% range)\nHigh 35\u00b0C / Low 23\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a significantly higher daily temperature. Meteoblue: High of 35.6\u00b0C vs baseline 29\u00b0C; Low of 24.4\u00b0C vs baseline 17\u00b0C. Such heat in Paris may make the city feel like a natural sauna, certainly not the best day for a bumblebee in flight.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The baseline and Meteoblue sources disagree on today's weather in Paris. Meteoblue suggests a high of 36\u00b0C and a low of 22\u00b0C, which is a 6\u00b0C and 1\u00b0C difference respectively from the baseline. Given the heat, it's the kind of day where even a gazelle would seek shade in the City of Light.",
   "alignment": "divergent"
 }
