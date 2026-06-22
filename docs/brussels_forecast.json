@@ -8,6 +8,6 @@
   "rain_range": 5.0,
   "summary": "Brussels: \u2600\ufe0f Avg 26.8\u00b0C (2\u00b0C range), 2% rain (5% range)\nHigh 31\u00b0C / Low 21\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather forecast for Brussels aligns across all sources. Meteoblue reports sun with a high of 30.5\u00b0C (87\u00b0F) and a low of 20\u00b0C (68\u00b0F), which is within the 2\u00b0C range of the baseline. While YR.no and M\u00e9t\u00e9o Belgique data was not available, the forecast suggests a sunny day, perfect for a stroll in the park with the bumblebees.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] There's a noticeable discrepancy in the temperature predictions. Meteoblue suggests the temperature could peak at around 32.8\u00b0C (91\u00b0F) compared to the baseline's 31\u00b0C high. This could make the city feel like a sauna, not ideal unless you're a bumblebee enjoying the warmth.",
+  "alignment": "divergent"
 }

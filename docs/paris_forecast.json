@@ -8,6 +8,6 @@
   "rain_range": 23.6,
   "summary": "Paris: \u2601\ufe0f Avg 33.9\u00b0C (2\u00b0C range), 14% rain (24% range)\nHigh 39\u00b0C / Low 24\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Forecasts differ significantly. Meteoblue predicts a sunny day while the baseline indicates 14% chance of rain. The temperature difference isn't stated on Meteoblue, making it hard to compare. Despite the uncertainty, it's probably a good day to be a bumblebee in the city of flowers.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates a higher temperature range (36.1-38.3\u00b0C) compared to the baseline (33.9\u00b0C). Notably, no other sources provided data for comparison. I guess even the gazelle would find it hot today in Paris.",
   "alignment": "divergent"
 }
