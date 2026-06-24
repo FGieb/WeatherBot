@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 37.079,
-  "avg_rain": 0.4,
-  "high_temp": 40.64,
-  "low_temp": 29.4,
-  "temp_range": 0.47800000000000864,
-  "rain_range": 0.8,
-  "summary": "Paris: \u2600\ufe0f Avg 37.1\u00b0C (0\u00b0C range), 0% rain (1% range)\nHigh 41\u00b0C / Low 29\u00b0C",
+  "avg_temp": 36.593,
+  "avg_rain": 0.5,
+  "high_temp": 39.6,
+  "low_temp": 30.6,
+  "temp_range": 0.5860000000000056,
+  "rain_range": 1.0,
+  "summary": "Paris: \u2600\ufe0f Avg 36.6\u00b0C (1\u00b0C range), 0% rain (1% range)\nHigh 40\u00b0C / Low 31\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue has a significantly different temperature prediction for Paris. While the Baseline predicts an average of 37.1\u00b0C, Meteoblue suggests temperatures around 36.7\u00b0C (98\u00b0F) and 25.6\u00b0C (78\u00b0F). With such a heat, it's a perfect day for gazelles, not so much for humans though.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue shows significantly lower temperatures (40\u00b0C vs 36.6\u00b0C at peak). Meteoblue: 40\u00b0C high vs baseline 36.6\u00b0C; Meteoblue: 79\u00b0F (26.1\u00b0C) low vs baseline 31\u00b0C. The heat might make you feel like a gazelle in the Sahara.",
   "alignment": "divergent"
 }

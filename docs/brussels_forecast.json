@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 30.81,
-  "avg_rain": 1.0,
-  "high_temp": 34.8,
-  "low_temp": 25.41,
-  "temp_range": 1.2199999999999989,
-  "rain_range": 2.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 30.8\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 35\u00b0C / Low 25\u00b0C",
+  "avg_temp": 31.208999999999996,
+  "avg_rain": 1.1,
+  "high_temp": 34.7,
+  "low_temp": 25.7,
+  "temp_range": 1.022000000000002,
+  "rain_range": 2.2,
+  "summary": "Brussels: \u2600\ufe0f Avg 31.2\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 35\u00b0C / Low 26\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All relevant weather forecasts align fully with the baseline. Meteoblue suggests a temperature range of 25.6\u00b0C to 30.6\u00b0C, which is within the baseline range. No other concrete values were provided. Despite the heat, it's a perfect day for a stroll in Brussels, just remember to take a water bottle with you.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a different temperature range. Meteoblue: High 36\u00b0C / Low 22\u00b0C compared to baseline High 35\u00b0C / Low 26\u00b0C. An extra degree at the peak might make the day feel a bit more like a desert than a bustling city, so remember to stay hydrated.",
+  "alignment": "divergent"
 }
