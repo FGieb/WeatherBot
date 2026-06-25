@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 31.208999999999996,
+  "avg_temp": 31.672000000000004,
   "avg_rain": 1.1,
-  "high_temp": 34.7,
-  "low_temp": 25.7,
-  "temp_range": 1.022000000000002,
+  "high_temp": 36.02,
+  "low_temp": 22.44,
+  "temp_range": 1.2960000000000065,
   "rain_range": 2.2,
-  "summary": "Brussels: \u2600\ufe0f Avg 31.2\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 35\u00b0C / Low 26\u00b0C",
+  "summary": "Brussels: \u2600\ufe0f Avg 31.7\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 36\u00b0C / Low 22\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a different temperature range. Meteoblue: High 36\u00b0C / Low 22\u00b0C compared to baseline High 35\u00b0C / Low 26\u00b0C. An extra degree at the peak might make the day feel a bit more like a desert than a bustling city, so remember to stay hydrated.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue reports a significant temperature difference. Meteoblue indicates a high of 36\u00b0C (4.3\u00b0C more than the baseline) and a low of 25\u00b0C (3\u00b0C more than the baseline). Temperatures this high make it a great day for haring around in the park, but don't forget your water bottle!",
   "alignment": "divergent"
 }
