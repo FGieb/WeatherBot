@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 25.957,
-  "avg_rain": 11.100000000000001,
-  "high_temp": 30.38,
-  "low_temp": 17.63,
-  "temp_range": 0.48600000000000065,
-  "rain_range": 13.000000000000002,
-  "summary": "Brussels: \u2601\ufe0f Avg 26.0\u00b0C (0\u00b0C range), 11% rain (13% range)\nHigh 30\u00b0C / Low 18\u00b0C",
+  "avg_temp": 21.331000000000003,
+  "avg_rain": 1.0,
+  "high_temp": 24.7,
+  "low_temp": 16.08,
+  "temp_range": 1.458000000000002,
+  "rain_range": 2.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 21.3\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 25\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Brussels weather data varies across sources. Meteoblue predicts significantly higher temperatures, with 34.4\u00b0C vs baseline's 26\u00b0C avg. Too bad we don't have a donkey's weather intuition to help us out!",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All sources agree: sunny day in Brussels with no expected rain. Meteoblue indicates the temperature may reach 28.3\u00b0C (83\u00b0F), a notable 7\u00b0C higher than baseline's 21.3\u00b0C. It seems like it's going to be a perfect day to spot a bumblebee buzzing around in the Brussels sun!",
+  "alignment": "full"
 }
