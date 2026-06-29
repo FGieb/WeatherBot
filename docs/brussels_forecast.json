@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 21.331000000000003,
-  "avg_rain": 1.0,
-  "high_temp": 24.7,
-  "low_temp": 16.08,
-  "temp_range": 1.458000000000002,
-  "rain_range": 2.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 21.3\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 25\u00b0C / Low 16\u00b0C",
+  "avg_temp": 21.235,
+  "avg_rain": 3.2,
+  "high_temp": 23.33,
+  "low_temp": 17.8,
+  "temp_range": 1.1900000000000013,
+  "rain_range": 6.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 21.2\u00b0C (1\u00b0C range), 3% rain (6% range)\nHigh 23\u00b0C / Low 18\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources agree: sunny day in Brussels with no expected rain. Meteoblue indicates the temperature may reach 28.3\u00b0C (83\u00b0F), a notable 7\u00b0C higher than baseline's 21.3\u00b0C. It seems like it's going to be a perfect day to spot a bumblebee buzzing around in the Brussels sun!",
-  "alignment": "full"
+  "gpt_comment": "[PARTIAL] Agreement with Meteoblue on temperature but not on precipitation. Meteoblue: 0-0.1\" rain not stated when, vs. baseline 3% rain. Looks like you'll need a bumblebee's precision to dodge those raindrops in Brussels today.",
+  "alignment": "unknown"
 }
