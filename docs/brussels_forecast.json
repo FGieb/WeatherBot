@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 22.165,
-  "avg_rain": 6.8,
-  "high_temp": 24.04,
-  "low_temp": 17.53,
-  "temp_range": 0.09000000000000341,
-  "rain_range": 5.6,
-  "summary": "Brussels: \u2601\ufe0f Avg 22.2\u00b0C (0\u00b0C range), 7% rain (6% range)\nHigh 24\u00b0C / Low 18\u00b0C",
+  "avg_temp": 25.362000000000002,
+  "avg_rain": 1.7,
+  "high_temp": 28.68,
+  "low_temp": 20.0,
+  "temp_range": 1.2839999999999954,
+  "rain_range": 3.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 25.4\u00b0C (1\u00b0C range), 2% rain (3% range)\nHigh 29\u00b0C / Low 20\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align fully with the baseline. Meteoblue's data is not explicitly stated. The weather in Brussels seems to be pretty predictable today.",
+  "gpt_comment": "[FULL] The weather predictions align across all accessible sources. Meteoblue suggests similar sunny weather with no explicit temperature or rain data. Enjoy the sun and keep an eye out for bumblebees basking in this lovely weather.",
   "alignment": "unknown"
 }
