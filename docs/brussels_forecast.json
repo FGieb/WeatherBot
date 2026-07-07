@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 24.345,
-  "avg_rain": 1.2,
-  "high_temp": 28.0,
-  "low_temp": 20.33,
-  "temp_range": 1.110000000000003,
-  "rain_range": 2.4,
-  "summary": "Brussels: \u2600\ufe0f Avg 24.3\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 28\u00b0C / Low 20\u00b0C",
+  "avg_temp": 23.945,
+  "avg_rain": 3.3,
+  "high_temp": 27.04,
+  "low_temp": 18.17,
+  "temp_range": 0.46999999999999886,
+  "rain_range": 6.6,
+  "summary": "Brussels: \u2600\ufe0f Avg 23.9\u00b0C (0\u00b0C range), 3% rain (7% range)\nHigh 27\u00b0C / Low 18\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The sources disagree on today's weather in Brussels. Meteoblue predicts a significantly lower temperature range of 17.2\u00b0C\u201330\u00b0C compared to the baseline's 20\u00b0C\u201328\u00b0C. A typical summer day in Brussels, it seems, just don't count on the baseline's forecast today.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: There's a significant discrepancy in temperature between the sources. Meteoblue suggests a high of 29\u00b0C (84\u00b0F) and a low of 19\u00b0C (66\u00b0F), which is hotter by at least 2\u00b0C compared to the baseline's 27\u00b0C high and 18\u00b0C low. Rain probability and hours are not stated. It seems like the day might be a touch hotter than expected, so it could be a good idea to dress lightly if you're planning outdoor activities.",
   "alignment": "divergent"
 }

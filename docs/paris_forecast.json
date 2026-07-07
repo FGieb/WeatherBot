@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 30.620000000000005,
-  "avg_rain": 0.7,
-  "high_temp": 34.8,
-  "low_temp": 25.1,
-  "temp_range": 0.7999999999999936,
-  "rain_range": 1.4,
-  "summary": "Paris: \u2600\ufe0f Avg 30.6\u00b0C (1\u00b0C range), 1% rain (1% range)\nHigh 35\u00b0C / Low 25\u00b0C",
+  "avg_temp": 32.145,
+  "avg_rain": 0.5,
+  "high_temp": 35.94,
+  "low_temp": 24.8,
+  "temp_range": 0.730000000000004,
+  "rain_range": 1.0,
+  "summary": "Paris: \u2600\ufe0f Avg 32.1\u00b0C (1\u00b0C range), 0% rain (1% range)\nHigh 36\u00b0C / Low 25\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue reports significantly lower temperatures. Meteoblue: 34\u00b0C vs Baseline: 30.6\u00b0C average. The weather is hot in Paris, make sure to drink water and maybe find a cool spot in the shade, perhaps under a tree with a bumblebee's nest.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The temperature varies between the baseline and Meteoblue. Meteoblue reports a high of 33.3\u00b0C and a low of 21.7\u00b0C, which is a ~1.1\u00b0C and ~3.3\u00b0C difference respectively. The temperature difference is substantial, especially in the evening, so you might want to dress like a gazelle, prepared for both heat and cold.",
   "alignment": "divergent"
 }
