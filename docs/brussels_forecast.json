@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 28.330000000000002,
-  "avg_rain": 0.7,
-  "high_temp": 31.7,
-  "low_temp": 23.0,
-  "temp_range": 0.10000000000000142,
-  "rain_range": 1.4,
-  "summary": "Brussels: \u2600\ufe0f Avg 28.3\u00b0C (0\u00b0C range), 1% rain (1% range)\nHigh 32\u00b0C / Low 23\u00b0C",
+  "avg_temp": 27.081000000000003,
+  "avg_rain": 0.9,
+  "high_temp": 30.7,
+  "low_temp": 19.8,
+  "temp_range": 0.40199999999999747,
+  "rain_range": 1.8,
+  "summary": "Brussels: \u2600\ufe0f Avg 27.1\u00b0C (0\u00b0C range), 1% rain (2% range)\nHigh 31\u00b0C / Low 20\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Brussels weather sources show some differences. Meteoblue suggests a high of 30.6\u00b0C (2.7\u00b0C above baseline) and not stating rain probability or hours. Seems like it might feel hotter than expected, make sure to stay hydrated!",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels. Meteoblue indicates sunshine with unspecified temperature and wind conditions. It's a classic day for a caf\u00e9 terrace.",
+  "alignment": "unknown"
 }
