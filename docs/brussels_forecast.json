@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 29.695,
-  "avg_rain": 1.5,
-  "high_temp": 34.2,
-  "low_temp": 24.1,
-  "temp_range": 1.129999999999999,
-  "rain_range": 3.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 29.7\u00b0C (1\u00b0C range), 2% rain (3% range)\nHigh 34\u00b0C / Low 24\u00b0C",
+  "avg_temp": 26.958,
+  "avg_rain": 0.8,
+  "high_temp": 30.3,
+  "low_temp": 21.9,
+  "temp_range": 0.7639999999999958,
+  "rain_range": 1.6,
+  "summary": "Brussels: \u2600\ufe0f Avg 27.0\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 30\u00b0C / Low 22\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates a lower temperature range compared to the baseline. Meteoblue: 29.4\u00b0C (a difference of about 0.3\u00b0C from the baseline), and no rain or wind information given. It's a classic summer day in Brussels, just a bit cooler according to Meteoblue.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue suggests a hotter day than baseline. Meteoblue: High 32\u00b0C (89\u00b0F) vs baseline High 30\u00b0C. With such hot weather, even a gazelle would seek some shade in Brussels today.",
   "alignment": "divergent"
 }
