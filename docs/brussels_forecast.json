@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 18.192999999999998,
-  "avg_rain": 4.2,
-  "high_temp": 20.8,
-  "low_temp": 14.85,
-  "temp_range": 0.8539999999999992,
-  "rain_range": 0.40000000000000036,
-  "summary": "Brussels: \u2600\ufe0f Avg 18.2\u00b0C (1\u00b0C range), 4% rain (0% range)\nHigh 21\u00b0C / Low 15\u00b0C",
+  "avg_temp": 18.988,
+  "avg_rain": 2.2,
+  "high_temp": 22.99,
+  "low_temp": 15.02,
+  "temp_range": 0.8159999999999954,
+  "rain_range": 4.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 19.0\u00b0C (1\u00b0C range), 2% rain (4% range)\nHigh 23\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline today in Brussels. Meteoblue indicates similar temperatures and no explicit rainfall data. A perfect day for a stroll, even a bumblebee would enjoy the sunshine!",
+  "gpt_comment": "[FULL] All accessible sources align with the baseline for Brussels: sunny weather with an average of 19\u00b0C. Meteoblue also indicates sun, but doesn't provide explicit temperature or rain data. Enjoy this delightful spring day in Brussels, it's buzzing like a bumblebee with sunshine.",
   "alignment": "unknown"
 }
