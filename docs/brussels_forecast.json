@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 21.467000000000002,
-  "avg_rain": 1.0,
-  "high_temp": 26.32,
-  "low_temp": 15.6,
-  "temp_range": 1.6139999999999972,
-  "rain_range": 2.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 21.5\u00b0C (2\u00b0C range), 1% rain (2% range)\nHigh 26\u00b0C / Low 16\u00b0C",
+  "avg_temp": 19.570999999999998,
+  "avg_rain": 4.7,
+  "high_temp": 23.46,
+  "low_temp": 15.23,
+  "temp_range": 0.4620000000000033,
+  "rain_range": 9.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 19.6\u00b0C (0\u00b0C range), 5% rain (9% range)\nHigh 23\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for Brussels weather. Meteoblue reports similar temperature and wind speed, but does not state rain probability. Considering the sunny forecast, it's a perfect day for a caf\u00e9 terrace.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Material divergence with Meteoblue. Meteoblue reports a high of 24\u00b0C (\u22484\u00b0C delta) and a low of 13\u00b0C (\u22482\u00b0C delta), but no explicit rain data. Looks like it might be a bit warmer than expected in Brussels today, but no chance of rain is mentioned.",
+  "alignment": "divergent"
 }
