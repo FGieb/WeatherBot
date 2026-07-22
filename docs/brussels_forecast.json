@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.570999999999998,
-  "avg_rain": 4.7,
-  "high_temp": 23.46,
-  "low_temp": 15.23,
-  "temp_range": 0.4620000000000033,
-  "rain_range": 9.4,
-  "summary": "Brussels: \u2600\ufe0f Avg 19.6\u00b0C (0\u00b0C range), 5% rain (9% range)\nHigh 23\u00b0C / Low 15\u00b0C",
+  "avg_temp": 19.777,
+  "avg_rain": 7.0,
+  "high_temp": 24.1,
+  "low_temp": 16.1,
+  "temp_range": 0.6859999999999999,
+  "rain_range": 6.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 19.8\u00b0C (1\u00b0C range), 7% rain (6% range)\nHigh 24\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Material divergence with Meteoblue. Meteoblue reports a high of 24\u00b0C (\u22484\u00b0C delta) and a low of 13\u00b0C (\u22482\u00b0C delta), but no explicit rain data. Looks like it might be a bit warmer than expected in Brussels today, but no chance of rain is mentioned.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All available sources align with the baseline. Meteoblue reports similar temperature and does not provide rain probability. The information from YR.no and M\u00e9t\u00e9o Belgique could not be extracted.",
+  "alignment": "unknown"
 }
