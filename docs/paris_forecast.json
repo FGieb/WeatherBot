@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 23.396,
-  "avg_rain": 0.9,
-  "high_temp": 27.7,
-  "low_temp": 17.2,
-  "temp_range": 0.40800000000000125,
-  "rain_range": 1.8,
-  "summary": "Paris: \u2600\ufe0f Avg 23.4\u00b0C (0\u00b0C range), 1% rain (2% range)\nHigh 28\u00b0C / Low 17\u00b0C",
+  "avg_temp": 26.223999999999997,
+  "avg_rain": 0.7,
+  "high_temp": 30.4,
+  "low_temp": 19.3,
+  "temp_range": 0.23199999999999932,
+  "rain_range": 1.4,
+  "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (0\u00b0C range), 1% rain (1% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All available sources align with the baseline for Paris weather. Meteoblue indicates a high of 26\u00b0C and a low of 16\u00b0C, which falls within the baseline range. Enjoy the warm, sunny day, perhaps with a promenade like a gazelle in the Parisian boulevards.",
+  "gpt_comment": "[FULL] Weather forecasts align perfectly. Meteoblue reports temperatures of 25\u00b0C (77\u00b0F) high and 17\u00b0C (62\u00b0F) low, which are within the baseline range. Seems like a classic summer day in Paris, perfect for enjoying a caf\u00e9 terrace!",
   "alignment": "unknown"
 }
