@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 26.741,
-  "avg_rain": 0.7,
-  "high_temp": 30.4,
-  "low_temp": 21.45,
-  "temp_range": 0.597999999999999,
-  "rain_range": 1.4,
-  "summary": "Brussels: \u2600\ufe0f Avg 26.7\u00b0C (1\u00b0C range), 1% rain (1% range)\nHigh 30\u00b0C / Low 21\u00b0C",
+  "avg_temp": 21.001,
+  "avg_rain": 33.5,
+  "high_temp": 24.4,
+  "low_temp": 16.84,
+  "temp_range": 2.1980000000000004,
+  "rain_range": 31.0,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 21.0\u00b0C (2\u00b0C range), 34% rain (31% range)\nHigh 24\u00b0C / Low 17\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels. Meteoblue suggests a high of 26.6\u00b0C (80\u00b0F) and a low of 14.4\u00b0C (58\u00b0F), within the given range. Enjoy the sunny weather, perfect for spotting a bumblebee or two in the park!",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] There is a significant divergence in temperature predictions. Meteoblue forecasts a peak of 31\u00b0C which is a 10\u00b0C difference from the baseline's 21\u00b0C average. No other material discrepancies noted. This heat might make Brussels feel more like a safari, perfect for spotting a gazelle, but not ideal if you're a bumblebee in a fur coat!",
+  "alignment": "divergent"
 }
