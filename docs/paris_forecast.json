@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 25.381,
-  "avg_rain": 0.7,
-  "high_temp": 29.4,
-  "low_temp": 18.5,
-  "temp_range": 0.8020000000000067,
-  "rain_range": 1.4,
-  "summary": "Paris: \u2600\ufe0f Avg 25.4\u00b0C (1\u00b0C range), 1% rain (1% range)\nHigh 29\u00b0C / Low 18\u00b0C",
+  "avg_temp": 30.047999999999995,
+  "avg_rain": 0.1,
+  "high_temp": 34.3,
+  "low_temp": 21.5,
+  "temp_range": 0.7360000000000007,
+  "rain_range": 0.2,
+  "summary": "Paris: \u2600\ufe0f Avg 30.0\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 34\u00b0C / Low 22\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All available sources align with the baseline for Paris weather today. Meteoblue indicates sunny weather, consistent with the baseline. A perfect day for a caf\u00e9 terrace, just like a Parisian bumblebee hopping from flower to flower.",
-  "alignment": "unknown"
+  "gpt_comment": "[FULL] The weather forecast is consistent across all accessible sources. Meteoblue reports similar temperatures but doesn't specify rain chances. The absence of data from YR.no and M\u00e9t\u00e9o France limits a more comprehensive comparison.",
+  "alignment": "full"
 }
