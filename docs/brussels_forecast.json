@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 31.659,
-  "avg_rain": 0.3,
-  "high_temp": 37.3,
-  "low_temp": 22.73,
-  "temp_range": 1.9220000000000077,
-  "rain_range": 0.6,
-  "summary": "Brussels: \u2600\ufe0f Avg 31.7\u00b0C (2\u00b0C range), 0% rain (1% range)\nHigh 37\u00b0C / Low 23\u00b0C",
+  "avg_temp": 26.146,
+  "avg_rain": 0.7,
+  "high_temp": 31.0,
+  "low_temp": 18.88,
+  "temp_range": 3.028000000000006,
+  "rain_range": 1.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 26.1\u00b0C (3\u00b0C range), 1% rain (1% range)\nHigh 31\u00b0C / Low 19\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue shows a lower temperature range (30.6\u00b0C\u201315\u00b0C) compared to the baseline's 37\u00b0C\u201323\u00b0C. Not stated rain probability and hours by other sources. As the day seems cooler, it might be a good day for a bumblebee to buzz around without overheating!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: There is a significant discrepancy in temperature readings. Meteoblue suggests a higher peak (36\u00b0C vs 31\u00b0C baseline) and a lower minimum (19\u00b0C vs baseline's 26.1\u00b0C). It's like a heat wave is hitting Brussels - stay cool like a gazelle in the shade!",
   "alignment": "divergent"
 }
