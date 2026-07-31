@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 23.89,
-  "avg_rain": 2.0,
-  "high_temp": 30.0,
-  "low_temp": 15.61,
-  "temp_range": 2.1400000000000006,
-  "rain_range": 4.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 23.9\u00b0C (2\u00b0C range), 2% rain (4% range)\nHigh 30\u00b0C / Low 16\u00b0C",
+  "avg_temp": 22.975,
+  "avg_rain": 0.8,
+  "high_temp": 27.0,
+  "low_temp": 17.78,
+  "temp_range": 0.9699999999999989,
+  "rain_range": 1.6,
+  "summary": "Brussels: \u2600\ufe0f Avg 23.0\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 27\u00b0C / Low 18\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a slight chance of rain, differing from the baseline's dry forecast. Meteoblue also shows a slight increase in temperature, not explicitly stated but visually evident from their chart. The day seems more fit for a hyena who doesn't mind a potential dash through the rain rather than a bumblebee seeking clear skies.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All sources align with the baseline for Brussels weather today. Meteoblue indicates a temperature range of 18.3-28.9\u00b0C and no rain, which matches our baseline. The weather seems perfect for a leisurely stroll, maybe you'll spot a bumblebee or two.",
+  "alignment": "full"
 }
