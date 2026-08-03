@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 29.794,
-  "avg_rain": 5.6,
-  "high_temp": 36.8,
-  "low_temp": 21.93,
-  "temp_range": 2.0120000000000005,
-  "rain_range": 0.7999999999999998,
-  "summary": "Brussels: \u2601\ufe0f Avg 29.8\u00b0C (2\u00b0C range), 6% rain (1% range)\nHigh 37\u00b0C / Low 22\u00b0C",
+  "avg_temp": 25.864,
+  "avg_rain": 2.0,
+  "high_temp": 30.5,
+  "low_temp": 20.54,
+  "temp_range": 1.1920000000000002,
+  "rain_range": 4.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 25.9\u00b0C (1\u00b0C range), 2% rain (4% range)\nHigh 30\u00b0C / Low 21\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] Alignment on temperature, divergence on sunshine. Meteoblue suggests clear skies contrasting the baseline's cloudy prediction. The lack of data from other sources makes it a partial guess, just like spotting a gazelle in the Brussels' Sonian Forest.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts higher temperatures (34.4\u00b0C vs. 25.9\u00b0C baseline) and slight chances of rain (0.1-0.2\"). YR.no and Local data was not stated. It might get a bit steamy - even a bumblebee might seek some shade today!",
+  "alignment": "divergent"
 }
