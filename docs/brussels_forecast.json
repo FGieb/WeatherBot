@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 25.864,
-  "avg_rain": 2.0,
-  "high_temp": 30.5,
-  "low_temp": 20.54,
-  "temp_range": 1.1920000000000002,
-  "rain_range": 4.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 25.9\u00b0C (1\u00b0C range), 2% rain (4% range)\nHigh 30\u00b0C / Low 21\u00b0C",
+  "avg_temp": 24.671,
+  "avg_rain": 2.4,
+  "high_temp": 29.1,
+  "low_temp": 19.34,
+  "temp_range": 0.8179999999999978,
+  "rain_range": 4.8,
+  "summary": "Brussels: \u2600\ufe0f Avg 24.7\u00b0C (1\u00b0C range), 2% rain (5% range)\nHigh 29\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts higher temperatures (34.4\u00b0C vs. 25.9\u00b0C baseline) and slight chances of rain (0.1-0.2\"). YR.no and Local data was not stated. It might get a bit steamy - even a bumblebee might seek some shade today!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports a higher temperature: peak at 31.7\u00b0C vs baseline's 29\u00b0C. Rain data and other temperature ranges are not stated from other sources. Seems like the heat could make some bumblebees pretty busy today in Brussels.",
   "alignment": "divergent"
 }
