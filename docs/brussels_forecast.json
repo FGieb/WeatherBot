@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 24.671,
-  "avg_rain": 2.4,
-  "high_temp": 29.1,
-  "low_temp": 19.34,
-  "temp_range": 0.8179999999999978,
-  "rain_range": 4.8,
-  "summary": "Brussels: \u2600\ufe0f Avg 24.7\u00b0C (1\u00b0C range), 2% rain (5% range)\nHigh 29\u00b0C / Low 19\u00b0C",
+  "avg_temp": 20.053,
+  "avg_rain": 0.7,
+  "high_temp": 24.8,
+  "low_temp": 14.09,
+  "temp_range": 2.3740000000000023,
+  "rain_range": 1.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 20.1\u00b0C (2\u00b0C range), 1% rain (1% range)\nHigh 25\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports a higher temperature: peak at 31.7\u00b0C vs baseline's 29\u00b0C. Rain data and other temperature ranges are not stated from other sources. Seems like the heat could make some bumblebees pretty busy today in Brussels.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels' weather is warmer according to Meteoblue. Meteoblue predicts highs of 27\u00b0C (equivalent of 81\u00b0F) and lows of 19\u00b0C (equivalent of 66\u00b0F) compared to baseline's 25\u00b0C/14\u00b0C. Other specifics like rain probability or wind speed aren't stated.",
   "alignment": "divergent"
 }
