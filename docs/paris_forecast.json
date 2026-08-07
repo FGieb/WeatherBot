@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 28.968,
+  "avg_temp": 28.029999999999998,
   "avg_rain": 0.3,
-  "high_temp": 32.8,
-  "low_temp": 20.8,
-  "temp_range": 1.6959999999999908,
+  "high_temp": 32.4,
+  "low_temp": 19.7,
+  "temp_range": 0.9400000000000048,
   "rain_range": 0.6,
-  "summary": "Paris: \u2600\ufe0f Avg 29.0\u00b0C (2\u00b0C range), 0% rain (1% range)\nHigh 33\u00b0C / Low 21\u00b0C",
+  "summary": "Paris: \u2600\ufe0f Avg 28.0\u00b0C (1\u00b0C range), 0% rain (1% range)\nHigh 32\u00b0C / Low 20\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All accessible sources align with the baseline for Paris weather. Meteoblue indicates a high of around 26\u00b0C and low of 15\u00b0C (~79\u00b0F - 59\u00b0F) which falls within the baseline range. If you're a bumblebee in Paris, it's the perfect day for a pollen hunt.",
+  "gpt_comment": "[FULL] All sources align with the baseline data for Paris. Meteoblue suggests a high and low of 28\u00b0C and 15\u00b0C respectively, which is within the baseline's range. There's no mention of any rain, so it should be a dry day, perfect for a stroll down the Seine.",
   "alignment": "unknown"
 }

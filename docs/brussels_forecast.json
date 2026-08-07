@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 26.433999999999997,
-  "avg_rain": 0.5,
-  "high_temp": 30.32,
-  "low_temp": 19.3,
-  "temp_range": 1.0279999999999987,
-  "rain_range": 1.0,
-  "summary": "Brussels: \u2600\ufe0f Avg 26.4\u00b0C (1\u00b0C range), 0% rain (1% range)\nHigh 30\u00b0C / Low 19\u00b0C",
+  "avg_temp": 25.571999999999996,
+  "avg_rain": 0.6,
+  "high_temp": 29.9,
+  "low_temp": 19.0,
+  "temp_range": 0.18400000000000105,
+  "rain_range": 1.2,
+  "summary": "Brussels: \u2600\ufe0f Avg 25.6\u00b0C (0\u00b0C range), 1% rain (1% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather forecast for Brussels aligns across all sources. Meteoblue forecasts a high of 23.3\u00b0C (74\u00b0F) and a low of 14.4\u00b0C (58\u00b0F), which is within the 1\u00b0C range of the baseline. Rain probability and wind speed are not stated. It's a lovely day to be out and about, almost as busy as a bumblebee in a field of flowers.",
+  "gpt_comment": "[FULL] The weather forecast for Brussels aligns across available sources. Meteoblue predicts a similar temperature range but doesn't specify rain probability. The lack of data from YR.no and local sources doesn't affect the overall forecast consensus.",
   "alignment": "unknown"
 }
