@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 27.718,
-  "avg_rain": 1.2,
-  "high_temp": 33.6,
-  "low_temp": 20.08,
-  "temp_range": 4.403999999999996,
-  "rain_range": 2.4,
-  "summary": "Brussels: \u2600\ufe0f Avg 27.7\u00b0C (4\u00b0C range), 1% rain (2% range)\nHigh 34\u00b0C / Low 20\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 23.037,
+  "avg_rain": 0.9,
+  "high_temp": 27.2,
+  "low_temp": 14.2,
+  "temp_range": 1.4060000000000024,
+  "rain_range": 1.8,
+  "summary": "Brussels: \u2600\ufe0f Avg 23.0\u00b0C (1\u00b0C range), 1% rain (2% range)\nHigh 27\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] There's a major discrepancy between Meteoblue and the baseline. Meteoblue predicts a high of 28\u00b0C (difference of 6\u00b0C) and a low of 14\u00b0C (difference of 6\u00b0C). Unfortunately, YR.no and M\u00e9t\u00e9o Belgique didn't provide any data to compare. It seems like the donkeys might need an extra blanket tonight with that lower temperature!",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All accessible sources agree with the baseline for Brussels' weather. Meteoblue confirms sunny weather, but does not provide explicit temperature or rain probability details. Looks like a beautiful day to be out and about, just like a gazelle in the open plains.",
+  "alignment": "unknown"
 }
