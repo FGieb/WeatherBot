@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 28.643,
-  "avg_rain": 0.1,
-  "high_temp": 34.2,
-  "low_temp": 20.3,
-  "temp_range": 0.6339999999999968,
-  "rain_range": 0.2,
-  "summary": "Brussels: \u2600\ufe0f Avg 28.6\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 34\u00b0C / Low 20\u00b0C",
+  "avg_temp": 32.186,
+  "avg_rain": 0.2,
+  "high_temp": 37.9,
+  "low_temp": 25.4,
+  "temp_range": 1.0680000000000014,
+  "rain_range": 0.4,
+  "summary": "Brussels: \u2600\ufe0f Avg 32.2\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 38\u00b0C / Low 25\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels' weather information shows a notable difference. Meteoblue reports a lower high temperature of around 27\u00b0C (80\u00b0F) versus the baseline's 28.6\u00b0C average. It seems like it could be a bit cooler than anticipated, maybe just enough to keep the bumblebees buzzing a bit longer.",
-  "alignment": "divergent"
+  "gpt_comment": "[FULL] All available data aligns with the baseline. Meteoblue indicates a high of 32.8\u00b0C (0.6\u00b0C difference) and no precipitation, matching the baseline. Just another hot, dry day in Brussels - stay hydrated!",
+  "alignment": "full"
 }
