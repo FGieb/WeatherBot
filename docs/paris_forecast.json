@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 34.569,
+  "avg_temp": 34.442,
   "avg_rain": 0.4,
-  "high_temp": 39.3,
-  "low_temp": 27.4,
-  "temp_range": 0.7819999999999965,
+  "high_temp": 39.5,
+  "low_temp": 25.51,
+  "temp_range": 1.676000000000002,
   "rain_range": 0.8,
-  "summary": "Paris: \u2600\ufe0f Avg 34.6\u00b0C (1\u00b0C range), 0% rain (1% range)\nHigh 39\u00b0C / Low 27\u00b0C",
+  "summary": "Paris: \u2600\ufe0f Avg 34.4\u00b0C (2\u00b0C range), 0% rain (1% range)\nHigh 40\u00b0C / Low 26\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports a high of 35\u00b0C (0.4\u00b0C higher than baseline), and a low of 20.5\u00b0C (6.5\u00b0C lower than baseline). The significant discrepancy in the minimum temperature might make you feel like a gazelle darting from the scorching desert to a cool oasis.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue reports a high of 37.2\u00b0C (99\u00b0F), which is a significant 2.8\u00b0C cooler than the baseline's maximum. Other details from this source are not stated. It's a classic summer day in Paris, just make sure you're not a gazelle running around in this heat.",
   "alignment": "divergent"
 }

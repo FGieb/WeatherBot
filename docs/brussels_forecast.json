@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 32.186,
-  "avg_rain": 0.2,
-  "high_temp": 37.9,
-  "low_temp": 25.4,
-  "temp_range": 1.0680000000000014,
-  "rain_range": 0.4,
-  "summary": "Brussels: \u2600\ufe0f Avg 32.2\u00b0C (1\u00b0C range), 0% rain (0% range)\nHigh 38\u00b0C / Low 25\u00b0C",
+  "avg_temp": 31.955,
+  "avg_rain": 0.4,
+  "high_temp": 37.8,
+  "low_temp": 23.22,
+  "temp_range": 2.0900000000000034,
+  "rain_range": 0.8,
+  "summary": "Brussels: \u2600\ufe0f Avg 32.0\u00b0C (2\u00b0C range), 0% rain (1% range)\nHigh 38\u00b0C / Low 23\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All available data aligns with the baseline. Meteoblue indicates a high of 32.8\u00b0C (0.6\u00b0C difference) and no precipitation, matching the baseline. Just another hot, dry day in Brussels - stay hydrated!",
-  "alignment": "full"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The baseline forecast suggests warmer temperature than Meteoblue. Meteoblue indicates a high of 35\u00b0C (3\u00b0C lower than the baseline's high). Hours of dissent aren't stated. A sweltering summer day in Brussels, maybe too hot for a bumblebee's flight!",
+  "alignment": "divergent"
 }
