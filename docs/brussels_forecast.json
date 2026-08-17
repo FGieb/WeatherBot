@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 21.921999999999997,
-  "avg_rain": 15.1,
-  "high_temp": 28.1,
-  "low_temp": 16.1,
-  "temp_range": 1.9959999999999951,
-  "rain_range": 18.2,
-  "summary": "Brussels: \u2601\ufe0f Avg 21.9\u00b0C (2\u00b0C range), 15% rain (18% range)\nHigh 28\u00b0C / Low 16\u00b0C",
+  "avg_temp": 19.935000000000002,
+  "avg_rain": 58.0,
+  "high_temp": 21.33,
+  "low_temp": 17.8,
+  "temp_range": 1.7099999999999973,
+  "rain_range": 34.400000000000006,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 19.9\u00b0C (2\u00b0C range), 58% rain (34% range)\nHigh 21\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All forecasts align well for Brussels today. Notable differences are not stated due to missing data from YR.no and M\u00e9t\u00e9o Belgique. The day seems to remain mostly dry, a perfect occasion for a walk in the park, watching bumblebees buzzing around flowers.",
-  "alignment": "full"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue predicts less rain than the baseline. Meteoblue: 0.1-0.2\" rain vs baseline 58% probability; temperature and rain probability from YR.no and M\u00e9t\u00e9o Belgique not stated. Don't forget your umbrella, Brussels can surprise you like a monkey with its sudden showers.",
+  "alignment": "divergent"
 }
