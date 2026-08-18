@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.935000000000002,
-  "avg_rain": 58.0,
-  "high_temp": 21.33,
-  "low_temp": 17.8,
-  "temp_range": 1.7099999999999973,
-  "rain_range": 34.400000000000006,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 19.9\u00b0C (2\u00b0C range), 58% rain (34% range)\nHigh 21\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 17.475,
+  "avg_rain": 45.1,
+  "high_temp": 19.8,
+  "low_temp": 15.5,
+  "temp_range": 1.3100000000000023,
+  "rain_range": 2.200000000000003,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 17.5\u00b0C (1\u00b0C range), 45% rain (2% range)\nHigh 20\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue predicts less rain than the baseline. Meteoblue: 0.1-0.2\" rain vs baseline 58% probability; temperature and rain probability from YR.no and M\u00e9t\u00e9o Belgique not stated. Don't forget your umbrella, Brussels can surprise you like a monkey with its sudden showers.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue's forecast differs significantly from the baseline. Meteoblue predicts rain of 0.1-0.2\" while the baseline suggests a 45% chance of rain. It's going to be a bit of a pig to plan any outdoor activities today with this inconsistency.",
   "alignment": "divergent"
 }
