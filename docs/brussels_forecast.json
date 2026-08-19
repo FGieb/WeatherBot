@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 17.475,
-  "avg_rain": 45.1,
-  "high_temp": 19.8,
-  "low_temp": 15.5,
-  "temp_range": 1.3100000000000023,
-  "rain_range": 2.200000000000003,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 17.5\u00b0C (1\u00b0C range), 45% rain (2% range)\nHigh 20\u00b0C / Low 16\u00b0C",
+  "avg_temp": 19.739,
+  "avg_rain": 30.6,
+  "high_temp": 21.97,
+  "low_temp": 15.4,
+  "temp_range": 0.8780000000000001,
+  "rain_range": 35.599999999999994,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 19.7\u00b0C (1\u00b0C range), 31% rain (36% range)\nHigh 22\u00b0C / Low 15\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue's forecast differs significantly from the baseline. Meteoblue predicts rain of 0.1-0.2\" while the baseline suggests a 45% chance of rain. It's going to be a bit of a pig to plan any outdoor activities today with this inconsistency.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a slightly lower temperature with a high of 20\u00b0C (2.7\u00b0C delta) and more rain (0.2-0.4\" vs baseline's 31%). The forecast remains uncertain, no need for a donkey's coat yet, but maybe pack an umbrella.",
   "alignment": "divergent"
 }

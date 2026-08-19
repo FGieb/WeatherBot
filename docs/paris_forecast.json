@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 23.181,
-  "avg_rain": 21.5,
-  "high_temp": 28.6,
-  "low_temp": 19.7,
-  "temp_range": 0.5179999999999936,
-  "rain_range": 1.3999999999999986,
-  "summary": "Paris: \u2601\ufe0f Avg 23.2\u00b0C (1\u00b0C range), 22% rain (1% range)\nHigh 29\u00b0C / Low 20\u00b0C",
+  "avg_temp": 22.439,
+  "avg_rain": 5.0,
+  "high_temp": 25.0,
+  "low_temp": 17.4,
+  "temp_range": 0.1579999999999977,
+  "rain_range": 10.0,
+  "summary": "Paris: \u2600\ufe0f Avg 22.4\u00b0C (0\u00b0C range), 5% rain (10% range)\nHigh 25\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a temperature range of 20-26\u00b0C, differing by 2.8\u00b0C at peak from the baseline. Rain and other data not stated. With a slightly cooler temperature, it might be a good day for a stroll along the Seine, just remember to pack a light jacket.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue predicts a slightly cooler day and more rain than the baseline. Specifically, it forecasts a temperature of 28.3\u00b0C (a 5.9\u00b0C delta), a 15 mph wind speed, and a 0.1-0.2\" rainfall (a 95pp rain probability difference). Quite a different outlook, so perhaps consider taking an umbrella if you're planning a walk along the Seine.",
   "alignment": "divergent"
 }
