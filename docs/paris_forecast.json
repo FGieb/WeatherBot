@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 21.532000000000004,
-  "avg_rain": 2.9,
-  "high_temp": 25.53,
-  "low_temp": 16.8,
-  "temp_range": 1.024000000000001,
-  "rain_range": 5.8,
-  "summary": "Paris: \u2600\ufe0f Avg 21.5\u00b0C (1\u00b0C range), 3% rain (6% range)\nHigh 26\u00b0C / Low 17\u00b0C",
+  "avg_temp": 22.362,
+  "avg_rain": 3.6,
+  "high_temp": 26.88,
+  "low_temp": 15.8,
+  "temp_range": 1.6839999999999975,
+  "rain_range": 7.2,
+  "summary": "Paris: \u2600\ufe0f Avg 22.4\u00b0C (2\u00b0C range), 4% rain (7% range)\nHigh 27\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] The weather forecast for Paris aligns across all sources. Meteoblue predicts the temperature to be around 24\u00b0C (75\u00b0F), which is within the range provided by the baseline. Rainfall and wind speed are not stated explicitly. It's looking like a beautiful day in Paris, perfect for bumblebees buzzing around the city's many gardens.",
+  "gpt_comment": "[FULL] All sources align with the baseline. Meteoblue indicates a high of 24.4\u00b0C (76\u00b0F) and a low of 14.4\u00b0C (58\u00b0F), within the baseline's range. Perfect weather for a garden picnic, just remember to bring the bumblebee-friendly flowers.",
   "alignment": "unknown"
 }
