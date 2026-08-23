@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 18.948,
-  "avg_rain": 2.4,
-  "high_temp": 22.06,
-  "low_temp": 14.6,
-  "temp_range": 1.3760000000000048,
-  "rain_range": 4.8,
-  "summary": "Brussels: \u2600\ufe0f Avg 18.9\u00b0C (1\u00b0C range), 2% rain (5% range)\nHigh 22\u00b0C / Low 15\u00b0C",
+  "avg_temp": 20.04,
+  "avg_rain": 5.0,
+  "high_temp": 24.62,
+  "low_temp": 13.8,
+  "temp_range": 0.9599999999999973,
+  "rain_range": 10.0,
+  "summary": "Brussels: \u2600\ufe0f Avg 20.0\u00b0C (1\u00b0C range), 5% rain (10% range)\nHigh 25\u00b0C / Low 14\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] General agreement but with some difference in temperature. Meteoblue suggests a higher temperature with a high of 20.5\u00b0C (69\u00b0F) and a low of 13.3\u00b0C (56\u00b0F), deviating from the baseline. Despite the temperature difference, it's a classic spring day in Brussels - perfect for spotting a bumblebee or two!",
+  "gpt_comment": "[FULL] Sources align perfectly with the baseline for Brussels today. Meteoblue confirms clear skies and temperatures around 20\u00b0C. Looks like a beautiful day to spot a bumblebee in the park.",
   "alignment": "unknown"
 }
