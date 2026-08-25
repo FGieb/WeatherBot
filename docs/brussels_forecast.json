@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 20.218,
-  "avg_rain": 12.6,
-  "high_temp": 25.66,
-  "low_temp": 15.5,
-  "temp_range": 3.396000000000001,
+  "avg_temp": 23.346,
+  "avg_rain": 23.4,
+  "high_temp": 27.7,
+  "low_temp": 18.5,
+  "temp_range": 1.5080000000000027,
   "rain_range": 25.2,
-  "summary": "Brussels: \u2601\ufe0f Avg 20.2\u00b0C (3\u00b0C range), 13% rain (25% range)\nHigh 26\u00b0C / Low 16\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "summary": "Brussels: \u2601\ufe0f Avg 23.3\u00b0C (2\u00b0C range), 23% rain (25% range)\nHigh 28\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Verdict is uncertain due to incomplete data from multiple sources. Meteoblue reports a high of approximately 22.2\u00b0C, which is 2\u00b0C cooler than the baseline, but no rain data or specific hours were provided. Unfortunately, I couldn't extract any data from YR.no or M\u00e9t\u00e9o Belgique to compare further. A monkey would have an easier time predicting the weather today.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: There's a noticeable difference with the Meteoblue data. Meteoblue displays not stated temperature, but a difference in rainfall is evident; it's dry vs. baseline's 23% rain. It's a bit like a chameleon weather - keep your umbrella close, just in case!",
   "alignment": "divergent"
 }
