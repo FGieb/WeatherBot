@@ -8,6 +8,6 @@
   "rain_range": 25.2,
   "summary": "Brussels: \u2601\ufe0f Avg 23.3\u00b0C (2\u00b0C range), 23% rain (25% range)\nHigh 28\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: There's a noticeable difference with the Meteoblue data. Meteoblue displays not stated temperature, but a difference in rainfall is evident; it's dry vs. baseline's 23% rain. It's a bit like a chameleon weather - keep your umbrella close, just in case!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue's forecast differs significantly. Meteoblue: 28.3\u201329.4\u00b0C (5\u00b0C delta) vs baseline 23.3\u00b0C; 0-0.2\" of rain not stated in percentages. It's getting hot in Brussels, stay hydrated like a gazelle in the savannah!",
   "alignment": "divergent"
 }

@@ -8,6 +8,6 @@
   "rain_range": 6.599999999999998,
   "summary": "Paris: \u2601\ufe0f Avg 25.5\u00b0C (1\u00b0C range), 16% rain (7% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All available sources align with the baseline. Meteoblue: 27.8\u00b0C avg, no rain stated. Unfortunately, couldn't get data from YR.no or M\u00e9t\u00e9o France. Quite a temperate day for a stroll down the Seine, just as pleasant as a bumblebee's buzz.",
+  "gpt_comment": "[FULL] All available sources align with the baseline for Paris. Meteoblue indicates a temperature range between 20.5\u201327.7\u00b0C and no significant rain, consistent with the baseline. A classic day in Paris, perfect for a stroll along the Seine.",
   "alignment": "unknown"
 }
