@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 23.346,
-  "avg_rain": 23.4,
-  "high_temp": 27.7,
-  "low_temp": 18.5,
-  "temp_range": 1.5080000000000027,
-  "rain_range": 25.2,
-  "summary": "Brussels: \u2601\ufe0f Avg 23.3\u00b0C (2\u00b0C range), 23% rain (25% range)\nHigh 28\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 19.206000000000003,
+  "avg_rain": 25.7,
+  "high_temp": 21.71,
+  "low_temp": 16.0,
+  "temp_range": 1.8120000000000012,
+  "rain_range": 3.3999999999999986,
+  "summary": "Brussels: \u2601\ufe0f Avg 19.2\u00b0C (2\u00b0C range), 26% rain (3% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue's forecast differs significantly. Meteoblue: 28.3\u201329.4\u00b0C (5\u00b0C delta) vs baseline 23.3\u00b0C; 0-0.2\" of rain not stated in percentages. It's getting hot in Brussels, stay hydrated like a gazelle in the savannah!",
-  "alignment": "divergent"
+  "gpt_comment": "[PARTIAL] Meteoblue diverges slightly with lower temperatures. Meteoblue: 20.5\u00b0C peak, 16.6\u00b0C low vs baseline's 22\u00b0C / 16\u00b0C; rain and wind data not stated. Don't forget your jacket if you're going out, it might feel a bit chillier than expected.",
+  "alignment": "unknown"
 }
