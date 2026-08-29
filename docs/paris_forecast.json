@@ -8,6 +8,6 @@
   "rain_range": 11.0,
   "summary": "Paris: \u2601\ufe0f Avg 21.7\u00b0C (1\u00b0C range), 10% rain (11% range)\nHigh 24\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[PARTIAL] alignment. Meteoblue shows a slightly lower temperature range (21.7\u201325.6\u00b0C vs. baseline 24\u201317\u00b0C). Rainfall and other data not stated. Looks like a typical Parisian day to me, just missing the buzz of bumblebees in the parks.",
+  "gpt_comment": "[FULL] All available sources align with the baseline for Paris. Meteoblue indicates sunny weather, consistent with the baseline's low rain probability. Parisians can enjoy a typical day in the city, perhaps even spot a bumblebee or two in the parks.",
   "alignment": "unknown"
 }
