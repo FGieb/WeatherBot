@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.206000000000003,
-  "avg_rain": 25.7,
-  "high_temp": 21.71,
-  "low_temp": 16.0,
-  "temp_range": 1.8120000000000012,
-  "rain_range": 3.3999999999999986,
-  "summary": "Brussels: \u2601\ufe0f Avg 19.2\u00b0C (2\u00b0C range), 26% rain (3% range)\nHigh 22\u00b0C / Low 16\u00b0C",
+  "avg_temp": 19.759,
+  "avg_rain": 23.7,
+  "high_temp": 22.33,
+  "low_temp": 16.4,
+  "temp_range": 0.8780000000000001,
+  "rain_range": 13.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 19.8\u00b0C (1\u00b0C range), 24% rain (13% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] Meteoblue diverges slightly with lower temperatures. Meteoblue: 20.5\u00b0C peak, 16.6\u00b0C low vs baseline's 22\u00b0C / 16\u00b0C; rain and wind data not stated. Don't forget your jacket if you're going out, it might feel a bit chillier than expected.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests possible rain not mentioned in the baseline. Meteoblue: 0.1-0.2\" rain, not stated when, vs baseline's dry forecast. A potential surprise for anyone planning to be as busy as a bee outside today.",
+  "alignment": "divergent"
 }
