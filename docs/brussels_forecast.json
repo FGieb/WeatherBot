@@ -8,6 +8,6 @@
   "rain_range": 13.0,
   "summary": "Brussels: \u2601\ufe0f Avg 19.8\u00b0C (1\u00b0C range), 24% rain (13% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] Alignment with Meteoblue. Meteoblue shows temperatures in Fahrenheit which roughly convert to a high of 19\u00b0C and low of 16\u00b0C, aligning with the baseline; rain details not stated. A classic spring day in Brussels, perfect for spotting a bumblebee in the park.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Only Meteoblue provides additional data, but it doesn't match the baseline. Meteoblue: not stated \u00b0C, rain not stated, wind 8 mph, 4h sunshine. The lack of details makes for a cloudy forecast, much like a bumblebee navigating through a foggy morning.",
+  "alignment": "divergent"
 }
