@@ -8,6 +8,6 @@
   "rain_range": 11.0,
   "summary": "Paris: \u2601\ufe0f Avg 21.7\u00b0C (1\u00b0C range), 10% rain (11% range)\nHigh 24\u00b0C / Low 17\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All data aligns with the baseline forecast for Paris. Meteoblue predicts a high of 25\u00b0C (77\u00b0F) and a low of 16\u00b0C (61\u00b0F), and doesn't provide rain data. The breeze from Meteoblue might make it feel like a gazelle's sprint through the savanna.",
+  "gpt_comment": "[FULL] All available sources align with the baseline for today's Paris weather. Meteoblue implies an average temperature around 22\u00b0C, which falls within the baseline's range. The rain probability and hours are not stated.",
   "alignment": "unknown"
 }

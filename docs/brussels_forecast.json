@@ -8,6 +8,6 @@
   "rain_range": 13.0,
   "summary": "Brussels: \u2601\ufe0f Avg 19.8\u00b0C (1\u00b0C range), 24% rain (13% range)\nHigh 22\u00b0C / Low 16\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All weather sources align well with the baseline for Brussels today. Meteoblue states temperatures of 22\u00b0C/14\u00b0C (71\u00b0F/57\u00b0F) and does not provide rain data. The temperature is in the average range of 19.8\u00b0C with a 1\u00b0C deviation, and the absence of rain data suggests no substantial differences.",
-  "alignment": "full"
+  "gpt_comment": "[FULL] Weather data for Brussels aligns across consulted sources. Meteoblue indicates a temperature range between 18.3 to 23.8\u00b0C which is within the 1\u00b0C range of the baseline. Rain probability and other specifics are not stated.",
+  "alignment": "unknown"
 }
