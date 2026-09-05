@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 19.759,
-  "avg_rain": 23.7,
-  "high_temp": 22.33,
-  "low_temp": 16.4,
-  "temp_range": 0.8780000000000001,
-  "rain_range": 13.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 19.8\u00b0C (1\u00b0C range), 24% rain (13% range)\nHigh 22\u00b0C / Low 16\u00b0C",
+  "avg_temp": 22.477000000000004,
+  "avg_rain": 3.9,
+  "high_temp": 27.55,
+  "low_temp": 14.8,
+  "temp_range": 1.073999999999998,
+  "rain_range": 7.8,
+  "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather forecasts fully align. Meteoblue states a high of 69\u00b0F (20.5\u00b0C) and a low of 57\u00b0F (13.9\u00b0C), fitting within the baseline's range. Notably, no rain is mentioned, making for a typical spring day in Brussels.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Some disagreement in today's forecast for Brussels. Meteoblue suggests a high of 22\u00b0C, lower than the average baseline of 22.5\u00b0C, but exact rain probability is not stated. It's a bit like trying to predict a monkey's next move, isn't it?",
+  "alignment": "divergent"
 }

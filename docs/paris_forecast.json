@@ -1,13 +1,13 @@
 {
   "city": "Paris",
-  "avg_temp": 21.732,
-  "avg_rain": 9.5,
-  "high_temp": 23.93,
-  "low_temp": 17.4,
-  "temp_range": 1.184000000000001,
-  "rain_range": 11.0,
-  "summary": "Paris: \u2601\ufe0f Avg 21.7\u00b0C (1\u00b0C range), 10% rain (11% range)\nHigh 24\u00b0C / Low 17\u00b0C",
+  "avg_temp": 26.248,
+  "avg_rain": 4.2,
+  "high_temp": 30.36,
+  "low_temp": 18.6,
+  "temp_range": 1.0159999999999982,
+  "rain_range": 8.4,
+  "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] Weather sources align perfectly today. Meteoblue states temperatures similar to the baseline without any rain probabilities or wind speed mentioned. Seems like a classic Parisian day, perfect for a stroll along the Seine.",
+  "gpt_comment": "[FULL] All sources align with the baseline for Paris weather today. Meteoblue states a high of 78\u00b0F (25.6\u00b0C) and a low of 63\u00b0F (17.2\u00b0C) which is within range of the baseline. The beautiful sunny day seems perfect for a stroll along the Seine.",
   "alignment": "unknown"
 }
