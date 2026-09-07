@@ -8,6 +8,6 @@
   "rain_range": 8.4,
   "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline: sunny and warm in Paris. Meteoblue indicates a temperature range similar to baseline, with no rain forecasted, but exact values are not stated. It's a classic summer day in Paris, perfect for a picnic in the park - just remember to bring water for those thirsty bumblebees!",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates slight rain, differing from the baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated when, vs baseline 4% rain probability. The expected rain might make it a less than ideal day for a picnic, unless you're a duck or a bumblebee who enjoys the wet weather.",
+  "alignment": "divergent"
 }

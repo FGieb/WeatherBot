@@ -8,6 +8,6 @@
   "rain_range": 7.8,
   "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All accessible sources align well with the baseline for Brussels. Meteoblue reports a sunny day with similar temperature ranges and no significant rain. A classic spring day in Brussels, perfect for a bumblebee's flower hunt.",
-  "alignment": "full"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue indicates possible light rain, contrary to the baseline's dry forecast. Meteoblue: Expected 0.1-0.2\" of rain, not stated when. With the unpredictable weather, maybe a monkey would even think twice before swinging in the trees today.",
+  "alignment": "divergent"
 }
