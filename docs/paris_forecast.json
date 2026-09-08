@@ -8,6 +8,6 @@
   "rain_range": 8.4,
   "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue indicates slight rain, differing from the baseline's dry forecast. Meteoblue: 0.1-0.2\" rain, not stated when, vs baseline 4% rain probability. The expected rain might make it a less than ideal day for a picnic, unless you're a duck or a bumblebee who enjoys the wet weather.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue shows different temperatures with a maximum around 20\u00b0C, quite lower than the baseline's 26.2\u00b0C. Unfortunately, the exact rain probability and hours are not stated. It seems like a cooler day in Paris - good for a stroll, but a bumblebee might prefer a warmer day for its flower visits.",
   "alignment": "divergent"
 }
