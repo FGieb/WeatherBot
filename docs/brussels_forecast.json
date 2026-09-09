@@ -8,6 +8,6 @@
   "rain_range": 7.8,
   "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecast from Meteoblue differs noticeably from the baseline. Meteoblue indicates temperatures around 17.8\u00b0C, which is cooler by approximately 4.7\u00b0C than the baseline. Unfortunately, YR.no and M\u00e9t\u00e9o Belgique did not provide any data for comparison. Well, seems like a perfect day for indoor activities, perhaps a visit to the Royal Museum of Fine Arts, to avoid the chill.",
-  "alignment": "divergent"
+  "gpt_comment": "[PARTIAL] Agreement on Brussels weather today. Meteoblue suggests a lower average temperature with 21\u00b0C peak and 10\u00b0C low but does not state rain probability. Seems like a typical spring day in Brussels with a slight chill in the air.",
+  "alignment": "unknown"
 }
