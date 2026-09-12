@@ -8,6 +8,6 @@
   "rain_range": 7.8,
   "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for Brussels weather. Meteoblue suggests a temperature range of 12.8-22.9\u00b0C, which is within the baseline's range. Other specifics like rain probability were not stated by the dissenting sources. Perfect day for a bumblebee to enjoy the blossoms in the city's parks.",
-  "alignment": "unknown"
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: One source varies but others could not be verified. Meteoblue suggests a lower high of around 23\u00b0C (approx 5\u00b0C difference) and a higher low of around 13\u00b0C (approx 2\u00b0C difference), but wind speed and rain are not stated. Seems like a classic spring day in Brussels - perfect for spotting bumblebees in the park.",
+  "alignment": "divergent"
 }
