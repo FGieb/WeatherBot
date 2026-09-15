@@ -8,6 +8,6 @@
   "rain_range": 8.4,
   "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[PARTIAL] Meteoblue shows a higher peak temperature than the baseline, but exact values are not stated. The other sources do not provide explicit data. Looks like it's going to be a hotter day in Paris, perfect for a stroll if you're a bumblebee enjoying the sun.",
+  "gpt_comment": "[FULL] All sources align with the baseline for the available data. Meteoblue suggests a temperature between 15.5\u201321.7\u00b0C, within the baseline's range. Specific rain probabilities or temperature variations at certain hours are not stated.",
   "alignment": "unknown"
 }

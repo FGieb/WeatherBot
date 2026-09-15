@@ -8,6 +8,6 @@
   "rain_range": 7.8,
   "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[PARTIAL] alignment. Meteoblue shows a higher minimum temperature (16.1\u00b0C vs 15\u00b0C baseline). Other sources were not explicit or unavailable. Seems like an ideal day to sit outside, maybe watch some bumblebees buzz around the local flowers.",
+  "gpt_comment": "[FULL] Weather reports for Brussels align today. Meteoblue suggests a similar average temperature of 19\u00b0C (3.5\u00b0C delta), no rain probability, and not stated peak temperature. A typical mild day in Brussels, ideal for a stroll in the park, just keep an eye out for bumblebees!",
   "alignment": "unknown"
 }
