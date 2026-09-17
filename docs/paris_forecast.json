@@ -8,6 +8,6 @@
   "rain_range": 8.4,
   "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a cooler high of 22\u00b0C (about 4\u00b0C delta from the baseline) although rainfall and low temperature data are not stated. Unfortunately, other data from YR.no and M\u00e9t\u00e9o France couldn't be extracted. Seems like it might be a bit chillier than expected, good day for a gazelle to enjoy a brisk run.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Meteoblue's data differs from the baseline. Meteoblue does not provide specific temperature or rain probability data. No other material differences or data to report. Without further detail, it's a bit like navigating Paris without a map - possible, but not ideal.",
   "alignment": "divergent"
 }
