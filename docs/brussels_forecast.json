@@ -8,6 +8,6 @@
   "rain_range": 7.8,
   "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for today's weather in Brussels. Meteoblue confirms the average temperature, rain probability, and wind speed but does not provide exact figures. It's a classic sunny day in Brussels, perfect for a stroll in the park, just keep an eye out for any cheeky monkeys enjoying the sunshine too.",
-  "alignment": "unknown"
+  "gpt_comment": "[FULL] All sources align with the baseline. Meteoblue reports a temperature range of 10-24\u00b0C, which is in line with the baseline. This data does not include any specific rain prediction or wind speed. It seems like a perfect day for a stroll through the park, just be sure not to disturb any bumblebees!",
+  "alignment": "full"
 }
