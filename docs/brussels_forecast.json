@@ -8,6 +8,6 @@
   "rain_range": 7.8,
   "summary": "Brussels: \u2600\ufe0f Avg 22.5\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 28\u00b0C / Low 15\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline forecast for Brussels. Meteoblue predicts a clear day with temperatures similar to the baseline and no rain. The day promises to be sunny, ideal for a stroll in the park, but don't forget your sunscreen, even a bumblebee can get sunburned!",
+  "gpt_comment": "[PARTIAL] alignment. Meteoblue presents a slight difference in temperature. Meteoblue reports a high of 22.8\u00b0C (5.2\u00b0C less than baseline) and a low of 16.1\u00b0C (1.1\u00b0C more than baseline); no rain data stated. Seems like it might be a bit cooler than expected, maybe a good day to see the gazelles at the Brussels Zoo without the usual heat.",
   "alignment": "unknown"
 }

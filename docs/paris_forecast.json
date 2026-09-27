@@ -8,6 +8,6 @@
   "rain_range": 8.4,
   "summary": "Paris: \u2600\ufe0f Avg 26.2\u00b0C (1\u00b0C range), 4% rain (8% range)\nHigh 30\u00b0C / Low 19\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "[FULL] All accessible sources agree with the baseline for Paris: sunny with an average of 26.2\u00b0C and a 4% chance of rain. Meteoblue also suggests a sunny day but does not provide specific temperature or rain data. I wish we could all bask in the Paris sun like a content bumblebee, alas, some of us must verify weather reports.",
+  "gpt_comment": "[PARTIAL] Alignment with other sources. Meteoblue reports a slightly lower temperature range (24.4-19.4\u00b0C). Not enough data for a more comprehensive comparison. Looks like it's going to be a classic Parisian day, just a tad cooler according to Meteoblue.",
   "alignment": "unknown"
 }
