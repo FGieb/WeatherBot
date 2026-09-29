@@ -8,6 +8,6 @@
   "rain_range": 28.2,
   "summary": "Brussels: \ud83c\udf27\ufe0f Avg 21.8\u00b0C (0\u00b0C range), 39% rain (28% range)\nHigh 27\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Baseline forecast for Brussels is somewhat challenged. Meteoblue predicts a slightly cooler temperature range (61-82\u00b0F or 16-27.8\u00b0C) than the baseline\u2019s 18-27\u00b0C. Other data was not stated or unavailable. If you're planning an afternoon stroll, maybe bring a light jacket just in case it's cooler than expected!",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue forecasts a slightly lower temperature range (25-19\u00b0C) and predicts a small amount of rain compared to the baseline's dry forecast. The forecast uncertainty warning remains valid.",
   "alignment": "divergent"
 }
