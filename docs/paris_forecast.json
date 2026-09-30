@@ -8,6 +8,6 @@
   "rain_range": 18.0,
   "summary": "Paris: \u2601\ufe0f Avg 20.8\u00b0C (3\u00b0C range), 30% rain (18% range)\nHigh 25\u00b0C / Low 18\u00b0C",
   "graph_file": "docs/paris_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Meteoblue shows slightly cooler temperatures and possible rain. Meteoblue: 22.2\u00b0C average (about 1.4\u00b0C cooler than baseline) with potential for up to 0.4\" of rain, whereas baseline predicts dry weather. Looks like it might be a good day for ducks in Paris today, not so much for bumblebees.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts a significantly lower temperature range of 15.5-20\u00b0C compared to the baseline's 18-25\u00b0C. Rain probability and exact hours are not stated. It seems like the perfect day to be a bumblebee in Paris, a bit cooler and potentially less rain to dodge.",
   "alignment": "divergent"
 }
