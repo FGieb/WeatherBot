@@ -8,6 +8,6 @@
   "rain_range": 28.2,
   "summary": "Brussels: \ud83c\udf27\ufe0f Avg 21.8\u00b0C (0\u00b0C range), 39% rain (28% range)\nHigh 27\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: The weather data from Meteoblue diverges significantly from the baseline. Meteoblue suggests a rainfall of 0.2-0.4 inches, a stark contrast from the baseline's 39% probability. The temperature is not explicitly stated by Meteoblue. It's more like a guessing game now; let's hope it doesn't rain on your parade.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The Meteoblue forecast materially disagrees with the baseline. It suggests a cooler temperature with highs of 19.4\u00b0C vs baseline's 27\u00b0C and doesn't mention rain probability. It's a good day for a bumblebee to enjoy Brussels' cooler weather.",
   "alignment": "divergent"
 }
