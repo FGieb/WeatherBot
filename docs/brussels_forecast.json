@@ -8,6 +8,6 @@
   "rain_range": 24.0,
   "summary": "Brussels: \u2601\ufe0f Avg 18.3\u00b0C (0\u00b0C range), 26% rain (24% range)\nHigh 23\u00b0C / Low 14\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Data from Meteoblue contradicts the baseline. Meteoblue: temperature not stated, rain probability not stated. It's a bit like guessing what a monkey would do next in a room full of bananas.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Weather forecasts for Brussels are inconsistent today. Meteoblue predicts a higher amount of rainfall, around 0.2-0.4 inches, while the baseline forecast suggests only a 26% chance for rain. It's a bit of a monkey's game predicting the weather today, so it might be wise to carry an umbrella just in case.",
   "alignment": "divergent"
 }
