@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 21.77,
-  "avg_rain": 39.3,
-  "high_temp": 27.33,
-  "low_temp": 18.17,
-  "temp_range": 0.01999999999999602,
-  "rain_range": 28.2,
-  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 21.8\u00b0C (0\u00b0C range), 39% rain (28% range)\nHigh 27\u00b0C / Low 18\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 18.304,
+  "avg_rain": 25.6,
+  "high_temp": 22.54,
+  "low_temp": 14.1,
+  "temp_range": 0.2080000000000055,
+  "rain_range": 24.0,
+  "summary": "Brussels: \u2601\ufe0f Avg 18.3\u00b0C (0\u00b0C range), 26% rain (24% range)\nHigh 23\u00b0C / Low 14\u00b0C\n\u26a0\ufe0f Forecast uncertain",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels weather shows some disagreement. Meteoblue indicates a lower temperature (22.2\u00b0C vs baseline 21.8\u00b0C), however, rain data is not stated. Regardless, it might be a nice day for a stroll, just keep an umbrella handy, you wouldn't want to be a wet monkey.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]: Data from Meteoblue contradicts the baseline. Meteoblue: temperature not stated, rain probability not stated. It's a bit like guessing what a monkey would do next in a room full of bananas.",
   "alignment": "divergent"
 }
