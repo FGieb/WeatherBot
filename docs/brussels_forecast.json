@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 18.304,
-  "avg_rain": 25.6,
-  "high_temp": 22.54,
-  "low_temp": 14.1,
-  "temp_range": 0.2080000000000055,
-  "rain_range": 24.0,
-  "summary": "Brussels: \u2601\ufe0f Avg 18.3\u00b0C (0\u00b0C range), 26% rain (24% range)\nHigh 23\u00b0C / Low 14\u00b0C\n\u26a0\ufe0f Forecast uncertain",
+  "avg_temp": 13.870000000000001,
+  "avg_rain": 32.7,
+  "high_temp": 15.9,
+  "low_temp": 9.3,
+  "temp_range": 1.3400000000000016,
+  "rain_range": 17.4,
+  "summary": "Brussels: \ud83c\udf27\ufe0f Avg 13.9\u00b0C (1\u00b0C range), 33% rain (17% range)\nHigh 16\u00b0C / Low 9\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Weather forecasts for Brussels are inconsistent today. Meteoblue predicts a higher amount of rainfall, around 0.2-0.4 inches, while the baseline forecast suggests only a 26% chance for rain. It's a bit of a monkey's game predicting the weather today, so it might be wise to carry an umbrella just in case.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue predicts slightly more rain (0.2-0.4\") than the baseline's 33%. Temperature data is not stated from other sources. Looks like it might be a good day for ducks, not so much for bumblebees.",
   "alignment": "divergent"
 }
