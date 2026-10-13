@@ -1,13 +1,13 @@
 {
   "city": "Brussels",
-  "avg_temp": 12.286000000000001,
-  "avg_rain": 16.700000000000003,
-  "high_temp": 15.77,
-  "low_temp": 9.2,
-  "temp_range": 1.452,
-  "rain_range": 0.1999999999999993,
-  "summary": "Brussels: \u2601\ufe0f Avg 12.3\u00b0C (1\u00b0C range), 17% rain (0% range)\nHigh 16\u00b0C / Low 9\u00b0C",
+  "avg_temp": 14.925999999999998,
+  "avg_rain": 6.4,
+  "high_temp": 19.82,
+  "low_temp": 10.9,
+  "temp_range": 0.012000000000000455,
+  "rain_range": 12.8,
+  "summary": "Brussels: \u2601\ufe0f Avg 14.9\u00b0C (0\u00b0C range), 6% rain (13% range)\nHigh 20\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] All sources align with the baseline for Brussels weather today. Meteoblue shows similar temperatures but does not state rain probability. With the cool temperatures, it's a classic spring day in Brussels.",
+  "gpt_comment": "[FULL] All available sources align with the baseline for Brussels. Meteoblue suggests a slightly cooler day with a high of 20\u00b0F (around 11\u00b0C), but doesn't specify the exact hours. A classic spring day in Brussels, perfect for a caf\u00e9 terrace.",
   "alignment": "unknown"
 }
