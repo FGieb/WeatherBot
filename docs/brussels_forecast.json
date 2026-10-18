@@ -8,6 +8,6 @@
   "rain_range": 12.8,
   "summary": "Brussels: \u2601\ufe0f Avg 14.9\u00b0C (0\u00b0C range), 6% rain (13% range)\nHigh 20\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "[FULL] The weather forecast aligns across all available sources. Meteoblue indicates sunny weather, matching the baseline's low rain probability. A classic spring day in Brussels, perfect for people-watching at a caf\u00e9 terrace.",
-  "alignment": "full"
+  "gpt_comment": "[FULL] All sources align with the baseline. Meteoblue also indicates an average temperature of 14.9\u00b0C with no rain. Too bad there's no data from YR.no and M\u00e9t\u00e9o Belgique, but looks like it's going to be a classic spring day in Brussels.",
+  "alignment": "unknown"
 }
