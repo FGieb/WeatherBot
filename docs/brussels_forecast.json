@@ -8,6 +8,6 @@
   "rain_range": 12.8,
   "summary": "Brussels: \u2601\ufe0f Avg 14.9\u00b0C (0\u00b0C range), 6% rain (13% range)\nHigh 20\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT]. Meteoblue suggests lower temperatures than baseline, but exact values are not stated. Unfortunately, the other sources did not provide data for comparison. Seems like you might need a cozy jacket today, better be a warm bumblebee than a cold one.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecast is inconsistent. Meteoblue predicts slight rain, unlike the baseline's dry outlook. It's a bit of a toss-up, you might need a bumblebee's intuition to predict the weather today.",
   "alignment": "divergent"
 }
