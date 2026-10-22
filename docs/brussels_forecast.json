@@ -8,6 +8,6 @@
   "rain_range": 12.8,
   "summary": "Brussels: \u2601\ufe0f Avg 14.9\u00b0C (0\u00b0C range), 6% rain (13% range)\nHigh 20\u00b0C / Low 11\u00b0C",
   "graph_file": "docs/brussels_comparison.png",
-  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] The forecast is inconsistent. Meteoblue predicts slight rain, unlike the baseline's dry outlook. It's a bit of a toss-up, you might need a bumblebee's intuition to predict the weather today.",
+  "gpt_comment": "\u26a0\ufe0f[DIVERGENT] Brussels weather data is inconsistent today. Meteoblue predicts a temperature range between 7.8-8.3\u00b0C, differing from the baseline's 14.9\u00b0C average, and anticipates 10.2-20.3mm rain, which is significantly more than the baseline's 6%. Too bad for anyone hoping to play a game of football in the park, unless they're as keen on mud as a pig in a wallow.",
   "alignment": "divergent"
 }
